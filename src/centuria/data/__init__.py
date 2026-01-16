@@ -1,5 +1,5 @@
-"""Data loading and processing utilities."""
+"""Data loading utilities."""
 
-from centuria.data.loaders import DataLoader
+from centuria.data.loaders import load_files, load_text
 
-__all__ = ["DataLoader"]
+__all__ = ["load_text", "load_files"]
