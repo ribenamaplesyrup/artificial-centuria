@@ -1,12 +1,11 @@
-"""Pydantic data models for personas, surveys, and responses."""
+"""Data models."""
 
-from centuria.models.persona import DataSource, PersonaProfile
+from centuria.models.persona import Persona
 from centuria.models.response import QuestionResponse, SurveyResponse
 from centuria.models.survey import Question, Survey
 
 __all__ = [
-    "DataSource",
-    "PersonaProfile",
+    "Persona",
     "Question",
     "Survey",
     "QuestionResponse",
