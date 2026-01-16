@@ -1,5 +1,5 @@
-"""LLM client utilities using LiteLLM."""
+"""LLM utilities."""
 
-from centuria.llm.client import LLMClient
+from centuria.llm.client import complete
 
-__all__ = ["LLMClient"]
+__all__ = ["complete"]
