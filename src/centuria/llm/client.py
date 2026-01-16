@@ -1,14 +1,19 @@
 """LLM client using LiteLLM."""
 
 import os
+import warnings
+from pathlib import Path
 
 import litellm
 from dotenv import load_dotenv
 
-load_dotenv()
+# Load .env from project root (handles running from notebooks/)
+_project_root = Path(__file__).parent.parent.parent.parent
+load_dotenv(_project_root / ".env")
 
-# Suppress litellm logging
+# Suppress litellm noise
 litellm.suppress_debug_info = True
+warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 
 
 async def complete(
