@@ -1,5 +1,5 @@
-"""Persona generation from data sources."""
+"""Persona generation."""
 
-from centuria.persona.generator import PersonaGenerator
+from centuria.persona.generator import create_persona, create_persona_from_files
 
-__all__ = ["PersonaGenerator"]
+__all__ = ["create_persona", "create_persona_from_files"]
