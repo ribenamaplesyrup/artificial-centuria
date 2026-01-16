@@ -1,5 +1,5 @@
-"""Survey execution and analysis."""
+"""Survey execution."""
 
-from centuria.survey.executor import SurveyExecutor
+from centuria.survey.executor import ask_question, run_survey
 
-__all__ = ["SurveyExecutor"]
+__all__ = ["ask_question", "run_survey"]
