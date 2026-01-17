@@ -67,3 +67,7 @@ logs/
 
 # uv
 .python-version
+
+# Local files (not tracked)
+*.local.md
+TODO.local.md

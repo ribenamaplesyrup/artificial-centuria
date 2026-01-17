@@ -2,6 +2,7 @@
 
 import os
 import warnings
+from dataclasses import dataclass
 from pathlib import Path
 
 import litellm
@@ -16,11 +17,76 @@ litellm.suppress_debug_info = True
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 
 
+@dataclass
+class CompletionResult:
+    """Result from an LLM completion with usage stats."""
+
+    content: str
+    prompt_tokens: int
+    completion_tokens: int
+    cost: float  # USD
+
+
+@dataclass
+class CostEstimate:
+    """Estimated cost for a completion."""
+
+    prompt_tokens: int
+    completion_tokens: int  # estimated
+    cost: float  # USD
+
+
+def estimate_cost(
+    prompt: str,
+    system: str | None = None,
+    model: str | None = None,
+    estimated_completion_tokens: int = 10,
+) -> CostEstimate:
+    """
+    Estimate the cost of a completion before sending it.
+
+    Args:
+        prompt: The user prompt
+        system: Optional system prompt
+        model: Model to use (defaults to DEFAULT_MODEL env var or gpt-4o)
+        estimated_completion_tokens: Expected output tokens (default 10 for short responses)
+
+    Returns:
+        CostEstimate with token counts and estimated cost
+    """
+    model = model or os.getenv("DEFAULT_MODEL", "gpt-4o")
+
+    messages = []
+    if system:
+        messages.append({"role": "system", "content": system})
+    messages.append({"role": "user", "content": prompt})
+
+    # Count prompt tokens
+    prompt_tokens = litellm.token_counter(model=model, messages=messages)
+
+    # Build full prompt string for cost calculation
+    full_prompt = (system or "") + prompt
+    # Estimate completion as roughly N tokens worth of text
+    estimated_completion = "word " * estimated_completion_tokens
+
+    total_cost = litellm.completion_cost(
+        model=model,
+        prompt=full_prompt,
+        completion=estimated_completion,
+    )
+
+    return CostEstimate(
+        prompt_tokens=prompt_tokens,
+        completion_tokens=estimated_completion_tokens,
+        cost=total_cost,
+    )
+
+
 async def complete(
     prompt: str,
     system: str | None = None,
     model: str | None = None,
-) -> str:
+) -> CompletionResult:
     """
     Get a completion from an LLM.
 
@@ -30,7 +96,7 @@ async def complete(
         model: Model to use (defaults to DEFAULT_MODEL env var or gpt-4o)
 
     Returns:
-        The completion text
+        CompletionResult with content and usage stats
     """
     model = model or os.getenv("DEFAULT_MODEL", "gpt-4o")
 
@@ -40,4 +106,13 @@ async def complete(
     messages.append({"role": "user", "content": prompt})
 
     response = await litellm.acompletion(model=model, messages=messages)
-    return response.choices[0].message.content
+
+    # Calculate cost using litellm's built-in pricing
+    cost = litellm.completion_cost(completion_response=response)
+
+    return CompletionResult(
+        content=response.choices[0].message.content,
+        prompt_tokens=response.usage.prompt_tokens,
+        completion_tokens=response.usage.completion_tokens,
+        cost=cost,
+    )
