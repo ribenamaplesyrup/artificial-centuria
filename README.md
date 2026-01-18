@@ -31,6 +31,7 @@ artificial-centuria/
 │   ├── survey/          # Survey execution & analysis
 │   ├── data/            # Data loading utilities
 │   └── observability/   # Cost tracking
+├── web/                 # SvelteKit web application
 ├── data/                # User data (gitignored)
 ├── surveys/             # Survey definitions (YAML)
 └── tests/               # Unit tests
@@ -49,6 +50,37 @@ persona = await generator.from_files(["cv.pdf", "linkedin.txt"])
 # Run a survey
 executor = SurveyExecutor()
 responses = await executor.run(persona, survey)
+```
+
+## Web App
+
+The project includes a SvelteKit web application for visualizing survey results.
+
+### Running the Web App
+
+1. Start the Python API server:
+```bash
+uv run python -m centuria.api.server
+```
+
+2. In a separate terminal, navigate to the web directory and install dependencies:
+```bash
+cd web
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+### Building for Production
+
+```bash
+npm run build
+npm run preview  # Preview the production build
 ```
 
 ## Development

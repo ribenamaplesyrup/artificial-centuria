@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Any
 
-from pydantic import BaseModel
+from pydantic import BaseModel, field_validator
 
 from centuria.data import load_text
 from centuria.llm import complete
@@ -42,6 +42,20 @@ class ExtractedProfile(BaseModel):
 
     # Raw context for LLM prompting
     raw_context: str = ""
+
+    @field_validator(
+        "key_skills",
+        "reading_genres",
+        "media_diet",
+        "intellectual_interests",
+        "key_values",
+        "causes_care_about",
+        mode="before",
+    )
+    @classmethod
+    def none_to_empty_list(cls, v):
+        """Convert None to empty list for list fields."""
+        return v if v is not None else []
 
 
 EXTRACTION_PROMPT = """Analyze the following personal data and extract a structured profile.

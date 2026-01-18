@@ -1,5 +1,8 @@
 """Simple FastAPI server for Centuria experiments."""
 
+import asyncio
+import base64
+import io
 import json
 import os
 from contextlib import asynccontextmanager
@@ -8,9 +11,16 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
 from pydantic import BaseModel
+import httpx
+import litellm
+from google import genai
+from PIL import Image
 
 from centuria.llm.client import complete
+from centuria.models import Persona, Question, Survey
+from centuria.survey import ask_question, estimate_survey_cost
 
 # Load .env from project root
 _project_root = Path(__file__).parent.parent.parent.parent
@@ -320,6 +330,214 @@ async def generate_persona(request: GenerateRequest = None):
     persona_data.setdefault("continent", "Unknown")
 
     return GeneratedPersona(**persona_data)
+
+
+# ============================================================================
+# Survey API Endpoints
+# ============================================================================
+
+
+class SurveyQuestionRequest(BaseModel):
+    """Request for a single-question survey."""
+
+    question_id: str
+    question_text: str
+    options: list[str]
+    model: str = "gpt-4o-mini"
+
+
+class PersonaData(BaseModel):
+    """Persona data from the frontend."""
+
+    id: str
+    name: str
+    context: str
+
+
+class SurveyRequest(BaseModel):
+    """Request for running a survey on multiple personas."""
+
+    question: SurveyQuestionRequest
+    personas: list[PersonaData]
+
+
+class SurveyEstimateRequest(BaseModel):
+    """Request for estimating survey cost."""
+
+    question: SurveyQuestionRequest
+    sample_persona: PersonaData
+    num_personas: int
+
+
+class SurveyResponse(BaseModel):
+    """Response for a single persona."""
+
+    persona_id: str
+    persona_name: str
+    response: str
+    cost: float
+
+
+class SurveyResultsResponse(BaseModel):
+    """Full survey results."""
+
+    responses: list[SurveyResponse]
+    total_cost: float
+
+
+class EstimateResponse(BaseModel):
+    """Cost estimate response."""
+
+    prompt_tokens: int
+    completion_tokens: int
+    cost_per_agent: float
+    total_cost: float
+    num_agents: int
+
+
+@app.post("/api/survey/estimate", response_model=EstimateResponse)
+async def estimate_survey(request: SurveyEstimateRequest):
+    """Estimate the cost of running a survey before executing it."""
+    persona = Persona(
+        id=request.sample_persona.id,
+        name=request.sample_persona.name,
+        context=request.sample_persona.context,
+    )
+
+    question = Question(
+        id=request.question.question_id,
+        text=request.question.question_text,
+        question_type="single_select",
+        options=request.question.options,
+    )
+
+    survey = Survey(id="estimate", name="Cost Estimate", questions=[question])
+
+    estimate = estimate_survey_cost(
+        persona=persona,
+        survey=survey,
+        num_agents=request.num_personas,
+        model=request.question.model,
+    )
+
+    return EstimateResponse(
+        prompt_tokens=estimate.prompt_tokens,
+        completion_tokens=estimate.completion_tokens,
+        cost_per_agent=estimate.cost_per_agent,
+        total_cost=estimate.total_cost,
+        num_agents=estimate.num_agents,
+    )
+
+
+@app.post("/api/survey/run", response_model=SurveyResultsResponse)
+async def run_survey(request: SurveyRequest):
+    """Run a survey on multiple personas concurrently."""
+    question = Question(
+        id=request.question.question_id,
+        text=request.question.question_text,
+        question_type="single_select",
+        options=request.question.options,
+    )
+
+    async def survey_persona(p: PersonaData) -> SurveyResponse:
+        persona = Persona(id=p.id, name=p.name, context=p.context)
+        result = await ask_question(persona, question, model=request.question.model)
+        return SurveyResponse(
+            persona_id=p.id,
+            persona_name=p.name,
+            response=result.response,
+            cost=result.cost,
+        )
+
+    # Run all surveys concurrently
+    tasks = [survey_persona(p) for p in request.personas]
+    responses = await asyncio.gather(*tasks)
+
+    total_cost = sum(r.cost for r in responses)
+
+    return SurveyResultsResponse(responses=list(responses), total_cost=total_cost)
+
+
+@app.get("/api/personas/dalston-clt")
+async def get_dalston_personas():
+    """Load the Dalston CLT personas for the Dream A Garden experiment."""
+    personas_file = _project_root / "data" / "synthetic" / "dalston_clt" / "personas_for_survey.json"
+
+    if not personas_file.exists():
+        return {"error": "Personas file not found", "personas": []}
+
+    with open(personas_file) as f:
+        personas_data = json.load(f)
+
+    return {"personas": personas_data}
+
+
+# ============================================================================
+# Image Generation API Endpoints
+# ============================================================================
+
+
+class ImageGenerationRequest(BaseModel):
+    """Request for generating a garden design image."""
+
+    winning_option: str
+    design_choices: list[dict]  # [{question: str, answer: str}, ...]
+
+
+class ImageGenerationResponse(BaseModel):
+    """Response containing the generated image."""
+
+    image_base64: str
+    prompt_used: str
+
+
+@app.post("/api/generate-garden-image")
+async def generate_garden_image(request: ImageGenerationRequest):
+    """Generate an image of the garden design using Google Gemini."""
+    # Load the original plot image
+    plot_image_path = _project_root / "web" / "static" / "images" / "plot_1.png"
+    if not plot_image_path.exists():
+        return {"error": f"Plot image not found at {plot_image_path}"}
+
+    # Build a detailed prompt from the survey results
+    design_description = "\n".join([f"- {d['question']}: {d['answer']}" for d in request.design_choices])
+
+    prompt = f"""Transform this empty urban plot into a beautiful {request.winning_option}.
+
+Design specifications from community vote:
+{design_description}
+
+Keep the same camera angle and perspective. Keep the Victorian brick walls and terraced houses visible. Make it look like a professional landscape architecture rendering of the completed garden. Show the space as newly built and in use with people enjoying it. British overcast weather lighting."""
+
+    try:
+        # Initialize Gemini client
+        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+
+        # Load the source image
+        source_image = Image.open(plot_image_path)
+
+        # Generate content with image and prompt
+        response = client.models.generate_content(
+            model="gemini-2.5-flash-image",
+            contents=[prompt, source_image],
+        )
+
+        # Extract the generated image from response
+        generated_image = None
+        for part in response.parts:
+            if part.inline_data is not None:
+                # Get the raw image data and convert to base64
+                image_bytes = part.inline_data.data
+                generated_image = base64.standard_b64encode(image_bytes).decode("utf-8")
+                break
+
+        if not generated_image:
+            return {"error": "No image generated in response"}
+
+    except Exception as e:
+        return {"error": f"Image generation failed: {str(e)}"}
+
+    return {"image_base64": generated_image, "prompt_used": prompt}
 
 
 def run():

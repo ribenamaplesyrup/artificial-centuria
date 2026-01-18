@@ -6,15 +6,14 @@
 <p class="subtitle">Notes from building simulations of human collectives</p>
 
 <p>
-	This is a collection of small experiments exploring what happens when you give
-	language models personalities and put them in rooms together. Some of these
-	work. Most of them fail in interesting ways.
+	This is a small collection of experiments into silicon sampling — asking
+	language models to simulate human populations and seeing what happens. Some
+	of these work. Most of them fail in interesting ways.
 </p>
 
 <p>
-	The underlying library is called <em>Centuria</em> — named for the Roman
-	military unit of roughly 100 soldiers. The goal is to eventually simulate
-	groups of that size, each with distinct backgrounds, beliefs, and behaviors.
+	Each failure highlights the limits of where vibecoding can take you, arriving
+	at moats that suggest the need for real experience and better tools.
 </p>
 
 <hr />
@@ -25,5 +24,9 @@
 	<li>
 		<span class="experiment-number">01</span>
 		<a href="/experiments/01-random-person-generator">Random person generator</a>
+	</li>
+	<li>
+		<span class="experiment-number">02</span>
+		<a href="/experiments/02-dream-a-garden">Dream a Garden</a>
 	</li>
 </ul>

@@ -164,8 +164,6 @@
 	onMount(async () => {
 		if (!browser) return;
 
-		document.body.classList.add('wide');
-
 		// Fetch prompt and models in parallel
 		try {
 			const [promptRes, modelsRes] = await Promise.all([
@@ -195,9 +193,6 @@
 			maxZoom: 18
 		}).addTo(map);
 
-		return () => {
-			document.body.classList.remove('wide');
-		};
 	});
 
 	async function generatePerson() {

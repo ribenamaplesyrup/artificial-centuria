@@ -11,6 +11,7 @@ from centuria.persona.synthetic import (
     generate_synthetic_persona,
     generate_persona_batch,
     list_available_file_types,
+    infer_file_types_for_identity,
     estimate_persona_cost,
     estimate_batch_cost,
 )
@@ -27,6 +28,7 @@ __all__ = [
     "generate_synthetic_persona",
     "generate_persona_batch",
     "list_available_file_types",
+    "infer_file_types_for_identity",
     "estimate_persona_cost",
     "estimate_batch_cost",
 ]
