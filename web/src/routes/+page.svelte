@@ -34,9 +34,6 @@
 			if (res.ok) {
 				apiAvailable = true;
 				keyStatus = await res.json();
-				if (!keyStatus.has_llm_key) {
-					showKeyModal = true;
-				}
 			}
 		} catch (e) {
 			// API not running - don't show modal
@@ -283,6 +280,9 @@
 	.settings-status {
 		font-size: 0.85rem;
 		color: #666;
+		display: flex;
+		align-items: center;
+		line-height: 1;
 	}
 
 	/* Modal styles */
