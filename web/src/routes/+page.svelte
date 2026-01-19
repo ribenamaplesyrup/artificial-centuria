@@ -30,7 +30,9 @@
 	async function checkApiKeys() {
 		checkingKeys = true;
 		try {
-			const res = await fetch(`${API_URL}/api/keys/status`);
+			const res = await fetch(`${API_URL}/api/keys/status`, {
+				credentials: 'include'
+			});
 			if (res.ok) {
 				apiAvailable = true;
 				keyStatus = await res.json();
@@ -52,6 +54,7 @@
 			const res = await fetch(`${API_URL}/api/keys/set`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
+				credentials: 'include',
 				body: JSON.stringify({
 					openai_key: openaiKey || null,
 					anthropic_key: anthropicKey || null,

@@ -88,6 +88,7 @@ async def complete(
     prompt: str,
     system: str | None = None,
     model: str | None = None,
+    api_keys: dict[str, str] | None = None,
 ) -> CompletionResult:
     """
     Get a completion from an LLM.
@@ -96,6 +97,8 @@ async def complete(
         prompt: The user prompt
         system: Optional system prompt
         model: Model to use (defaults to DEFAULT_MODEL env var or gpt-4o)
+        api_keys: Optional dict with provider keys (openai, anthropic, gemini)
+                  to use instead of environment variables
 
     Returns:
         CompletionResult with content and usage stats
@@ -107,7 +110,22 @@ async def complete(
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
 
-    response = await litellm.acompletion(model=model, messages=messages)
+    # Build kwargs with optional API key override
+    kwargs: dict = {"model": model, "messages": messages}
+
+    if api_keys:
+        # LiteLLM accepts api_key parameter to override env vars
+        if model.startswith("gpt") or model.startswith("o1") or model.startswith("o3"):
+            if api_keys.get("openai"):
+                kwargs["api_key"] = api_keys["openai"]
+        elif model.startswith("claude"):
+            if api_keys.get("anthropic"):
+                kwargs["api_key"] = api_keys["anthropic"]
+        elif model.startswith("gemini"):
+            if api_keys.get("gemini"):
+                kwargs["api_key"] = api_keys["gemini"]
+
+    response = await litellm.acompletion(**kwargs)
 
     # Calculate cost using litellm's built-in pricing
     cost = litellm.completion_cost(completion_response=response)

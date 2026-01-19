@@ -77,11 +77,16 @@ def parse_choice_and_justification(content: str) -> tuple[str, str]:
     return choice, justification
 
 
-async def ask_question(persona: Persona, question: Question, model: str | None = None) -> QuestionResponse:
+async def ask_question(
+    persona: Persona,
+    question: Question,
+    model: str | None = None,
+    api_keys: dict[str, str] | None = None,
+) -> QuestionResponse:
     """Ask a persona a single question."""
     system = build_system_prompt(persona)
     user = build_user_prompt(question)
-    result = await complete(user, system=system, model=model)
+    result = await complete(user, system=system, model=model, api_keys=api_keys)
 
     # Parse choice and justification for single_select questions
     if question.question_type == "single_select":
@@ -100,11 +105,16 @@ async def ask_question(persona: Persona, question: Question, model: str | None =
     )
 
 
-async def run_survey(persona: Persona, survey: Survey, model: str | None = None) -> SurveyResponse:
+async def run_survey(
+    persona: Persona,
+    survey: Survey,
+    model: str | None = None,
+    api_keys: dict[str, str] | None = None,
+) -> SurveyResponse:
     """Run a complete survey on a persona (all questions in parallel)."""
     # Run all questions in parallel for speed
     responses = await asyncio.gather(*[
-        ask_question(persona, question, model=model)
+        ask_question(persona, question, model=model, api_keys=api_keys)
         for question in survey.questions
     ])
 

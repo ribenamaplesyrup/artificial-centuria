@@ -4,11 +4,12 @@ import asyncio
 import base64
 import json
 import os
+import secrets
 from contextlib import asynccontextmanager
 from pathlib import Path
 
 from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import Cookie, FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -73,6 +74,38 @@ def format_classify_prompt(occupation: str, brief: str) -> str:
 # Load .env from project root
 _project_root = Path(__file__).parent.parent.parent.parent
 load_dotenv(_project_root / ".env")
+
+# =============================================================================
+# Session-based API Key Storage
+# =============================================================================
+# Store API keys per-session to prevent key leakage between users
+_session_keys: dict[str, dict[str, str]] = {}
+
+
+def get_or_create_session(session_id: str | None) -> str:
+    """Get existing session or create a new one."""
+    if session_id and session_id in _session_keys:
+        return session_id
+    new_session = secrets.token_urlsafe(32)
+    _session_keys[new_session] = {}
+    return new_session
+
+
+def get_session_keys(session_id: str | None) -> dict[str, str]:
+    """Get API keys for a session, falling back to environment variables."""
+    session_keys = _session_keys.get(session_id, {}) if session_id else {}
+    return {
+        "openai": session_keys.get("openai") or os.getenv("OPENAI_API_KEY") or "",
+        "anthropic": session_keys.get("anthropic") or os.getenv("ANTHROPIC_API_KEY") or "",
+        "gemini": session_keys.get("gemini") or os.getenv("GEMINI_API_KEY") or "",
+    }
+
+
+def set_session_key(session_id: str, provider: str, key: str) -> None:
+    """Set an API key for a session."""
+    if session_id not in _session_keys:
+        _session_keys[session_id] = {}
+    _session_keys[session_id][provider] = key
 
 
 class GeneratedPersona(BaseModel):
@@ -145,13 +178,28 @@ async def health():
 
 
 @app.get("/api/keys/status")
-async def get_api_key_status():
-    """Check which API keys are configured."""
+async def get_api_key_status(
+    response: Response,
+    centuria_session: str | None = Cookie(default=None),
+):
+    """Check which API keys are configured for this session."""
+    # Ensure session exists
+    session_id = get_or_create_session(centuria_session)
+    if session_id != centuria_session:
+        response.set_cookie(
+            key="centuria_session",
+            value=session_id,
+            httponly=True,
+            samesite="lax",
+            secure=False,  # Set to True in production with HTTPS
+        )
+
+    keys = get_session_keys(session_id)
     return {
-        "openai": bool(os.getenv("OPENAI_API_KEY")),
-        "anthropic": bool(os.getenv("ANTHROPIC_API_KEY")),
-        "gemini": bool(os.getenv("GEMINI_API_KEY")),
-        "has_llm_key": bool(os.getenv("OPENAI_API_KEY") or os.getenv("ANTHROPIC_API_KEY")),
+        "openai": bool(keys["openai"]),
+        "anthropic": bool(keys["anthropic"]),
+        "gemini": bool(keys["gemini"]),
+        "has_llm_key": bool(keys["openai"] or keys["anthropic"]),
     }
 
 
@@ -164,21 +212,38 @@ class SetApiKeysRequest(BaseModel):
 
 
 @app.post("/api/keys/set")
-async def set_api_keys(request: SetApiKeysRequest):
-    """Set API keys at runtime (session only, not persisted to .env)."""
-    if request.openai_key:
-        os.environ["OPENAI_API_KEY"] = request.openai_key
-    if request.anthropic_key:
-        os.environ["ANTHROPIC_API_KEY"] = request.anthropic_key
-    if request.gemini_key:
-        os.environ["GEMINI_API_KEY"] = request.gemini_key
+async def set_api_keys(
+    request: SetApiKeysRequest,
+    response: Response,
+    centuria_session: str | None = Cookie(default=None),
+):
+    """Set API keys for this session only (isolated per user)."""
+    # Ensure session exists
+    session_id = get_or_create_session(centuria_session)
+    if session_id != centuria_session:
+        response.set_cookie(
+            key="centuria_session",
+            value=session_id,
+            httponly=True,
+            samesite="lax",
+            secure=False,  # Set to True in production with HTTPS
+        )
 
+    # Store keys in session, not globally
+    if request.openai_key:
+        set_session_key(session_id, "openai", request.openai_key)
+    if request.anthropic_key:
+        set_session_key(session_id, "anthropic", request.anthropic_key)
+    if request.gemini_key:
+        set_session_key(session_id, "gemini", request.gemini_key)
+
+    keys = get_session_keys(session_id)
     return {
         "success": True,
-        "openai": bool(os.getenv("OPENAI_API_KEY")),
-        "anthropic": bool(os.getenv("ANTHROPIC_API_KEY")),
-        "gemini": bool(os.getenv("GEMINI_API_KEY")),
-        "has_llm_key": bool(os.getenv("OPENAI_API_KEY") or os.getenv("ANTHROPIC_API_KEY")),
+        "openai": bool(keys["openai"]),
+        "anthropic": bool(keys["anthropic"]),
+        "gemini": bool(keys["gemini"]),
+        "has_llm_key": bool(keys["openai"] or keys["anthropic"]),
     }
 
 
@@ -189,9 +254,10 @@ async def get_prompt():
 
 
 @app.get("/api/models")
-async def get_models():
-    """Return available models based on configured API keys."""
-    return {"models": get_available_models()}
+async def get_models(centuria_session: str | None = Cookie(default=None)):
+    """Return available models based on configured API keys for this session."""
+    keys = get_session_keys(centuria_session)
+    return {"models": get_available_models(api_keys=keys)}
 
 
 @app.get("/api/occupation-categories")
@@ -201,14 +267,19 @@ async def get_occupation_categories():
 
 
 @app.post("/api/generate-persona", response_model=GeneratedPersona)
-async def generate_persona(request: GenerateRequest = None):
+async def generate_persona(
+    request: GenerateRequest = None,
+    centuria_session: str | None = Cookie(default=None),
+):
     """Generate a random persona using a naive LLM prompt, then classify."""
     model = request.model if request else DEFAULT_MODEL
+    api_keys = get_session_keys(centuria_session)
 
     # Step 1: Generate the base persona
     result = await complete(
         prompt=PERSONA_GENERATION_PROMPT,
         model=model,
+        api_keys=api_keys,
     )
     persona_data = parse_json_response(result.content)
 
@@ -219,6 +290,7 @@ async def generate_persona(request: GenerateRequest = None):
             brief=persona_data.get("brief", ""),
         ),
         model=model,
+        api_keys=api_keys,
     )
     category = match_occupation_category(classify_result.content.strip())
 
@@ -333,7 +405,10 @@ async def estimate_survey(request: SurveyEstimateRequest):
 
 
 @app.post("/api/survey/run", response_model=SurveyResultsResponse)
-async def run_survey(request: SurveyRequest):
+async def run_survey_endpoint(
+    request: SurveyRequest,
+    centuria_session: str | None = Cookie(default=None),
+):
     """Run a survey on multiple personas concurrently."""
     question = Question(
         id=request.question.question_id,
@@ -341,10 +416,13 @@ async def run_survey(request: SurveyRequest):
         question_type="single_select",
         options=request.question.options,
     )
+    api_keys = get_session_keys(centuria_session)
 
     async def survey_persona(p: PersonaData) -> SurveyResponse:
         persona = Persona(id=p.id, name=p.name, context=p.context)
-        result = await ask_question(persona, question, model=request.question.model)
+        result = await ask_question(
+            persona, question, model=request.question.model, api_keys=api_keys
+        )
         return SurveyResponse(
             persona_id=p.id,
             persona_name=p.name,
@@ -429,7 +507,10 @@ class ImageGenerationResponse(BaseModel):
 
 
 @app.post("/api/generate-image")
-async def generate_image(request: ImageGenerationRequest):
+async def generate_image(
+    request: ImageGenerationRequest,
+    centuria_session: str | None = Cookie(default=None),
+):
     """Generate an image of the design using Google Gemini."""
     # Load the original plot image
     # Check build directory first (for deployed app), then static (for local dev)
@@ -450,8 +531,14 @@ Design specifications from community vote:
 Important: This is a small 0.3-acre urban plot. Keep the exact same size, proportions, and boundaries as shown. Do not expand or enlarge the space. Keep the same camera angle and perspective. Keep the Victorian brick walls and terraced houses visible around the edges. Make it look like a professional architectural rendering of the completed space, appropriately scaled to fit this compact urban plot. Show the space as newly built and in use with a few people. British overcast weather lighting."""
 
     try:
-        # Initialize Gemini client
-        client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+        # Get Gemini API key from session
+        api_keys = get_session_keys(centuria_session)
+        gemini_key = api_keys.get("gemini")
+        if not gemini_key:
+            return {"error": "Gemini API key not configured"}
+
+        # Initialize Gemini client with session key
+        client = genai.Client(api_key=gemini_key)
 
         # Load the source image
         source_image = Image.open(plot_image_path)

@@ -194,9 +194,9 @@
 		try {
 			// Fetch personas, households, and models in parallel
 			const [personasRes, householdsRes, modelsRes] = await Promise.all([
-				fetch(`${API_URL}/api/personas/dalston-clt`),
-				fetch(`${API_URL}/api/households/dalston-clt`),
-				fetch(`${API_URL}/api/models`)
+				fetch(`${API_URL}/api/personas/dalston-clt`, { credentials: 'include' }),
+				fetch(`${API_URL}/api/households/dalston-clt`, { credentials: 'include' }),
+				fetch(`${API_URL}/api/models`, { credentials: 'include' })
 			]);
 
 			if (personasRes.ok) {
@@ -231,7 +231,9 @@
 		personFiles = [];
 
 		try {
-			const res = await fetch(`${API_URL}/api/persona-files/${person.id}`);
+			const res = await fetch(`${API_URL}/api/persona-files/${person.id}`, {
+				credentials: 'include'
+			});
 			if (res.ok) {
 				const data = await res.json();
 				personFiles = data.files || [];
@@ -263,6 +265,7 @@
 			const response = await fetch(`${API_URL}/api/survey/estimate`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
+				credentials: 'include',
 				body: JSON.stringify({
 					question: {
 						question_id: 'plot_use',
@@ -302,6 +305,7 @@
 			const response = await fetch(`${API_URL}/api/survey/run`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
+				credentials: 'include',
 				body: JSON.stringify({
 					question: {
 						question_id: 'plot_use',
@@ -585,6 +589,7 @@
 			const response = await fetch(`${API_URL}/api/survey/estimate`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
+				credentials: 'include',
 				body: JSON.stringify({
 					question: {
 						question_id: followUpQuestions[0].id,
@@ -633,6 +638,7 @@
 				const response = await fetch(`${API_URL}/api/survey/run`, {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json' },
+					credentials: 'include',
 					body: JSON.stringify({
 						question: {
 							question_id: q.id,
@@ -694,6 +700,7 @@
 			const response = await fetch(`${API_URL}/api/generate-image`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
+				credentials: 'include',
 				body: JSON.stringify({
 					winning_option: winningOption,
 					design_choices: designChoices

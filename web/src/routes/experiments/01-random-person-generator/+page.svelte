@@ -179,8 +179,8 @@
 		// Fetch prompt and models in parallel
 		try {
 			const [promptRes, modelsRes] = await Promise.all([
-				fetch(`${API_URL}/api/prompt`),
-				fetch(`${API_URL}/api/models`)
+				fetch(`${API_URL}/api/prompt`, { credentials: 'include' }),
+				fetch(`${API_URL}/api/models`, { credentials: 'include' })
 			]);
 
 			if (promptRes.ok) {
@@ -215,6 +215,7 @@
 			const response = await fetch(`${API_URL}/api/generate-persona`, {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
+				credentials: 'include',
 				body: JSON.stringify({ model: selectedModel })
 			});
 

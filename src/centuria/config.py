@@ -90,11 +90,31 @@ PROVIDER_MODELS = {
 DEFAULT_MODEL = "gpt-4o-mini"
 
 
-def get_available_models() -> list[dict]:
-    """Return models for providers that have API keys configured."""
+def get_available_models(api_keys: dict[str, str] | None = None) -> list[dict]:
+    """Return models for providers that have API keys configured.
+
+    Args:
+        api_keys: Optional dict with session-specific keys (openai, anthropic, gemini).
+                  Falls back to environment variables if not provided.
+    """
     available = []
+    # Map provider names to session key names
+    session_key_map = {
+        "OpenAI": "openai",
+        "Anthropic": "anthropic",
+        "Google": "gemini",
+    }
+
     for provider, config in PROVIDER_MODELS.items():
-        if os.getenv(config["env_key"]):
+        # Check session keys first, then fall back to env vars
+        session_key = session_key_map.get(provider)
+        has_key = False
+        if api_keys and session_key:
+            has_key = bool(api_keys.get(session_key))
+        if not has_key:
+            has_key = bool(os.getenv(config["env_key"]))
+
+        if has_key:
             for model in config["models"]:
                 available.append({
                     "id": model["id"],
