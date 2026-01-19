@@ -95,7 +95,7 @@ def get_available_models(api_keys: dict[str, str] | None = None) -> list[dict]:
 
     Args:
         api_keys: Optional dict with session-specific keys (openai, anthropic, gemini).
-                  Falls back to environment variables if not provided.
+                  When provided, only checks session keys (no env var fallback).
     """
     available = []
     # Map provider names to session key names
@@ -106,13 +106,9 @@ def get_available_models(api_keys: dict[str, str] | None = None) -> list[dict]:
     }
 
     for provider, config in PROVIDER_MODELS.items():
-        # Check session keys first, then fall back to env vars
         session_key = session_key_map.get(provider)
-        has_key = False
-        if api_keys and session_key:
-            has_key = bool(api_keys.get(session_key))
-        if not has_key:
-            has_key = bool(os.getenv(config["env_key"]))
+        # Only check session keys when api_keys is provided (no env var fallback)
+        has_key = bool(api_keys.get(session_key)) if api_keys and session_key else False
 
         if has_key:
             for model in config["models"]:

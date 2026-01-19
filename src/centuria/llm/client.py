@@ -113,17 +113,15 @@ async def complete(
     # Build kwargs with optional API key override
     kwargs: dict = {"model": model, "messages": messages}
 
-    if api_keys:
-        # LiteLLM accepts api_key parameter to override env vars
+    if api_keys is not None:
+        # When api_keys is provided, ALWAYS use it (no env var fallback)
+        # Pass the key or an invalid placeholder to prevent LiteLLM env var fallback
         if model.startswith("gpt") or model.startswith("o1") or model.startswith("o3"):
-            if api_keys.get("openai"):
-                kwargs["api_key"] = api_keys["openai"]
+            kwargs["api_key"] = api_keys.get("openai") or "sk-no-key-configured"
         elif model.startswith("claude"):
-            if api_keys.get("anthropic"):
-                kwargs["api_key"] = api_keys["anthropic"]
+            kwargs["api_key"] = api_keys.get("anthropic") or "sk-ant-no-key-configured"
         elif model.startswith("gemini"):
-            if api_keys.get("gemini"):
-                kwargs["api_key"] = api_keys["gemini"]
+            kwargs["api_key"] = api_keys.get("gemini") or "no-key-configured"
 
     response = await litellm.acompletion(**kwargs)
 

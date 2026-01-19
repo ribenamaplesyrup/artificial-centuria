@@ -92,12 +92,12 @@ def get_or_create_session(session_id: str | None) -> str:
 
 
 def get_session_keys(session_id: str | None) -> dict[str, str]:
-    """Get API keys for a session, falling back to environment variables."""
+    """Get API keys for a session (no fallback to env vars for user isolation)."""
     session_keys = _session_keys.get(session_id, {}) if session_id else {}
     return {
-        "openai": session_keys.get("openai") or os.getenv("OPENAI_API_KEY") or "",
-        "anthropic": session_keys.get("anthropic") or os.getenv("ANTHROPIC_API_KEY") or "",
-        "gemini": session_keys.get("gemini") or os.getenv("GEMINI_API_KEY") or "",
+        "openai": session_keys.get("openai", ""),
+        "anthropic": session_keys.get("anthropic", ""),
+        "gemini": session_keys.get("gemini", ""),
     }
 
 
