@@ -1,94 +1,59 @@
 # Artificial Centuria
 
-Generate 100+ LLM personas to model groups of humans and survey them on single-select and open-ended questions.
+This project includes some basic experiments using LLMs to generate synthetic personas and surveying them. It includes notebooks exploring methods and a web app simulating experiments.
 
-## Setup
+## Key Components
 
-1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
-2. Clone this repository
-3. Copy `.env.example` to `.env` and add your API keys
-4. Install dependencies:
+### Notebooks
 
-```bash
-uv sync
-```
+The `notebooks/` directory contains Jupyter notebooks that walk through the core features of the project:
 
-5. Launch Jupyter Lab:
+- **`01_single_agent_from_personal_data.ipynb`**: Explores creating a single LLM persona from personal data (like a CV) and testing its accuracy and consistency against the real person's answers. It compares personas generated from structured vs. unstructured data.
 
-```bash
-uv run jupyter lab
-```
+- **`02_synthetic_persona_generation.ipynb`**: Details the process of creating synthetic personas. It covers extracting structured profiles from real data, dealing with LLM biases in generation, and a "file-first" approach where data files are generated before the persona.
 
-## Project Structure
+- **`03_building_a_fictional_neighbourhood.ipynb`**: Generates a fictional neighbourhood of 100 synthetic personas based on real-world census data for E8, London. It creates households, assigns demographics, and generates rich context statements for each persona.
 
-```
-artificial-centuria/
-├── notebooks/           # Experimentation notebooks
-├── src/centuria/        # Core library
-│   ├── models/          # Pydantic data models
-│   ├── llm/             # LiteLLM client & prompts
-│   ├── persona/         # Persona generation
-│   ├── survey/          # Survey execution & analysis
-│   ├── data/            # Data loading utilities
-│   └── observability/   # Cost tracking
-├── web/                 # SvelteKit web application
-├── data/                # User data (gitignored)
-├── surveys/             # Survey definitions (YAML)
-└── tests/               # Unit tests
-```
+### Web App & Experiments
 
-## Quick Start
+The `web/` directory contains a SvelteKit application for interactive experiments and visualization of survey results.
 
-```python
-from centuria.persona import PersonaGenerator
-from centuria.survey import SurveyExecutor
+- **`01-random-person-generator`**: This experiment generates random personas using an LLM and displays them on a map. It shows statistics on the generated population, highlighting the biases that can emerge from relying on LLMs for random data generation.
 
-# Generate a persona from your data
-generator = PersonaGenerator()
-persona = await generator.from_files(["cv.pdf", "linkedin.txt"])
+- **`02-testing-space-before-it-happens`**: This experiment simulates a real-world scenario where a community in Dalston, London, decides what to do with a collectively owned plot of land. It uses the 100 synthetic personas generated in the notebooks to survey them on their preferences, visualizes the results, and generates an AI image of the community's final vision.
 
-# Run a survey
-executor = SurveyExecutor()
-responses = await executor.run(persona, survey)
-```
+To run the web app:
+1. Start the Python API server: `uv run python -m centuria.api.server`
+2. In another terminal, navigate to the `web` directory.
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
-## Web App
+### `src` Library
 
-The project includes a SvelteKit web application for visualizing survey results.
+The `src/centuria/` directory contains the core Python library, providing modules for:
+- `models`: Pydantic data models
+- `llm`: LiteLLM client & prompts
+- `persona`: Persona generation
+- `survey`: Survey execution & analysis
+- `data`: Data loading utilities
 
-### Running the Web App
+## Getting Started
 
-1. Start the Python API server:
-```bash
-uv run python -m centuria.api.server
-```
-
-2. In a separate terminal, navigate to the web directory and install dependencies:
-```bash
-cd web
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-The app will be available at `http://localhost:5173`.
-
-### Building for Production
-
-```bash
-npm run build
-npm run preview  # Preview the production build
-```
-
-## Development
-
-Run tests:
-```bash
-uv run pytest
-```
+1. **Install [uv](https://docs.astral.sh/uv/getting-started/installation/)**
+2. **Clone the repository**
+3. **Set up environment variables:**
+   ```bash
+   cp .env.example .env
+   # Add your API keys to .env
+   ```
+4. **Install dependencies:**
+   ```bash
+   uv sync
+   ```
+5. **Launch Jupyter Lab to explore the notebooks:**
+   ```bash
+   uv run jupyter lab
+   ```
 
 ## License
 
