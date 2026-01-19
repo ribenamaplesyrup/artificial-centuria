@@ -11,7 +11,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import Response
+from fastapi.responses import FileResponse, Response
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import httpx
 import litellm
@@ -251,13 +252,42 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Centuria API", lifespan=lifespan)
 
+# Configure CORS origins from environment or use defaults for local development
+_default_origins = ["http://localhost:5173", "http://localhost:4173"]
+_cors_origins_env = os.getenv("CORS_ORIGINS", "")
+_cors_origins = [o.strip() for o in _cors_origins_env.split(",") if o.strip()] if _cors_origins_env else _default_origins
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:4173"],
+    allow_origins=_cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.get("/")
+async def root():
+    """Root endpoint - serves SPA if available, otherwise API info."""
+    # Check if frontend build exists
+    index_file = _project_root / "web" / "build" / "index.html"
+    if index_file.exists():
+        return FileResponse(index_file)
+
+    # Fall back to API info when no frontend is built
+    return {
+        "name": "Centuria API",
+        "description": "Generate LLM personas to model groups of humans and survey them",
+        "docs": "/docs",
+        "health": "/api/health",
+        "endpoints": [
+            "/api/health",
+            "/api/models",
+            "/api/generate-persona",
+            "/api/survey/run",
+            "/api/survey/estimate",
+        ]
+    }
 
 
 @app.get("/api/health")
@@ -568,7 +598,10 @@ class ImageGenerationResponse(BaseModel):
 async def generate_image(request: ImageGenerationRequest):
     """Generate an image of the design using Google Gemini."""
     # Load the original plot image
-    plot_image_path = _project_root / "web" / "static" / "images" / "plot_1.png"
+    # Check build directory first (for deployed app), then static (for local dev)
+    plot_image_path = _project_root / "web" / "build" / "images" / "plot_1.png"
+    if not plot_image_path.exists():
+        plot_image_path = _project_root / "web" / "static" / "images" / "plot_1.png"
     if not plot_image_path.exists():
         return {"error": f"Plot image not found at {plot_image_path}"}
 
@@ -611,6 +644,56 @@ Important: This is a small 0.3-acre urban plot. Keep the exact same size, propor
         return {"error": f"Image generation failed: {str(e)}"}
 
     return {"image_base64": generated_image, "prompt_used": prompt}
+
+
+# ============================================================================
+# Static File Serving (for single-service deployment)
+# ============================================================================
+
+# Path to the built frontend (web/build from SvelteKit)
+_static_dir = _project_root / "web" / "build"
+
+# Mount static assets if the build directory exists
+if _static_dir.exists():
+    # Mount the _app directory for SvelteKit's hashed assets
+    _app_dir = _static_dir / "_app"
+    if _app_dir.exists():
+        app.mount("/_app", StaticFiles(directory=str(_app_dir)), name="svelte_app")
+
+    # Mount other static assets (images, sample-data, etc.)
+    _static_assets = _static_dir
+    if _static_assets.exists():
+        app.mount("/images", StaticFiles(directory=str(_static_dir / "images")), name="images")
+        _sample_data_dir = _static_dir / "sample-data"
+        if _sample_data_dir.exists():
+            app.mount("/sample-data", StaticFiles(directory=str(_sample_data_dir)), name="sample_data")
+
+    # Catch-all route for SPA - serve index.html for non-API routes
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        """Serve the SvelteKit SPA for any non-API routes."""
+        # Don't intercept API routes
+        if full_path.startswith("api/"):
+            return {"error": "Not found"}
+
+        # Check if it's a static file request
+        static_file = _static_dir / full_path
+        if static_file.exists() and static_file.is_file():
+            return FileResponse(static_file)
+
+        # For SPA routes, check if there's a prerendered HTML file
+        # SvelteKit static adapter creates /route/index.html for each route
+        if full_path:
+            prerendered = _static_dir / full_path / "index.html"
+            if prerendered.exists():
+                return FileResponse(prerendered)
+
+        # Fall back to main index.html for client-side routing
+        index_file = _static_dir / "index.html"
+        if index_file.exists():
+            return FileResponse(index_file)
+
+        return {"error": "Not found"}
 
 
 def run():

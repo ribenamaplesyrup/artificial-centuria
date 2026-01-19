@@ -25,7 +25,7 @@
 	// Track which model was used for the current batch of personas
 	let usedModel = $state(null);
 
-	const API_URL = 'http://localhost:8000';
+	const API_URL = '';
 
 	// Stop words to exclude from word frequency
 	const STOP_WORDS = new Set([

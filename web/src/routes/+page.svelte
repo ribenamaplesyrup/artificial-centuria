@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 
-	const API_URL = 'http://localhost:8000';
+	const API_URL = '';
 
 	// API key status
 	let keyStatus = $state({
