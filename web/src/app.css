@@ -57,10 +57,8 @@ p {
 	margin-bottom: 1.2rem;
 }
 
-.subtitle {
-	font-style: italic;
-	color: var(--text-muted);
-	margin-bottom: 2rem;
+.intro {
+	margin-top: 1.5rem;
 }
 
 .experiment-list {
@@ -76,6 +74,37 @@ p {
 	font-family: 'Courier New', monospace;
 	color: var(--text-muted);
 	margin-right: 0.5rem;
+}
+
+.experiment-list li.upcoming {
+	color: #bbb;
+	cursor: default;
+}
+
+.experiment-list li.upcoming .experiment-number {
+	color: #ccc;
+}
+
+.experiment-list li.upcoming .experiment-title {
+	cursor: help;
+	position: relative;
+}
+
+.experiment-list li.upcoming .experiment-title[data-tooltip]:hover::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin-top: 0.5rem;
+	background: #333;
+	color: #fff;
+	padding: 0.75rem 1rem;
+	border-radius: 4px;
+	font-size: 0.85rem;
+	line-height: 1.5;
+	width: 320px;
+	z-index: 100;
+	white-space: normal;
 }
 
 .nav {

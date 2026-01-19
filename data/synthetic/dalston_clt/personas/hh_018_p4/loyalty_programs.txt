@@ -1,0 +1,10 @@
+- Tesco Clubcard - High usage - 1500 points
+- Sainsbury's Nectar Card - Moderate usage - 800 points
+- Costa Coffee Club - Moderate usage - Silver status
+- British Airways Executive Club - Infrequent usage - Blue status
+- Marks and Spencer Sparks Card - Moderate usage - 500 points
+- B&Q Club - High usage (gardening) - 1200 points
+- RHS Membership (Royal Horticultural Society) - High usage - Member status
+- National Trust Membership - Moderate usage - Annual member
+- Local Community Gym Membership - Low usage - Base member
+- Subscription to Gardener’s World Magazine - High usage - Active subscriber

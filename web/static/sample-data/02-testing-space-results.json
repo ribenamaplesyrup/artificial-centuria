@@ -1,0 +1,3142 @@
+{
+  "surveyResults": [
+    {
+      "persona_id": "hh_001_p1",
+      "persona_name": "Dilek Aydin",
+      "response": "Allotments",
+      "justification": "I've been growing vegetables with the Dalston Community Gardeners for years now, and we're always short on space. My Turkish peppers and tomatoes need more room than my little patch allows, and I know many neighbors from the Turkish association want to grow their own herbs and vegetables too.",
+      "cost": 0.01707
+    },
+    {
+      "persona_id": "hh_001_p2",
+      "persona_name": "Kemal Aydin",
+      "response": "Outdoor gym",
+      "justification": "I already work out at home with my adjustable dumbbells, but having proper pull-up bars and resistance equipment nearby would save me having to jerry-rig something in my flat. Plus, after being cramped under floorboards all day doing rewires, I need somewhere to properly stretch out my back.",
+      "cost": 0.01839
+    },
+    {
+      "persona_id": "hh_001_p3",
+      "persona_name": "Zeynep Aydin",
+      "response": "Allotments",
+      "justification": "I'd love to grow my own veg for the weekly boxes I deliver, plus it'd be perfect for the herbs I use in my dinner party recipes - nothing beats fresh rosemary from your own plot.",
+      "cost": 0.016245000000000002
+    },
+    {
+      "persona_id": "hh_001_p4",
+      "persona_name": "Hasan Aydin",
+      "response": "Playground",
+      "justification": "Would be perfect for gaming meetups outdoors - we could set up portable setups for local tournaments and still have space for the younger kids in the area to play during the day. Plus, benches mean somewhere to sit with my laptop when I need a break from coding indoors.",
+      "cost": 0.016649999999999998
+    },
+    {
+      "persona_id": "hh_001_p5",
+      "persona_name": "Emine Aydin",
+      "response": "Sculpture park",
+      "justification": "It'd be like having a free outdoor gallery right on my doorstep - perfect for sketching sessions when I need a break from working in our cramped flat. Plus, maybe they'd let local art students like me exhibit there sometimes.",
+      "cost": 0.018105
+    },
+    {
+      "persona_id": "hh_001_p6",
+      "persona_name": "Sofia Giannopoulos",
+      "response": "Allotments",
+      "justification": "Working late shifts at the restaurant means I'm always buying overpriced veg from the corner shop at odd hours - having a plot where I could grow my own would save me money and give me something relaxing to do on my days off.",
+      "cost": 0.016575
+    },
+    {
+      "persona_id": "hh_002_p1",
+      "persona_name": "Marko Petrović",
+      "response": "Playground",
+      "justification": "Look, I know Dalston's changed a lot, but there's still tons of young families here and honestly, the closest decent playground is like a 20-minute walk. I see parents dragging their kids to that tiny one by the overground station - it's always packed. Plus, I'd probably end up there myself with my nephew when he visits on weekends.",
+      "cost": 0.019635
+    },
+    {
+      "persona_id": "hh_002_p2",
+      "persona_name": "Selma Akman",
+      "response": "Allotments",
+      "justification": "I'd love to grow my own veg and herbs for the cafe - we're always talking about doing more sustainable stuff at work, and having fresh mint for our teas or tomatoes from just down the road would be amazing. Plus I could finally try that composting system I keep seeing on TikTok.",
+      "cost": 0.01833
+    },
+    {
+      "persona_id": "hh_003_p1",
+      "persona_name": "Olivia Thompson",
+      "response": "Allotments",
+      "justification": "I'd love having my own little plot to grow things - my flat's too small for proper plants and I'm always buying overpriced herbs from Whole Foods. Plus it'd be brilliant for my art, I've been wanting to do a series of paintings on urban nature and seasonal changes.",
+      "cost": 0.01803
+    },
+    {
+      "persona_id": "hh_003_p2",
+      "persona_name": "Ahmed Ünal",
+      "response": "Allotments",
+      "justification": "I'd love to grow more tomatoes and herbs for the café - my little garden at home isn't big enough for all the fresh ingredients I want to use, and buying them gets expensive.",
+      "cost": 0.016065
+    },
+    {
+      "persona_id": "hh_003_p3",
+      "persona_name": "Joyce Williams",
+      "response": "Allotments",
+      "justification": "I volunteer at the historical society on Thursdays, and we've been documenting how Dalston residents used to grow their own veg during the war years. It would be lovely to bring that tradition back - plus I'd finally have somewhere to grow proper tomatoes instead of just herbs on my windowsill.",
+      "cost": 0.016815
+    },
+    {
+      "persona_id": "hh_004_p1",
+      "persona_name": "Zeynep Demir",
+      "response": "Allotments",
+      "justification": "Would be brilliant to grow my own veg - I'm always cooking Turkish dishes that need fresh herbs and tomatoes, and the ones at the shops here just aren't the same as what my mum grows back home.",
+      "cost": 0.01623
+    },
+    {
+      "persona_id": "hh_005_p1",
+      "persona_name": "Thomas Wright",
+      "response": "Allotments",
+      "justification": "I'd love having a plot where I could build raised beds and trellises - been wanting to grow my own veg but my backyard's too shaded. Plus it'd be perfect for teaching the neighborhood kids some basic woodworking when we build the garden structures together.",
+      "cost": 0.01746
+    },
+    {
+      "persona_id": "hh_005_p2",
+      "persona_name": "Emma Wright",
+      "response": "Allotments",
+      "justification": "I'd love having a plot where I could grow veg for Sunday roasts with the family - plus it'd be brilliant for the knitting circle to have somewhere to sit outside in summer while we work on our projects.",
+      "cost": 0.01668
+    },
+    {
+      "persona_id": "hh_005_p3",
+      "persona_name": "Jack Wright",
+      "response": "Allotments",
+      "justification": "I cycle past empty lots every day and it kills me seeing wasted space when I'm paying £8 for a tiny bag of tomatoes at the shops. Plus I've been trying to grow herbs on my windowsill but they keep dying - having actual soil would be brilliant.",
+      "cost": 0.017535
+    },
+    {
+      "persona_id": "hh_005_p4",
+      "persona_name": "Lucy Wright",
+      "response": "Allotments",
+      "justification": "I could grow my own materials for natural dyes and maybe even cotton for my DIY fashion projects - plus it'd be perfect for the sustainable fashion content I'm always posting about on TikTok.",
+      "cost": 0.017009999999999997
+    },
+    {
+      "persona_id": "hh_005_p5",
+      "persona_name": "Beatrice Wright",
+      "response": "Allotments",
+      "justification": "I've been squeezing tomatoes and herbs into pots on my tiny patio for years now, and my knees are telling me it's time for proper raised beds. Plus, I could finally grow enough veg to share with the neighbors instead of just boring them with photos of my one prize courgette.",
+      "cost": 0.016545
+    },
+    {
+      "persona_id": "hh_006_p1",
+      "persona_name": "Michael Oseni",
+      "response": "Allotments",
+      "justification": "I'd love to grow some Nigerian vegetables like scotch bonnets and bitter leaf - can't find them fresh in the shops around here, and my students would benefit from seeing where food actually comes from during our environmental studies lessons.",
+      "cost": 0.01743
+    },
+    {
+      "persona_id": "hh_006_p2",
+      "persona_name": "Antonia Oseni",
+      "response": "Allotments",
+      "justification": "I've been growing herbs in pots on my balcony for years, but there's only so much you can do with that space. Having proper allotments would mean I could finally grow the vegetables I'm always buying at the farmers market - and maybe share some fresh produce with my patients who struggle to afford healthy food.",
+      "cost": 0.01782
+    },
+    {
+      "persona_id": "hh_006_p3",
+      "persona_name": "Isaac Oseni",
+      "response": "Allotments",
+      "justification": "Would be brilliant to grow my own veg - my grocery bills are mental right now and I could use the break from staring at screens all day. Plus I could probably rig up some Arduino sensors to monitor soil moisture for a uni project.",
+      "cost": 0.01767
+    },
+    {
+      "persona_id": "hh_006_p4",
+      "persona_name": "Evelyn Oseni",
+      "response": "Allotments",
+      "justification": "I'd love having a proper patch to grow vegetables - my little balcony garden isn't enough, and with food prices these days, growing our own would help stretch the pension. Plus, I could swap runner beans for Mrs. Patel's tomatoes like we used to do in my mum's day.",
+      "cost": 0.018675
+    },
+    {
+      "persona_id": "hh_007_p1",
+      "persona_name": "Aydin Yılmaz",
+      "response": "Allotments",
+      "justification": "I've been tending my small garden for years now, but there's only so much you can grow in a London back garden. Having proper allotment space would mean I could finally grow those heritage tomatoes I've been reading about, and share seeds with the neighbors I meet at the Saturday morning market.",
+      "cost": 0.017985
+    },
+    {
+      "persona_id": "hh_008_p1",
+      "persona_name": "Fatima Yıldız",
+      "response": "Allotments",
+      "justification": "I already get my veg from Ridley Road Market, but having our own growing space would be brilliant - plus it'd give me something proper to do on those Saturday mornings when I'm not volunteering.",
+      "cost": 0.01659
+    },
+    {
+      "persona_id": "hh_009_p1",
+      "persona_name": "Alistair Bennett",
+      "response": "Allotments",
+      "justification": "I've already got my small patch going at home, but there's never enough space for everything I want to grow - would be brilliant to finally have room for proper asparagus beds and maybe even a small greenhouse plot.",
+      "cost": 0.017025
+    },
+    {
+      "persona_id": "hh_009_p2",
+      "persona_name": "Margaret Bennett",
+      "response": "Allotments",
+      "justification": "I've got a small garden at home but there's never enough space for everything I want to grow. Having an allotment plot would mean I could finally try growing those heritage tomato varieties I've been reading about in my gardening magazines.",
+      "cost": 0.01773
+    },
+    {
+      "persona_id": "hh_010_p1",
+      "persona_name": "Aylin Demir",
+      "response": "Allotments",
+      "justification": "I'd love having a patch to grow my own herbs for the coffee shop - nothing beats fresh mint and basil in specialty drinks, and it'd be brilliant to share tips with neighbors while tending to our plots on weekends.",
+      "cost": 0.017115
+    },
+    {
+      "persona_id": "hh_010_p2",
+      "persona_name": "Emre Kaya",
+      "response": "Carpark",
+      "justification": "Look, I know it's not the most exciting option, but finding parking around here is a nightmare. I'm always getting complaints from customers at the workshop about nowhere to park when they drop off their motors. Plus, when I come back from car shows with the trailer, I end up circling for ages trying to find a spot.",
+      "cost": 0.017865
+    },
+    {
+      "persona_id": "hh_011_p1",
+      "persona_name": "Rachel Patel",
+      "response": "Allotments",
+      "justification": "I'd love having a plot to grow herbs and flowers for the boutique - we could do little arrangements with locally grown blooms, and maybe even host workshops where customers learn to make their own botanical displays. Plus, I'm always at the markets anyway, so having our own growing space would be brilliant.",
+      "cost": 0.018255
+    },
+    {
+      "persona_id": "hh_011_p2",
+      "persona_name": "Anil Patel",
+      "response": "Allotments",
+      "justification": "I'd love to grow some proper Indian vegetables like karela and methi - can't get them fresh at the shops round here and it'd save me a fortune on my weekly shop.",
+      "cost": 0.016725
+    },
+    {
+      "persona_id": "hh_012_p1",
+      "persona_name": "Anna Kowalska",
+      "response": "Allotments",
+      "justification": "I spend most weekends at the community garden already, and we're always turning people away because we don't have enough plots. Plus, I could finally grow those Polish tomatoes my babcia used to grow - the seeds have been sitting in my kitchen drawer for ages.",
+      "cost": 0.01704
+    },
+    {
+      "persona_id": "hh_012_p2",
+      "persona_name": "Tomasz Kowalski",
+      "response": "Allotments",
+      "justification": "I could grow some Polish vegetables there - proper dill and cucumbers for making ogórki kiszone like my mother used to. Plus, working with wood all day, it would be nice to get my hands in the soil for a change.",
+      "cost": 0.017985
+    },
+    {
+      "persona_id": "hh_013_p1",
+      "persona_name": "Aisha Nziramasanga",
+      "response": "Allotments",
+      "justification": "I've been wanting to grow my own vegetables ever since I started exploring Nigerian and Caribbean recipes - getting proper scotch bonnets and callaloo locally would be amazing, plus I could share produce at our community events.",
+      "cost": 0.015915
+    },
+    {
+      "persona_id": "hh_014_p1",
+      "persona_name": "Alexei Ivanov",
+      "response": "Playground",
+      "justification": "My kids are at that age where they need to burn off energy after school, and right now I'm always driving them to the park in Clissold. Having one right here means I could send them out while I'm working on a car in the garage on weekends - I'd hear them from my driveway.",
+      "cost": 0.01848
+    },
+    {
+      "persona_id": "hh_014_p2",
+      "persona_name": "Elena Ivanova",
+      "response": "Allotments",
+      "justification": "I'd love to grow my own herbs and maybe some tomatoes - fresh basil would be amazing for the coffee shop, and I'm tired of paying £3 for a tiny packet at Tesco. Plus I could finally try growing those specialty coffee plants I've been reading about in my magazines.",
+      "cost": 0.01845
+    },
+    {
+      "persona_id": "hh_014_p3",
+      "persona_name": "Nikolai Ivanov",
+      "response": "Allotments",
+      "justification": "I'd love having a patch to grow some veg - my grocery bills are mental lately and it'd be ace to tinker with some Arduino sensors for monitoring soil moisture and stuff. Plus beats staring at screens all day.",
+      "cost": 0.016875
+    },
+    {
+      "persona_id": "hh_014_p4",
+      "persona_name": "Veronika Ivanova",
+      "response": "Allotments",
+      "justification": "I'm always sketching plants for my art projects, and having actual gardens nearby would give me fresh subjects to draw from life instead of just using photos. Plus our student council's been pushing for more green spaces - this would actually show we can make environmental change happen locally.",
+      "cost": 0.017535000000000002
+    },
+    {
+      "persona_id": "hh_015_p1",
+      "persona_name": "James Carter",
+      "response": "Allotments",
+      "justification": "I cycle past empty patches of land every morning on my way to school and always think what a waste - we could be growing our own veg. Plus, with the way food prices are going, having a plot would really help with the weekly shop.",
+      "cost": 0.017025
+    },
+    {
+      "persona_id": "hh_015_p2",
+      "persona_name": "Amelia Carter",
+      "response": "Allotments",
+      "justification": "After long shifts at the hospital, I'd love nothing more than to tend to some vegetables - plus I could grow fresh ingredients for those healthy recipes I'm always posting on Instagram. Would be brilliant for our community health drives too, getting people involved in growing their own food.",
+      "cost": 0.017595
+    },
+    {
+      "persona_id": "hh_016_p1",
+      "persona_name": "Jonathan McCarthy",
+      "response": "Allotments",
+      "justification": "I already grow tomatoes and herbs in my garden, but I'd love more space to try growing heritage vegetables like those I saw at the markets in Florence. Plus, it'd be lovely to swap produce with neighbors - maybe trade some of my courgettes for Mrs. Patel's famous chili plants.",
+      "cost": 0.018435
+    },
+    {
+      "persona_id": "hh_017_p1",
+      "persona_name": "Yasmin Ahmed",
+      "response": "Allotments",
+      "justification": "I'd love to grow my own vegetables and maybe even some flowers for natural dyes - it would be brilliant to pop round after work and pick fresh veg for dinner, plus the sewing bee ladies would absolutely love swapping recipes and gardening tips.",
+      "cost": 0.017204999999999998
+    },
+    {
+      "persona_id": "hh_017_p2",
+      "persona_name": "Hassan Ahmed",
+      "response": "Playground",
+      "justification": "My little sister's always complaining there's nowhere decent to play around here, and honestly it'd be nice to have somewhere close by where she can hang out with her mates instead of being stuck indoors on her tablet all the time.",
+      "cost": 0.016605
+    },
+    {
+      "persona_id": "hh_017_p3",
+      "persona_name": "Amara Johnson",
+      "response": "Allotments",
+      "justification": "I've been tending my own garden for nearly forty years now, and there's nothing quite like growing your own veg - would be lovely to have more space for proper rows of runner beans and perhaps try those heritage tomatoes I've been reading about in my gardening magazines.",
+      "cost": 0.01791
+    },
+    {
+      "persona_id": "hh_018_p1",
+      "persona_name": "Ayla Kazım",
+      "response": "Allotments",
+      "justification": "I'm always trying new recipes from Binging with Babish but the veg at Tesco is rubbish - would love to grow my own tomatoes and herbs for once, plus it'd be brilliant to swap produce with neighbors.",
+      "cost": 0.018255
+    },
+    {
+      "persona_id": "hh_018_p2",
+      "persona_name": "Mehmet Kazım",
+      "response": "Allotments",
+      "justification": "I'd love having a plot to grow some veg - my flat's got great light but no outdoor space, and I've been wanting to try composting my food waste properly instead of just using the council bins.",
+      "cost": 0.016739999999999998
+    },
+    {
+      "persona_id": "hh_018_p3",
+      "persona_name": "Leyla Kazım",
+      "response": "Allotments",
+      "justification": "Would be perfect for growing our own veg - my flatshare's weekly shop at Ridley Road Market is getting pricey and I'd love to photograph the growing process for my uni project on community spaces.",
+      "cost": 0.01758
+    },
+    {
+      "persona_id": "hh_018_p4",
+      "persona_name": "Ahmet Kazım",
+      "response": "Allotments",
+      "justification": "I've been tending my small garden patch for years now, but there's only so much you can grow in a back garden. Having proper allotments would mean I could finally grow those runner beans and squash properly - plus I know at least a dozen folks from the gardening club who've been on the council waiting list for ages.",
+      "cost": 0.01938
+    },
+    {
+      "persona_id": "hh_019_p1",
+      "persona_name": "Nia Campbell",
+      "response": "Outdoor gym",
+      "justification": "I already pay for Virgin Active but an outdoor gym would be brilliant for quick workouts between shifts - especially when I'm trying to hit my 9,000 steps and the hospital's been manic.",
+      "cost": 0.01623
+    },
+    {
+      "persona_id": "hh_019_p2",
+      "persona_name": "Leo Fischer",
+      "response": "Allotments",
+      "justification": "I'd love a place to grow vegetables - been wanting to try urban farming since I read about it for my sociology paper, and my tiny flat doesn't even have a balcony. Plus it'd be perfect for my research on how shared spaces affect community bonds.",
+      "cost": 0.017055
+    },
+    {
+      "persona_id": "hh_019_p3",
+      "persona_name": "Ava Patel",
+      "response": "Allotments",
+      "justification": "I've been gardening for years now and with my little garden at home getting quite full, I'd love having an extra plot to try growing some of the vegetables I've been reading about in my gardening books - especially those heritage tomato varieties that need more space than I've got.",
+      "cost": 0.018000000000000002
+    },
+    {
+      "persona_id": "hh_019_p4",
+      "persona_name": "Efe Kaya",
+      "response": "Sculpture park",
+      "justification": "As someone in arts and entertainment who spends most days working alone in cafés, I'd love having an outdoor creative space nearby where I could sketch between projects and maybe even showcase some local artists' work. Plus it'd be perfect for those jam sessions with friends when the weather's nice.",
+      "cost": 0.0189
+    },
+    {
+      "persona_id": "hh_020_p1",
+      "persona_name": "Elaine Smith",
+      "response": "Allotments",
+      "justification": "I've been tending my little garden for years, but there's only so much you can grow in a back garden. Having proper allotment space would mean I could finally grow enough veg to share with the charity shop volunteers - we're always chatting about doing a proper harvest swap.",
+      "cost": 0.018345
+    },
+    {
+      "persona_id": "hh_021_p1",
+      "persona_name": "David Morgan",
+      "response": "Allotments",
+      "justification": "I've been cramming vegetables into every corner of my small back garden, and having a proper allotment plot would finally give me space to try growing heritage tomato varieties I've been reading about on the gardening forums.",
+      "cost": 0.017099999999999997
+    },
+    {
+      "persona_id": "hh_021_p2",
+      "persona_name": "Sarah Thompson",
+      "response": "Allotments",
+      "justification": "I'd love having a patch to grow my own veg - I'm always trying new healthy recipes from Bon Appétit but buying organic produce in London is so pricey. Plus gardening would be like outdoor yoga for me, proper therapeutic after a long shift at the hospital.",
+      "cost": 0.017625000000000002
+    },
+    {
+      "persona_id": "hh_022_p1",
+      "persona_name": "Priya Sharma",
+      "response": "Allotments",
+      "justification": "After long shifts at the clinic, I'd love nothing more than getting my hands dirty growing vegetables - plus it reminds me of helping my grandmother in her garden back home in India when I was little.",
+      "cost": 0.01674
+    },
+    {
+      "persona_id": "hh_022_p2",
+      "persona_name": "Clive Reynolds",
+      "response": "Allotments",
+      "justification": "I've been tending my balcony garden for years now, but there's only so much you can grow in pots. Having a proper plot would let me finally try growing those heritage tomatoes I've been reading about in my gardening books.",
+      "cost": 0.017235
+    },
+    {
+      "persona_id": "hh_023_p1",
+      "persona_name": "Paulina Kowalczyk",
+      "response": "Allotments",
+      "justification": "Would be brilliant to grow proper Polish tomatoes and cucumbers - the ones from Tesco just don't taste the same, and with food prices these days, having our own veg would really help the budget.",
+      "cost": 0.01704
+    },
+    {
+      "persona_id": "hh_023_p2",
+      "persona_name": "Piotr Kowalczyk",
+      "response": "Carpark",
+      "justification": "Look, I'm working on cars all day at Autocare, and when I get home the last thing I need is to spend twenty minutes circling the block looking for parking. My van's got all my tools in it - can't exactly leave it half a mile away, can I?",
+      "cost": 0.018285
+    },
+    {
+      "persona_id": "hh_023_p3",
+      "persona_name": "Lena Kowalczyk",
+      "response": "Allotments",
+      "justification": "I'm already helping with that community garden project on Kingsland Road and honestly, having proper allotments would be amazing - I could finally grow enough herbs and veg to stop buying those overpriced organic ones from Whole Foods.",
+      "cost": 0.01704
+    },
+    {
+      "persona_id": "hh_023_p4",
+      "persona_name": "Dominik Kowalczyk",
+      "response": "Playground",
+      "justification": "Me and my mates are always looking for somewhere to hang out after school - we'd totally use a playground for football and just messing about, especially since the nearest one is ages away.",
+      "cost": 0.01638
+    },
+    {
+      "persona_id": "hh_024_p1",
+      "persona_name": "Hannah Kowalczyk",
+      "response": "Sculpture park",
+      "justification": "I could finally have a proper space to display some of the larger pieces I've been working on - my flat's already bursting with canvases and I've been dying to try my hand at outdoor installations. Plus, imagine having somewhere to sketch that's not just Victoria Park for the hundredth time.",
+      "cost": 0.018315
+    },
+    {
+      "persona_id": "hh_024_p2",
+      "persona_name": "Robert Kowalczyk",
+      "response": "Allotments",
+      "justification": "I've been tending my window boxes and small balcony garden for years now, but there's only so much you can grow in pots. Having a proper allotment plot would mean I could finally grow those heritage tomatoes I've been reading about in my gardening magazines.",
+      "cost": 0.01167
+    },
+    {
+      "persona_id": "hh_025_p1",
+      "persona_name": "David Turner",
+      "response": "Allotments",
+      "justification": "I've been growing herbs on my kitchen windowsill for years, but there's never enough space. Would be brilliant to finally grow proper veg and maybe trade tomatoes with the neighbours for their courgettes.",
+      "cost": 0.015555
+    },
+    {
+      "persona_id": "hh_025_p2",
+      "persona_name": "Lisa Turner",
+      "response": "Allotments",
+      "justification": "I'd absolutely love having my own proper patch to grow veg - my flat's too small for anything beyond my houseplants and window boxes, and I've been dying to try growing heritage tomatoes like the ones in that gardening book I got from the library last month.",
+      "cost": 0.017475
+    },
+    {
+      "persona_id": "hh_026_p1",
+      "persona_name": "Simone Reynolds",
+      "response": "Allotments",
+      "justification": "After long shifts at the hospital, I'd love nothing more than getting my hands dirty growing veg - plus it'd be brilliant for the elderly patients I work with who miss their gardens and could use somewhere peaceful to visit.",
+      "cost": 0.017175
+    },
+    {
+      "persona_id": "hh_027_p1",
+      "persona_name": "Marlon Thompson",
+      "response": "Junkyard",
+      "justification": "That's where I'd find materials for my upcycling projects - I'm always hunting through skips and charity shops for stuff to transform, so having a proper community junkyard right here in Dalston would be perfect for my work.",
+      "cost": 0.015975
+    },
+    {
+      "persona_id": "hh_028_p1",
+      "persona_name": "Rashida Patel",
+      "response": "Allotments",
+      "justification": "I've been growing tomatoes and herbs on my balcony for years now, but there's never enough space. Having a proper plot would mean I could finally grow those butternut squashes I've been reading about in my gardening magazines.",
+      "cost": 0.016545
+    },
+    {
+      "persona_id": "hh_028_p2",
+      "persona_name": "Amir Patel",
+      "response": "Urban forest",
+      "justification": "I've been reading \"The Overstory\" recently and it's really opened my eyes to how crucial trees are, especially in dense areas like Dalston. Plus, after spending all day in chambers dealing with planning disputes, I'd love having a proper green space to decompress in during lunch breaks - much better than scrolling through case files in the office.",
+      "cost": 0.02004
+    },
+    {
+      "persona_id": "hh_028_p3",
+      "persona_name": "Nisha Patel",
+      "response": "Urban forest",
+      "justification": "I'd love having a proper green space to do my photography assignments without trekking all the way to the Lake District - plus it'd be perfect for the biodiversity surveys I'm always doing for my coursework.",
+      "cost": 0.01716
+    },
+    {
+      "persona_id": "hh_028_p4",
+      "persona_name": "Dylan Chan",
+      "response": "Allotments",
+      "justification": "Would be brilliant to grow some veg and herbs instead of buying everything from Tesco - plus it'd give me a reason to step away from the screen and actually do something with my hands on weekends.",
+      "cost": 0.016905
+    },
+    {
+      "persona_id": "hh_029_p1",
+      "persona_name": "Ayşegül Kara",
+      "response": "Courtyard",
+      "justification": "As a tailor, I could use a peaceful outdoor space to meet clients during nice weather - much better than cramming fabric samples into my small workshop. Plus, after hunching over my sewing machine all day, I'd love somewhere nearby to sit with a book and give my back a break.",
+      "cost": 0.01863
+    },
+    {
+      "persona_id": "hh_029_p2",
+      "persona_name": "Mehmet Kara",
+      "response": "Carpark",
+      "justification": "Look, I know it's not the most exciting option, but I see how difficult it is finding parking around Dalston every day when I'm doing my deliveries. A proper carpark would make my job so much easier - I wouldn't have to circle around for 20 minutes just to drop off a package.",
+      "cost": 0.018375
+    },
+    {
+      "persona_id": "hh_029_p3",
+      "persona_name": "Kerem Kara",
+      "response": "Allotments",
+      "justification": "I'm always broke from being a student and London prices are mental - growing our own veg would actually help me and my flatmates eat better without spending £20 on a tiny bag of organic produce at Whole Foods.",
+      "cost": 0.016935
+    },
+    {
+      "persona_id": "hh_029_p4",
+      "persona_name": "Emine Kara",
+      "response": "Allotments",
+      "justification": "I'd love having a plot to grow some veg - would be brilliant for my uni budget next year and I could finally try growing those heritage tomatoes my mum's always going on about from back home.",
+      "cost": 0.016454999999999997
+    },
+    {
+      "persona_id": "hh_029_p5",
+      "persona_name": "Hüseyin Kara",
+      "response": "Playground",
+      "justification": "Me and my friends always have to go really far to find a good place to play after school - if we had one right here in Dalston we could go every day and my mum wouldn't worry about us going too far!",
+      "cost": 0.016575
+    },
+    {
+      "persona_id": "hh_030_p1",
+      "persona_name": "Ayşe Yılmaz",
+      "response": "Allotments",
+      "justification": "Working with patients who struggle with diet-related conditions every day, I'd love having a place where we could run gardening sessions and teach people how to grow their own veg. Plus, I'd finally have somewhere to grow tomatoes - my tiny flat balcony just isn't cutting it.",
+      "cost": 0.017925
+    },
+    {
+      "persona_id": "hh_031_p1",
+      "persona_name": "Aria Davies",
+      "response": "Allotments",
+      "justification": "I already buy organic from Borough Market most weekends, but having my own plot would be brilliant - plus it'd give me something completely different from case files to focus on when I need to clear my head after work.",
+      "cost": 0.01668
+    },
+    {
+      "persona_id": "hh_031_p2",
+      "persona_name": "Tom Davies",
+      "response": "Playground",
+      "justification": "Me and my mates need somewhere to hang out that isn't just someone's flat or the high street - plus would be sick for coding meetups outside when it's actually decent weather.",
+      "cost": 0.015825
+    },
+    {
+      "persona_id": "hh_031_p3",
+      "persona_name": "Olive Watkins",
+      "response": "Allotments",
+      "justification": "I've been tending my little back garden for years now, but there's only so much you can grow in a small space. Having a proper allotment would mean I could finally grow those heritage tomatoes I've been reading about, and maybe even have enough veg to share at the community center's monthly lunches.",
+      "cost": 0.018945
+    },
+    {
+      "persona_id": "hh_032_p1",
+      "persona_name": "Zeynep Özdemir",
+      "response": "Allotments",
+      "justification": "I've been growing herbs and vegetables on my balcony for years now, but there's never enough space - proper allotment plots would mean I could finally grow the aubergines and peppers I've been wanting to try, just like we had in our garden back in Istanbul.",
+      "cost": 0.01788
+    },
+    {
+      "persona_id": "hh_032_p2",
+      "persona_name": "Yusuf Özdemir",
+      "response": "Allotments",
+      "justification": "I've been trying to grow more vegetables at home but my garden's too small - having a proper plot would mean I could finally grow enough tomatoes and courgettes to share with my Year 9 students when we do our unit on medieval farming practices.",
+      "cost": 0.017175
+    },
+    {
+      "persona_id": "hh_032_p3",
+      "persona_name": "Selin Özdemir",
+      "response": "Allotments",
+      "justification": "After twelve-hour shifts dealing with patients who've forgotten what real food tastes like, I'd love nothing more than to grow my own veg and maybe get my Turkish mum's tomatoes going properly for once.",
+      "cost": 0.01743
+    },
+    {
+      "persona_id": "hh_032_p4",
+      "persona_name": "Aylin Özdemir",
+      "response": "Urban forest",
+      "justification": "I spend so much time reading about deforestation for my coursework, and honestly it gets pretty depressing. Having an actual forest patch right here where I could study local biodiversity or just decompress after late nights in the library would be incredible. Plus, I've been trying to convince my flatmates to compost - this would give us somewhere to actually see the impact.",
+      "cost": 0.019755
+    },
+    {
+      "persona_id": "hh_032_p5",
+      "persona_name": "Efe Khan",
+      "response": "Sculpture park",
+      "justification": "As a graphic designer who's always photographing street art around London, I'd love having rotating installations right on my doorstep - perfect for my Instagram stories and finding fresh visual inspiration between projects.",
+      "cost": 0.01728
+    },
+    {
+      "persona_id": "hh_033_p1",
+      "persona_name": "Devan Singh",
+      "response": "Allotments",
+      "justification": "I cycle past that plot every morning on my way to the café, and it'd be brilliant to grow some of our own veg for the kitchen - we're always banging on about locally sourced ingredients but imagine actually picking tomatoes from our own patch for the sandwiches.",
+      "cost": 0.018225
+    },
+    {
+      "persona_id": "hh_033_p2",
+      "persona_name": "Kiran Patel",
+      "response": "Allotments",
+      "justification": "I'd love to grow my own herbs and veg for the dishes I cook at home - buying fresh basil and coriander from the shops costs a fortune, and I go through loads when I'm trying out new recipes from Salt Fat Acid Heat.",
+      "cost": 0.01707
+    },
+    {
+      "persona_id": "hh_034_p1",
+      "persona_name": "Owen Griffiths",
+      "response": "Allotments",
+      "justification": "I already enjoy the gardening I do at the community centre, and having our own plots would mean I could grow veg for the family - plus it'd give me and the other volunteers at Dalston something proper to work on together.",
+      "cost": 0.016785
+    },
+    {
+      "persona_id": "hh_034_p2",
+      "persona_name": "Margaret Griffiths",
+      "response": "Allotments",
+      "justification": "I'd love having a proper plot for my vegetables - my little garden at Baker's Lane Mews is lovely but there's barely room for my tomatoes and runner beans. Plus I could share tips with the other gardeners, maybe swap some seeds with them like I do with my knitting patterns at the community center.",
+      "cost": 0.01917
+    },
+    {
+      "persona_id": "hh_035_p1",
+      "persona_name": "Callum Matthews",
+      "response": "Allotments",
+      "justification": "Would be brilliant to grow some veg and maybe teach the local kids about where food comes from - plus I could finally have a go at growing tomatoes like my dad keeps banging on about.",
+      "cost": 0.016694999999999998
+    },
+    {
+      "persona_id": "hh_035_p2",
+      "persona_name": "Grace Taylor",
+      "response": "Allotments",
+      "justification": "I already grow herbs and veg on my balcony, but I'm constantly running out of space - having a proper plot would let me actually grow enough tomatoes to share with neighbors at the Sunday farmers' market.",
+      "cost": 0.01671
+    },
+    {
+      "persona_id": "hh_036_p1",
+      "persona_name": "Linda Ng",
+      "response": "Allotments",
+      "justification": "I've been wanting to grow my own veg for ages - would be brilliant to have a plot just down the road where I could pop by after work instead of just buying everything from Tesco. Plus, I'm trying to eat more plant-based meals these days and it'd be ace to use stuff I've grown myself.",
+      "cost": 0.018885
+    },
+    {
+      "persona_id": "hh_036_p2",
+      "persona_name": "Marcus Li",
+      "response": "Allotments",
+      "justification": "I cycle past empty plots every morning on my way to Greenwood and always think what a waste - I'd love to grow veg for my meals instead of buying everything from Tesco. Plus it'd be brilliant for my Year 10s' biology practicals on plant growth and ecosystems.",
+      "cost": 0.01767
+    },
+    {
+      "persona_id": "hh_037_p1",
+      "persona_name": "Yusuf Halici",
+      "response": "Allotments",
+      "justification": "I've got my hands full with my own garden already, but my Turkish neighbors keep asking where they can grow proper vegetables - tomatoes that actually taste like something, you know? Plus, teaching my grandchildren how things grow from seed to plate would beat any storybook I could read them.",
+      "cost": 0.01827
+    },
+    {
+      "persona_id": "hh_037_p2",
+      "persona_name": "Zeynep Halici",
+      "response": "Playground",
+      "justification": "My kids are always cooped up in our flat, and I'm constantly looking for places to take them on weekends when I'm not driving them to their activities. Having a proper playground just around the corner would save me from having to bundle them into the Yaris every time they need to burn off energy.",
+      "cost": 0.0189
+    },
+    {
+      "persona_id": "hh_037_p3",
+      "persona_name": "Elif Halici",
+      "response": "Allotments",
+      "justification": "I'd finally have somewhere to grow my own veg instead of trying to keep herbs alive on my windowsill - plus it'd be amazing to have fresh ingredients for my flatmates' dinner parties without spending a fortune at Whole Foods.",
+      "cost": 0.0177
+    },
+    {
+      "persona_id": "hh_038_p1",
+      "persona_name": "Emma Osei",
+      "response": "Allotments",
+      "justification": "After long shifts at the hospital, I'd love having a plot to grow my own veg - plus it'd be perfect for the community center cooking classes I help with on Thursday evenings.",
+      "cost": 0.01647
+    },
+    {
+      "persona_id": "hh_038_p2",
+      "persona_name": "Kwame Osei",
+      "response": "Allotments",
+      "justification": "I'd love having a patch to grow some scotch bonnets and tomatoes for my jollof rice - plus it'd be brilliant for teaching my students about food systems and getting them involved in something hands-on outside the classroom.",
+      "cost": 0.01728
+    },
+    {
+      "persona_id": "hh_039_p1",
+      "persona_name": "Duygu Yılmaz",
+      "response": "Allotments",
+      "justification": "I'd love having somewhere to grow my own veg - been watching loads of cooking shows lately and it'd be brilliant to actually use homegrown ingredients instead of just buying everything from Tesco after work.",
+      "cost": 0.017820000000000003
+    },
+    {
+      "persona_id": "hh_040_p1",
+      "persona_name": "Emma Sorensen",
+      "response": "Allotments",
+      "justification": "I'd love to grow my own veg and herbs - I'm always buying overpriced basil from Whole Foods for dinner parties, and it'd be brilliant to pop round the corner and pick fresh stuff. Plus I could finally try that photography project I've been wanting to do about urban growing.",
+      "cost": 0.018435
+    },
+    {
+      "persona_id": "hh_040_p2",
+      "persona_name": "Jonas Petersson",
+      "response": "Allotments",
+      "justification": "Would be brilliant to grow some veg and tinker with IoT sensors for monitoring soil moisture and automating watering systems - been wanting to try that Raspberry Pi garden project I bookmarked ages ago.",
+      "cost": 0.016425000000000002
+    },
+    {
+      "persona_id": "hh_041_p1",
+      "persona_name": "Georgia Gibbons",
+      "response": "Allotments",
+      "justification": "I've been with the Dalston Community Garden Club for over a decade now, and we're always short on growing space. My tomatoes did brilliantly last summer, and I'd love to have a proper plot where I could grow enough veg to share with the neighbors and make preserves for the church fete.",
+      "cost": 0.018015
+    }
+  ],
+  "followUpResults": [
+    {
+      "persona_id": "hh_001_p1",
+      "persona_name": "Dilek Aydin",
+      "response": "Mixed sizes for different needs",
+      "justification": "In our community garden in Dalston, we have all different members - some elderly Turkish ladies like me who can't bend so easily, young families with children learning to grow vegetables, and people who want to grow bigger things like courgettes. When I started gardening after retirement, I realized one size doesn't work for everyone.",
+      "cost": 0.01653,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_001_p2",
+      "persona_name": "Kemal Aydin",
+      "response": "Mixed sizes for different needs",
+      "justification": "Look, I'm always doing DIY projects at home anyway, so I'd build some raised beds for the wife's herbs and have ground rows for bigger stuff. Makes sense to have options - same as my toolbox, right tool for the right job.",
+      "cost": 0.016425,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_001_p3",
+      "persona_name": "Zeynep Aydin",
+      "response": "Mixed sizes for different needs",
+      "justification": "I love experimenting with different herbs and veggies from my weekly delivery box - having various bed sizes means I can dedicate a small raised section for my kitchen herbs while using ground rows for bigger crops like the heirloom tomatoes I've been wanting to try.",
+      "cost": 0.016155,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_001_p4",
+      "persona_name": "Hasan Aydin",
+      "response": "Mixed sizes for different needs",
+      "justification": "Look, I'm gonna be real - I've never actually gardened in my life. But as someone who spends way too much time optimizing game builds and coding projects, mixed sizes just makes sense. Different plants need different setups, right? It's like how I wouldn't use the same IDE for Python and C++ - you optimize for what you're working with.",
+      "cost": 0.017159999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_001_p5",
+      "persona_name": "Emine Aydin",
+      "response": "Mixed sizes for different needs",
+      "justification": "In our flat we barely have space for anything, so I'd want different sized plots - maybe a tiny raised bed for herbs my mum uses for cooking, and some ground-level bits for bigger stuff. It's like how I organize my art supplies - different spaces for different projects.",
+      "cost": 0.01779,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_001_p6",
+      "persona_name": "Sofia Giannopoulos",
+      "response": "Mixed sizes for different needs",
+      "justification": "From volunteering at those recycling education workshops, I've seen how different plants need different spaces - plus it'd be perfect for the music education charity to maybe run little gardening sessions where kids can work with plots that match their size.",
+      "cost": 0.015359999999999999,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_002_p1",
+      "persona_name": "Marko Petrović",
+      "response": "Raised beds",
+      "justification": "Look, I spend way too much time hunched over my laptop editing videos - raised beds would save my back when I'm trying to decompress in the garden on weekends. Plus, they'd look way cleaner for any Instagram stories I might post.",
+      "cost": 0.01662,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_002_p2",
+      "persona_name": "Selma Akman",
+      "response": "Mixed sizes for different needs",
+      "justification": "We've got this small urban farming project in Dalston I'm involved with, and honestly, different plants need different setups - like the herbs we grow for the café do better in raised beds, but the community veg patch works fine at ground level.",
+      "cost": 0.016365,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_003_p1",
+      "persona_name": "Olivia Thompson",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'd probably experiment with different heights and layouts since I'm always sketching and painting different perspectives anyway - plus my tiny London flat means I'd need to get creative with whatever little garden space I could find, maybe even some vertical bits for herbs.",
+      "cost": 0.016215,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_003_p2",
+      "persona_name": "Ahmed Ünal",
+      "response": "Mixed sizes for different needs",
+      "justification": "From running my café and tending my own garden, I know different plants need different conditions - just like how I arrange my herb boxes differently from my tomato patches at home. Some of our older customers at the café struggle with bending down, so having raised sections alongside ground beds would work perfectly for everyone in the community.",
+      "cost": 0.017025,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_003_p3",
+      "persona_name": "Joyce Williams",
+      "response": "Raised beds",
+      "justification": "At my age, I can't be bending down to ground level anymore - my back reminds me every time I try! The raised beds at the historical society's garden are so much easier for us volunteers to manage, and I've seen how well the herbs and vegetables grow in them.",
+      "cost": 0.01515,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_004_p1",
+      "persona_name": "Zeynep Demir",
+      "response": "Mixed sizes for different needs",
+      "justification": "I spend so much time hunched over my sewing table - having raised beds for herbs means I wouldn't have to bend down as much when I'm picking fresh mint for tea during my teaching breaks. Plus, ground-level rows work better for the bigger vegetables I use in my Turkish cooking.",
+      "cost": 0.01629,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_005_p1",
+      "persona_name": "Thomas Wright",
+      "response": "Mixed sizes for different needs",
+      "justification": "From all the home improvement projects I've done for folks around the neighborhood, I've learned everyone's got different situations - some have bad backs and need raised beds, others want traditional rows for their corn. Mixed sizes lets people pick what works for their space and abilities.",
+      "cost": 0.01617,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_005_p2",
+      "persona_name": "Emma Wright",
+      "response": "Raised beds",
+      "justification": "My nan struggles with her back when she's gardening, and I bet loads of people at the community center have the same issue - raised beds would mean everyone could join in without all that bending and kneeling.",
+      "cost": 0.015465,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_005_p3",
+      "persona_name": "Jack Wright",
+      "response": "Raised beds",
+      "justification": "I've been dealing with back pain from hunching over my laptop all day, and raised beds would mean I don't have to crouch down as much when I'm tending to plants. Plus, better drainage is key with how rainy it gets here.",
+      "cost": 0.015945,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_005_p4",
+      "persona_name": "Lucy Wright",
+      "response": "Mixed sizes for different needs",
+      "justification": "I love the idea of having different sections for different things - like a small raised area for herbs I could use in DIY natural dyes, and bigger ground plots for growing flowers I could dry and use in my art projects. Plus it reminds me of how I organize my fabric scraps - different sizes for different purposes!",
+      "cost": 0.017745,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_005_p5",
+      "persona_name": "Beatrice Wright",
+      "response": "Mixed sizes for different needs",
+      "justification": "After all these years tending my Dalston garden, I've learned you need raised beds for things like herbs and salads - saves my back from all that bending - but ground-level rows work better for my runner beans and potatoes. Can't imagine doing it any other way now.",
+      "cost": 0.015105,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_006_p1",
+      "persona_name": "Michael Oseni",
+      "response": "Mixed sizes for different needs",
+      "justification": "Been helping with the school garden project at Dalston Comprehensive, and we've learned that different vegetables need different setups - the Year 7s love working with the raised beds for herbs while the older kids manage the ground rows for larger crops.",
+      "cost": 0.016739999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_006_p2",
+      "persona_name": "Antonia Oseni",
+      "response": "Raised beds",
+      "justification": "My back's not getting any younger after 20 years of nursing - bending over ground-level beds after a 12-hour shift at St. Mary's would be torture. Plus, raised beds drain better in London's wet weather, and I can control the soil mix for my herbs and veg.",
+      "cost": 0.01638,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_006_p3",
+      "persona_name": "Isaac Oseni",
+      "response": "Mixed sizes for different needs",
+      "justification": "With my uni schedule and all the coding projects I'm juggling, I'd need different setups - maybe some small raised beds for quick herbs I can grab while cooking, and ground-level for bigger stuff that doesn't need constant attention. Plus, being on a student budget, I could start small and expand as I learn what works.",
+      "cost": 0.01803,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_006_p4",
+      "persona_name": "Evelyn Oseni",
+      "response": "Raised beds",
+      "justification": "At my age, all that bending down for ground-level planting would have my back complaining for days - raised beds mean I can tend to things without feeling like I've done ten rounds with a wrestler, just like how I've arranged my sewing table at the perfect height.",
+      "cost": 0.01701,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_007_p1",
+      "persona_name": "Aydin Yılmaz",
+      "response": "Raised beds",
+      "justification": "My knees aren't what they used to be at my age, and bending down to ground level for weeding and harvesting has become quite the challenge. Plus, raised beds drain better - learned that the hard way when we had that terrible wet spring a few years back and half my tomatoes got root rot.",
+      "cost": 0.016919999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_008_p1",
+      "persona_name": "Fatima Yıldız",
+      "response": "Mixed sizes for different needs",
+      "justification": "After all those episodes of Gardeners' World and my Saturday community work at the local allotment, I've seen how different plants need different setups - plus it reminds me of those creative solutions on Grand Designs where they maximise every bit of space.",
+      "cost": 0.01635,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_009_p1",
+      "persona_name": "Alistair Bennett",
+      "response": "Raised beds",
+      "justification": "My back isn't what it used to be at 44, and I've been eyeing those cedar raised bed kits on Amazon. Plus, the Victorian terraces round here in Dalston have terrible clay soil - raised beds would let me bring in decent compost without having to dig down to Australia.",
+      "cost": 0.01716,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_009_p2",
+      "persona_name": "Margaret Bennett",
+      "response": "Raised beds",
+      "justification": "With my bad knees from all those years standing in court, raised beds are a godsend - I can tend my herbs and vegetables without all the bending and kneeling that kills my back these days.",
+      "cost": 0.016065,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_010_p1",
+      "persona_name": "Aylin Demir",
+      "response": "Raised beds",
+      "justification": "From all the cafes I've worked in, the ones with raised herb gardens out back were so much easier to maintain - I could just grab fresh mint or basil without bending down constantly during busy shifts. Plus, they'd look great in my photography work around the neighborhood.",
+      "cost": 0.016649999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_010_p2",
+      "persona_name": "Emre Kaya",
+      "response": "Mixed sizes for different needs",
+      "justification": "Look, I spend all day bent over car engines - when I'm in the garden, I need some raised beds for my back's sake. But my mate who helps me out sometimes prefers working at ground level. Different heights work better for different jobs, just like in the workshop.",
+      "cost": 0.016125,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_011_p1",
+      "persona_name": "Rachel Patel",
+      "response": "Mixed sizes for different needs",
+      "justification": "Running my boutique in East London, I've learned that different artists and suppliers need different display spaces - same goes for plants. I'd want some raised beds for herbs I could grab quickly, maybe some ground rows for bigger veg, just like how I mix display heights in my shop window.",
+      "cost": 0.01704,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_011_p2",
+      "persona_name": "Anil Patel",
+      "response": "Mixed sizes for different needs",
+      "justification": "I've done loads of electrical work for people with gardens in Dalston, and the ones that work best have different setups - raised beds are brilliant for herbs near the kitchen, but you need proper rows for things like potatoes. Plus, having worked on community projects round here, I know everyone's got different mobility needs - my mate's nan can't bend down for ground-level stuff anymore.",
+      "cost": 0.01896,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_012_p1",
+      "persona_name": "Anna Kowalska",
+      "response": "Mixed sizes for different needs",
+      "justification": "At our community garden in Dalston, we've found different volunteers have different abilities - some of our older members struggle with ground-level beds, while the kids' groups love having their own smaller raised sections to tend.",
+      "cost": 0.015224999999999999,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_012_p2",
+      "persona_name": "Tomasz Kowalski",
+      "response": "Mixed sizes for different needs",
+      "justification": "After 38 years working with wood and seeing how different projects need different approaches, I know one size never fits all. My workshop has different benches for different jobs - same principle applies to garden plots. Plus, my back isn't what it used to be, so having some raised beds mixed in would save me from crouching all day.",
+      "cost": 0.018494999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_013_p1",
+      "persona_name": "Aisha Nziramasanga",
+      "response": "Mixed sizes for different needs",
+      "justification": "From helping organize community garden projects in Dalston, I've seen how different plot sizes work better for different people - elderly residents prefer raised beds they don't have to bend for, while families with kids love having ground-level spaces where little ones can dig around safely.",
+      "cost": 0.015675,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_014_p1",
+      "persona_name": "Alexei Ivanov",
+      "response": "Mixed sizes for different needs",
+      "justification": "Look, I spend all day bent over car engines, so raised beds would save my back for the vegetables. But the kids want to help with planting, so we'd need some ground-level patches they can actually reach without me worrying they'll topple into the tomatoes.",
+      "cost": 0.016890000000000002,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_014_p2",
+      "persona_name": "Elena Ivanova",
+      "response": "Mixed sizes for different needs",
+      "justification": "Look, I've got a tiny balcony in my Dalston flat, so I'm thinking practically here - different sized plots would mean people like me with no garden could grab a small raised bed for herbs, while families could get proper ground space for veg. Plus, working at the coffee shop, I'd love to grow some mint and basil for our summer drinks menu.",
+      "cost": 0.01866,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_014_p3",
+      "persona_name": "Nikolai Ivanov",
+      "response": "Raised beds",
+      "justification": "I've been getting into DIY projects lately with my Arduino and Raspberry Pi stuff, so building raised beds would be another fun weekend project. Plus, living in London means dealing with whatever soil quality you get - raised beds let me control that completely.",
+      "cost": 0.016035,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_014_p4",
+      "persona_name": "Veronika Ivanova",
+      "response": "Mixed sizes for different needs",
+      "justification": "As an art student, I love creating compositions with variety - plus I could have raised beds for herbs near the piano room window and ground-level rows for bigger vegetables in the back. It's like designing a living canvas that's both practical and visually interesting.",
+      "cost": 0.01632,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_015_p1",
+      "persona_name": "James Carter",
+      "response": "Raised beds",
+      "justification": "After cycling to work every morning, my back's not what it used to be - raised beds would save me from all that bending over. Plus, they'd drain better than our London clay soil, which gets waterlogged every winter.",
+      "cost": 0.01566,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_015_p2",
+      "persona_name": "Amelia Carter",
+      "response": "Mixed sizes for different needs",
+      "justification": "After long shifts at the hospital, I need something low-maintenance - raised beds would be perfect for my herbs and quick salads, but I'd want ground-level rows for the vegetables I donate to our community health drives.",
+      "cost": 0.015855,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_016_p1",
+      "persona_name": "Jonathan McCarthy",
+      "response": "Raised beds",
+      "justification": "At my age, I'm not getting any younger - raised beds save my back when I'm tending to my herbs and vegetables. Plus, they've worked brilliantly in my garden for growing the fresh ingredients I use in my Mediterranean cooking.",
+      "cost": 0.01617,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_017_p1",
+      "persona_name": "Yasmin Ahmed",
+      "response": "Raised beds",
+      "justification": "With all the bending I do at work measuring hems and adjusting garments, raised beds would save my back when I'm tending the garden after a long day in the shop.",
+      "cost": 0.015014999999999999,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_017_p2",
+      "persona_name": "Hassan Ahmed",
+      "response": "Mixed sizes for different needs",
+      "justification": "Honestly, that makes the most sense to me - like in our flat, we've got limited space so mum grows herbs in small pots on the windowsill and bigger stuff like tomatoes in containers on the balcony. Different plants need different setups innit.",
+      "cost": 0.016364999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_017_p3",
+      "persona_name": "Amara Johnson",
+      "response": "Mixed sizes for different needs",
+      "justification": "After forty years tending my garden here on Weaver's End Street, I've learned you need different setups - my raised beds are perfect for my herbs and salad greens where I don't want to bend too much at my age, but my ground-level rows work brilliantly for the heritage tomatoes and runner beans that need deeper roots.",
+      "cost": 0.018119999999999997,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_018_p1",
+      "persona_name": "Ayla Kazım",
+      "response": "Mixed sizes for different needs",
+      "justification": "Living in London with limited outdoor space, I'd want to maximize what I can grow - raised beds for herbs I use constantly in cooking, ground rows for larger veg, and maybe a vertical setup for climbing plants against the wall.",
+      "cost": 0.01689,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_018_p2",
+      "persona_name": "Mehmet Kazım",
+      "response": "Mixed sizes for different needs",
+      "justification": "Living in a flat in Dalston doesn't give me garden space, but if I had the chance, I'd go mixed - reminds me of the modular approach we use in tech. Small raised sections for herbs I'd actually use for cooking, ground-level for anything that needs more root space. Same principle as my home setup - everything optimized for its specific purpose.",
+      "cost": 0.018224999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_018_p3",
+      "persona_name": "Leyla Kazım",
+      "response": "Mixed sizes for different needs",
+      "justification": "In our Dalston flatshare, we've got this tiny communal garden space and everyone wants to grow different things - my flatmate's obsessed with herbs for cooking while I just want somewhere to sit and read between lectures. Mixed beds would let us actually share the space properly instead of arguing about it.",
+      "cost": 0.01794,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_018_p4",
+      "persona_name": "Ahmet Kazım",
+      "response": "Raised beds",
+      "justification": "My back's not what it used to be since I retired, and bending down to ground level gets harder each year. At the Dalston Gardening Club, we switched to raised beds last spring and it's been a blessing - I can actually spend hours tending my tomatoes without needing to sit down every few minutes.",
+      "cost": 0.018090000000000002,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_019_p1",
+      "persona_name": "Nia Campbell",
+      "response": "Raised beds",
+      "justification": "After long shifts on the ward, bending down to ground level would absolutely kill my back. Plus, raised beds would work perfectly with my fresh produce box delivery - I could grow herbs to supplement what doesn't come in the Oddbox.",
+      "cost": 0.015615,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_019_p2",
+      "persona_name": "Leo Fischer",
+      "response": "Mixed sizes for different needs",
+      "justification": "In my sociology research on community gardens in urban spaces, I've seen how different plot sizes let elderly residents have small raised beds while families with kids can manage larger ground plots - it's exactly the kind of inclusive design I'm writing about for my paper on how green spaces shape neighborhood interactions.",
+      "cost": 0.01629,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_019_p3",
+      "persona_name": "Ava Patel",
+      "response": "Raised beds",
+      "justification": "With my dodgy knees at 68, I can't be bending down to ground level like I used to. Plus, raised beds drain better in our soggy British weather - learned that the hard way after losing half my tomatoes to root rot last year.",
+      "cost": 0.016485,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_019_p4",
+      "persona_name": "Efe Kaya",
+      "response": "Mixed sizes for different needs",
+      "justification": "I spend so much time sketching at cafés that I appreciate when spaces have variety - same principle applies to gardens. Plus, after jamming with friends, we sometimes talk about starting a community garden project that could accommodate different creative approaches.",
+      "cost": 0.017085,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_020_p1",
+      "persona_name": "Elaine Smith",
+      "response": "Mixed sizes for different needs",
+      "justification": "At the community garden, we've got pensioners like me who can't bend down easily, young families wanting to get their little ones involved, and everyone in between. Different sized plots mean everyone can actually use the space - I've seen too many gardens sit half-empty because they're all ground-level and half the volunteers have bad backs!",
+      "cost": 0.018029999999999997,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_021_p1",
+      "persona_name": "David Morgan",
+      "response": "Mixed sizes for different needs",
+      "justification": "In my small Dalston garden, I've learned you need different setups for different plants - I use raised beds for my herbs near the kitchen door, but ground-level rows work better for the squash and beans that spread out. Plus, having varied heights makes it easier on my back after a long day teaching.",
+      "cost": 0.017535000000000002,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_021_p2",
+      "persona_name": "Sarah Thompson",
+      "response": "Raised beds",
+      "justification": "After spending long shifts on my feet at the hospital, I'd really appreciate not having to bend down so much to tend to plants - my back would thank me! Plus, they'd look lovely next to the café-style seating area I'm imagining for my garden yoga sessions.",
+      "cost": 0.01626,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_022_p1",
+      "persona_name": "Priya Sharma",
+      "response": "Mixed sizes for different needs",
+      "justification": "At the clinic, we see patients with all sorts of mobility issues - some use wheelchairs, others have back problems. Having different heights would mean everyone could actually participate, just like how we've adapted the community garden spaces I visit in Dalston.",
+      "cost": 0.0165,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_022_p2",
+      "persona_name": "Clive Reynolds",
+      "response": "Raised beds",
+      "justification": "I've got dodgy knees these days, and raised beds would save me from all that bending and kneeling. Plus, they'd look tidier - like the organised planters I've got on my balcony here in Dalston.",
+      "cost": 0.016094999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_023_p1",
+      "persona_name": "Paulina Kowalczyk",
+      "response": "Mixed sizes for different needs",
+      "justification": "When I helped my mum with her garden back in Warsaw, we always had different plots for herbs, vegetables, and flowers - it just makes more sense when you're actually using what you grow for cooking.",
+      "cost": 0.015825,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_023_p2",
+      "persona_name": "Piotr Kowalczyk",
+      "response": "Mixed sizes for different needs",
+      "justification": "After spending all day bent over car engines, my back isn't what it used to be - I'd want some raised beds for the easy stuff like herbs, but ground rows for things like potatoes that need more space. Plus, the wife likes her flowers, so she'd need her own section too.",
+      "cost": 0.017445000000000002,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_023_p3",
+      "persona_name": "Lena Kowalczyk",
+      "response": "Mixed sizes for different needs",
+      "justification": "From working on our local garden project, I've seen how some herbs need deeper beds while lettuce and things grow fine in shallower spaces - plus it makes it easier when different people want to grow different stuff.",
+      "cost": 0.015525,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_023_p4",
+      "persona_name": "Dominik Kowalczyk",
+      "response": "Mixed sizes for different needs",
+      "justification": "That's what my science teacher showed us when we did our plant growth experiment last term - we had small raised beds for herbs and bigger ground plots for vegetables, and it made it way easier to manage different plants. Plus it looked pretty cool, like those gardens they have in that farming documentary on Netflix.",
+      "cost": 0.017115000000000002,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_024_p1",
+      "persona_name": "Hannah Kowalczyk",
+      "response": "Mixed sizes for different needs",
+      "justification": "I love experimenting with different compositions in my paintings, so I'd apply the same approach to a garden - some raised beds for herbs I use for natural dyes, ground-level patches for larger installations, maybe even incorporate some vertical elements. It'd be like creating a living art piece outside my flat.",
+      "cost": 0.01725,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_024_p2",
+      "persona_name": "Robert Kowalczyk",
+      "response": "Mixed sizes for different needs",
+      "justification": "In my years of gardening, I've found that tomatoes do brilliantly in raised beds while my runner beans need those long ground-level rows. Having both options means everyone can grow what suits them - just like at the community plot near the library where I play chess.",
+      "cost": 0.010454999999999999,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_025_p1",
+      "persona_name": "David Turner",
+      "response": "Mixed sizes for different needs",
+      "justification": "After years of fixing up gardens for clients and doing my own veg patch, I've learned you need different setups - raised beds for the herbs near the kitchen door, ground rows for the potatoes and beans, and smaller boxes for things like strawberries that the local foxes keep getting into.",
+      "cost": 0.01584,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_025_p2",
+      "persona_name": "Lisa Turner",
+      "response": "Raised beds",
+      "justification": "I've got terrible knees after 12 years standing all day in retail, so raised beds would save me from all that bending down. Plus, they'd look lovely in my little garden space - I could even build them from those old pallets I saw behind the shop last week.",
+      "cost": 0.016485,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_026_p1",
+      "persona_name": "Simone Reynolds",
+      "response": "Mixed sizes for different needs",
+      "justification": "Working long shifts at the hospital, I'd need something low-maintenance - raised beds for herbs I can quickly grab for cooking, but ground-level for bigger veg that my neighbors and I could share. Plus, the community garden near Dalston Junction has this setup and it works brilliantly for everyone involved.",
+      "cost": 0.01761,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_027_p1",
+      "persona_name": "Marlon Thompson",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'd want flexibility for my creative projects - like having a small raised section for herbs I can grab while cooking after late DJ sets, and ground rows for bigger stuff I could use in my upcycling work, maybe dyeing fabrics with homegrown plants.",
+      "cost": 0.01521,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_028_p1",
+      "persona_name": "Rashida Patel",
+      "response": "Raised beds",
+      "justification": "My back isn't what it used to be after years working in healthcare, and raised beds mean I won't be bending over constantly when I'm tending to my tomatoes and herbs. Plus, they drain better in London's wet weather.",
+      "cost": 0.01533,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_028_p2",
+      "persona_name": "Amir Patel",
+      "response": "Mixed sizes for different needs",
+      "justification": "Living in Dalston, I've seen how different communities use their allotment spaces - some elderly residents struggle with ground-level plots while others want maximum growing space. Mixed sizes would work like good urban planning should, accommodating everyone's actual needs rather than forcing a one-size-fits-all approach.",
+      "cost": 0.0183,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_028_p3",
+      "persona_name": "Nisha Patel",
+      "response": "Mixed sizes for different needs",
+      "justification": "From doing photography at Hackney City Farm and helping with their environmental projects, I've seen how different plants need different setups - some herbs do better in raised beds while root veg need deeper ground-level space. Plus it looks more interesting than uniform rows, which would be perfect for taking photos.",
+      "cost": 0.017595,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_028_p4",
+      "persona_name": "Dylan Chan",
+      "response": "Mixed sizes for different needs",
+      "justification": "Living in a flat in Dalston means I don't have my own garden, but I've helped set up a few community spaces through local tech meetups - different plots work better for different people's schedules and what they want to grow.",
+      "cost": 0.016364999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_029_p1",
+      "persona_name": "Ayşegül Kara",
+      "response": "Mixed sizes for different needs",
+      "justification": "In my tailoring work, I've learned that one size never fits all - just like with my clients' measurements, every space and purpose needs its own approach. I'd want some raised beds for herbs I could snip while cooking, and ground-level areas for bigger vegetables like the tomatoes my Turkish mother always grew.",
+      "cost": 0.018015,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_029_p2",
+      "persona_name": "Mehmet Kara",
+      "response": "Mixed sizes for different needs",
+      "justification": "Makes sense to me - I'm always thinking about maximizing space from driving my Transit through tight London streets. Different sized plots mean people can grab what works for their schedule. I'd probably just want a small patch myself since I'm out on deliveries most days, but others might want bigger spaces.",
+      "cost": 0.01701,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_029_p3",
+      "persona_name": "Kerem Kara",
+      "response": "Mixed sizes for different needs",
+      "justification": "As a student volunteer who helps at community gardens, I've seen how having different plot sizes means more people can actually participate - like the elderly couple I met who just wanted a small herb patch, or the family growing enough veg to supplement their food bank visits.",
+      "cost": 0.016395,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_029_p4",
+      "persona_name": "Emine Kara",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'd love to experiment with different layouts since I'm always reading about creative gardening in those volunteering guides - plus it would be perfect for my school's environmental club project we're planning next term.",
+      "cost": 0.01524,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_029_p5",
+      "persona_name": "Hüseyin Kara",
+      "response": "Mixed sizes for different needs",
+      "justification": "Mum grows herbs in little pots on our balcony but she always says she wishes she had a proper garden for tomatoes like back home - having different sized plots means everyone can grow stuff, even if they just want something small.",
+      "cost": 0.015809999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_030_p1",
+      "persona_name": "Ayşe Yılmaz",
+      "response": "Raised beds",
+      "justification": "With my nursing background, I see too many patients with back problems from bending over in their gardens. Plus, I've got limited time between shifts and community events - raised beds would make it so much easier to pop out and tend to things without getting my work clothes muddy.",
+      "cost": 0.01641,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_031_p1",
+      "persona_name": "Aria Davies",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'd want raised beds for the herbs I use for cooking - much easier than bending down after a long day in chambers - but ground-level rows would work better for larger vegetables. My flat in Dalston only has a balcony, so I'd love having proper garden space to work in on weekends.",
+      "cost": 0.017265,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_031_p2",
+      "persona_name": "Tom Davies",
+      "response": "Mixed sizes for different needs",
+      "justification": "Makes sense from a coding perspective - like modular programming where different components serve different purposes. Plus I've seen loads of urban garden projects on TikTok where they use this approach in small London spaces, which would work well given how cramped everything is round here.",
+      "cost": 0.016184999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_031_p3",
+      "persona_name": "Olive Watkins",
+      "response": "Raised beds",
+      "justification": "My knees aren't what they used to be after all those years doing rounds at the hospital. The raised beds I put in my Dalston garden have been a godsend - I can tend my tomatoes without all that bending and kneeling.",
+      "cost": 0.016755,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_032_p1",
+      "persona_name": "Zeynep Özdemir",
+      "response": "Mixed sizes for different needs",
+      "justification": "In my community garden group here in Dalston, we've learned everyone needs something different - I use the raised beds for my herbs since my back isn't what it used to be, but the younger families want ground-level plots for their children to help with. This way, whether you're a grandmother like me or a young couple just starting out, there's a plot that works for you.",
+      "cost": 0.018465,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_032_p2",
+      "persona_name": "Yusuf Özdemir",
+      "response": "Mixed sizes for different needs",
+      "justification": "I've learned from trial and error in my own garden that different plants need different setups - my tomatoes do great in the raised beds I built last summer, but the herbs and lettuce grow better in ground-level rows where I can manage the watering more easily. Plus, with my teaching schedule, having some low-maintenance ground plots mixed with a few raised beds means I can still keep up with everything even during busy grading periods.",
+      "cost": 0.018959999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_032_p3",
+      "persona_name": "Selin Özdemir",
+      "response": "Raised beds",
+      "justification": "After long shifts on the ward, my back is absolutely knackered - raised beds would save me from all that bending and kneeling when I'm trying to unwind in the garden.",
+      "cost": 0.01584,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_032_p4",
+      "persona_name": "Aylin Özdemir",
+      "response": "Mixed sizes for different needs",
+      "justification": "In my dorm's community garden project, we learned the hard way that different plants need totally different setups - our tomatoes did way better in raised beds while the squash sprawled everywhere in ground plots. Plus, mixing it up makes the space look more interesting, which might actually get more students involved.",
+      "cost": 0.01779,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_032_p5",
+      "persona_name": "Efe Khan",
+      "response": "Mixed sizes for different needs",
+      "justification": "As someone who works with visual layouts all day, I'd want the flexibility to compose different sections like I do with design projects - maybe some raised beds for herbs near the edges and ground-level rows for bigger veg in the center. Plus it'd look way more interesting than uniform rows, like those community gardens I photograph around East London.",
+      "cost": 0.018465,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_033_p1",
+      "persona_name": "Devan Singh",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'd go for mixed sizes since I'm always experimenting with different plants and herbs for my photography projects, plus some raised beds would be perfect height for taking those macro shots without killing my back.",
+      "cost": 0.01581,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_033_p2",
+      "persona_name": "Kiran Patel",
+      "response": "Mixed sizes for different needs",
+      "justification": "Working at the salon, I see how different plants need different care - just like how I treat fine hair differently from thick curls. Plus, I love experimenting with herbs for cooking and they'd do better in raised beds, while bigger veg could go in ground-level rows.",
+      "cost": 0.01638,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_034_p1",
+      "persona_name": "Owen Griffiths",
+      "response": "Mixed sizes for different needs",
+      "justification": "At the community centre where I volunteer, we've got elderly folks who struggle to bend down and young families wanting to get their kids involved - different sized plots would let everyone join in properly.",
+      "cost": 0.014895,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_034_p2",
+      "persona_name": "Margaret Griffiths",
+      "response": "Raised beds",
+      "justification": "My knees aren't what they used to be, and I've found raised beds so much easier to manage in my own garden - no more groaning when I'm weeding or picking my runner beans!",
+      "cost": 0.016155,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_035_p1",
+      "persona_name": "Callum Matthews",
+      "response": "Raised beds",
+      "justification": "At the shop, I'm on my feet all day and my back's not getting any younger - raised beds would save me from all that bending over when I'm tending to plants after work.",
+      "cost": 0.015555,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_035_p2",
+      "persona_name": "Grace Taylor",
+      "response": "Mixed sizes for different needs",
+      "justification": "From my experience with the community garden project in Dalston, different people need different setups - some elderly neighbors struggle with ground-level beds while others want bigger plots for their families. Plus, my own balcony garden taught me that variety makes the space more interesting visually.",
+      "cost": 0.01662,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_036_p1",
+      "persona_name": "Linda Ng",
+      "response": "Raised beds",
+      "justification": "Would save my back from all the bending - I already spend enough time hunched over my laptop coding, and my weekend yoga sessions can only do so much.",
+      "cost": 0.015045,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_036_p2",
+      "persona_name": "Marcus Li",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'd go with mixed sizes - it's exactly what we've done with our school garden project. We use raised beds for the younger students since they're easier to manage, but ground-level plots for the older ones doing more ambitious experiments. Plus, having variety means we can grow herbs in small raised sections and vegetables in larger ground plots. Works brilliantly for teaching different growing techniques too.",
+      "cost": 0.017955,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_037_p1",
+      "persona_name": "Yusuf Halici",
+      "response": "Raised beds",
+      "justification": "My knees aren't what they used to be, and raised beds mean less bending when I'm tending to my tomatoes and herbs. Plus, they drain better in London's wet weather - learned that the hard way after losing a whole crop of courgettes to rot a few years back.",
+      "cost": 0.017204999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_037_p2",
+      "persona_name": "Zeynep Halici",
+      "response": "Raised beds",
+      "justification": "With my bad back from sitting at a desk all day, raised beds would save me from constantly bending down - plus they'd be perfect for the kids to help with gardening without trampling everything.",
+      "cost": 0.01611,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_037_p3",
+      "persona_name": "Elif Halici",
+      "response": "Mixed sizes for different needs",
+      "justification": "I'm all about using different spaces creatively - like when I work on my art pieces, sometimes I need a huge canvas for murals and other times tiny spaces for detailed illustrations. Same logic applies to gardening, plus it'd look way more interesting than boring uniform rows.",
+      "cost": 0.017159999999999998,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_038_p1",
+      "persona_name": "Emma Osei",
+      "response": "Mixed sizes for different needs",
+      "justification": "With my schedule at the hospital and volunteering in the evenings, I'd need different setups - maybe raised beds for herbs I can quickly grab for cooking, but ground rows for things that need more space. Plus, when we do community garden days at the center, having variety means everyone from kids to elderly volunteers can find something they can manage.",
+      "cost": 0.017805,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_038_p2",
+      "persona_name": "Kwame Osei",
+      "response": "Mixed sizes for different needs",
+      "justification": "Look, I've seen how different plants need different things - some of the herbs I use for West African cooking like scotch bonnets need more space, while leafy greens for salads can be packed tighter. Plus, working with kids at school, I know they respond better to variety than just uniform rows.",
+      "cost": 0.01749,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_039_p1",
+      "persona_name": "Duygu Yılmaz",
+      "response": "Mixed sizes for different needs",
+      "justification": "I love experimenting with different recipes and herbs for my cooking, so having various plot sizes would let me grow everything from tiny herb patches to bigger veg beds - perfect for all those Guardian food section recipes I'm always trying out!",
+      "cost": 0.017055,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_040_p1",
+      "persona_name": "Emma Sorensen",
+      "response": "Mixed sizes for different needs",
+      "justification": "Living in a Dalston flat, I don't have my own garden space, but I've been photographing the community gardens around here and noticed the ones that work best have different plot sizes - some raised beds for older residents, some ground plots for families. Would be perfect for those weekend workshops I go to.",
+      "cost": 0.01752,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_040_p2",
+      "persona_name": "Jonas Petersson",
+      "response": "Raised beds",
+      "justification": "After spending hours hunched over my laptop coding, I'd really appreciate not having to bend down to ground level when I'm tending to plants. Plus, raised beds would be perfect for adding some IoT sensors to monitor soil moisture - been wanting to try out a Raspberry Pi garden automation project.",
+      "cost": 0.01656,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_041_p1",
+      "persona_name": "Georgia Gibbons",
+      "response": "Raised beds",
+      "justification": "My knees aren't what they used to be, and raised beds mean I can still tend to my plants without all that bending and kneeling. Makes it much easier to keep up with the weeding too, which is important when you're managing a community plot.",
+      "cost": 0.015975,
+      "question_index": 0
+    },
+    {
+      "persona_id": "hh_001_p1",
+      "persona_name": "Dilek Aydin",
+      "response": "Water taps throughout",
+      "justification": "In my years with the Dalston Community Gardeners, we're always carrying heavy watering cans back and forth - my back isn't what it used to be since I retired! Having taps nearby would mean we could actually spend time tending the plants instead of lugging water around.",
+      "cost": 0.01593,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_001_p2",
+      "persona_name": "Kemal Aydin",
+      "response": "Tool shed",
+      "justification": "As an electrician, I'm always borrowing tools from mates or having to lug mine back and forth - having a proper shared workshop where I could do weekend projects without cluttering up my flat would be brilliant.",
+      "cost": 0.015675,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_001_p3",
+      "persona_name": "Zeynep Aydin",
+      "response": "Composting area",
+      "justification": "I go through so much veggie waste with my weekly produce delivery and all the cooking I do - right now it all just goes in the trash and it kills me. I'd actually use this every single day.",
+      "cost": 0.015105,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_001_p4",
+      "persona_name": "Hasan Aydin",
+      "response": "Water taps throughout",
+      "justification": "I spend way too much time refilling my water bottle between coding sessions and gaming marathons - having taps everywhere would save me from those annoying trips back to the kitchen when I'm in the zone.",
+      "cost": 0.014459999999999999,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_001_p5",
+      "persona_name": "Emine Aydin",
+      "response": "Water taps throughout",
+      "justification": "When I'm doing outdoor art projects or just cleaning my brushes after painting, having water access nearby would be brilliant - I'm always having to trek back inside our flat dripping paint water everywhere, which drives my family mental.",
+      "cost": 0.016815,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_001_p6",
+      "persona_name": "Sofia Giannopoulos",
+      "response": "Composting area",
+      "justification": "I'd actually use this - I hate throwing food scraps in the bin at my flat, and I already volunteer with recycling education so I could help neighbors learn how to use it properly.",
+      "cost": 0.01461,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_002_p1",
+      "persona_name": "Marko Petrović",
+      "response": "Water taps throughout",
+      "justification": "After watching all those gardening YouTube videos during lockdown, I actually tried growing some tomatoes on my balcony last summer - hauling water from my kitchen was a nightmare. Having taps around would make it so much easier to actually keep plants alive.",
+      "cost": 0.01677,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_002_p2",
+      "persona_name": "Selma Akman",
+      "response": "Greenhouse",
+      "justification": "As someone who's into urban farming and sustainability, I'd love having a greenhouse where I could grow herbs and veggies - maybe even some coffee plants! I could use fresh mint and basil in drinks at the café, plus it'd be perfect for the community art workshops I want to run about sustainable living.",
+      "cost": 0.016965,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_003_p1",
+      "persona_name": "Olivia Thompson",
+      "response": "Greenhouse",
+      "justification": "As an art student in London, I'd love having a greenhouse to sketch plants year-round - it's so hard finding affordable indoor spaces with good natural light here, and I've been dying to practice botanical illustration without freezing in the park all winter.",
+      "cost": 0.01614,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_003_p2",
+      "persona_name": "Ahmed Ünal",
+      "response": "Water taps throughout",
+      "justification": "When I'm working in my garden plot, I'm always dragging heavy watering cans back and forth - it's murder on my back after a long day at the café. Having taps nearby would save me so much time and effort.",
+      "cost": 0.01575,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_003_p3",
+      "persona_name": "Joyce Williams",
+      "response": "Water taps throughout",
+      "justification": "At my age, I'm not lugging heavy watering cans around anymore - I help neighbors with their gardens when they're away, and having taps nearby would save my back and knees from all that walking back and forth.",
+      "cost": 0.0144,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_004_p1",
+      "persona_name": "Zeynep Demir",
+      "response": "Water taps throughout",
+      "justification": "When I'm teaching sewing classes outdoors in summer or doing fabric dyeing workshops, we're constantly needing water for cleaning hands and tools - right now we have to trek back inside which is such a faff.",
+      "cost": 0.01509,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_005_p1",
+      "persona_name": "Thomas Wright",
+      "response": "Tool shed",
+      "justification": "Half the time my neighbors are borrowing my circular saw or asking if I have a tile cutter - we could just split the cost on the good stuff and keep it in one spot. Plus I'm tired of hauling my compressor up and down stairs when someone needs it.",
+      "cost": 0.01617,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_005_p2",
+      "persona_name": "Emma Wright",
+      "response": "Water taps throughout",
+      "justification": "After lugging my watering can back and forth at the community center's little garden patch, I'd kill for proper taps dotted about - my back's not getting any younger from all that hauling!",
+      "cost": 0.01539,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_005_p3",
+      "persona_name": "Jack Wright",
+      "response": "Composting area",
+      "justification": "I'm always hauling my food scraps to the municipal site on my bike, and honestly it's getting old - having one right here would save me those weekend trips and actually help me stick to composting regularly instead of just tossing stuff when I'm feeling lazy.",
+      "cost": 0.016245000000000002,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_005_p4",
+      "persona_name": "Lucy Wright",
+      "response": "Composting area",
+      "justification": "Would be brilliant for my DIY fashion projects - I'm always looking for ways to naturally dye fabrics and a composting area could give me access to organic materials for eco-friendly dyes. Plus, fits perfectly with the sustainable fashion stuff I'm always posting about on TikTok.",
+      "cost": 0.017295,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_005_p5",
+      "persona_name": "Beatrice Wright",
+      "response": "Water taps throughout",
+      "justification": "My knees aren't what they used to be, and lugging heavy watering cans from one tap is getting harder each year. Having taps dotted about would mean I could still tend to my runner beans and courgettes without the ache afterwards.",
+      "cost": 0.014505,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_006_p1",
+      "persona_name": "Michael Oseni",
+      "response": "Water taps throughout",
+      "justification": "After twenty-five years teaching teenagers, I know how messy school gardens get - we'd be tracking mud everywhere without proper places to wash up. Plus, I'm always carrying my tea mug around, so having water taps nearby would save me trips back to the staff room.",
+      "cost": 0.01719,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_006_p2",
+      "persona_name": "Antonia Oseni",
+      "response": "Water taps throughout",
+      "justification": "After 20 years of working 12-hour shifts at St. Mary's, I know how crucial easy water access is - I'd use them constantly for my vegetable patches and wouldn't have to lug heavy watering cans from my flat anymore.",
+      "cost": 0.015705,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_006_p3",
+      "persona_name": "Isaac Oseni",
+      "response": "Water taps throughout",
+      "justification": "Honestly, this would be perfect for my electronics projects - I'm always needing water to clean PCBs or cool down components when I'm tinkering with my Arduino and Raspberry Pi in the garden. Plus, it'd save me from traipsing back to my flat every time I need to wash flux residue off my hands.",
+      "cost": 0.018105,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_006_p4",
+      "persona_name": "Evelyn Oseni",
+      "response": "Water taps throughout",
+      "justification": "With all the knitting and sewing I do, I'm constantly washing wool and fabric pieces, and hauling water buckets from the house is murder on my back at my age. Having taps nearby would make my textile work so much easier.",
+      "cost": 0.016485,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_007_p1",
+      "persona_name": "Aydin Yılmaz",
+      "response": "Water taps throughout",
+      "justification": "At my age, I'm not lugging heavy watering cans across the allotment anymore - my back reminds me every time I try. Having taps nearby means I can actually keep up with watering my tomatoes and courgettes properly, especially during those hot summer spells we've been getting.",
+      "cost": 0.016995,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_008_p1",
+      "persona_name": "Fatima Yıldız",
+      "response": "Composting area",
+      "justification": "After hitting Ridley Road Market every week for fresh produce, I end up with loads of food scraps - plus I'm always trying to get my neighbors in Dalston more involved in environmental stuff, and this would be perfect for that.",
+      "cost": 0.0159,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_009_p1",
+      "persona_name": "Alistair Bennett",
+      "response": "Water taps throughout",
+      "justification": "My plot's at the far end and hauling watering cans from the single tap is murder on my back - especially during those dry spells we've been getting more of lately. Would save me twenty minutes every evening after work.",
+      "cost": 0.01611,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_009_p2",
+      "persona_name": "Margaret Bennett",
+      "response": "Water taps throughout",
+      "justification": "After spending my weekends knee-deep in my garden beds, I'm constantly traipsing back to my flat for water - my poor herbs would appreciate having taps nearby, and honestly, so would my back at my age!",
+      "cost": 0.016364999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_010_p1",
+      "persona_name": "Aylin Demir",
+      "response": "Composting area",
+      "justification": "I'm always left with coffee grounds at the end of my shift and hate seeing them go to waste - plus my weekend photography walks take me past community gardens that could really use the compost.",
+      "cost": 0.015375,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_010_p2",
+      "persona_name": "Emre Kaya",
+      "response": "Tool shed",
+      "justification": "At the workshop we're always lending tools back and forth - having a proper shared tool shed at home would be brilliant. I'm constantly fixing things for neighbours anyway, and it'd save me lugging my work kit about.",
+      "cost": 0.014925,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_011_p1",
+      "persona_name": "Rachel Patel",
+      "response": "Water taps throughout",
+      "justification": "Running a boutique means I'm constantly refreshing window displays and cleaning - having water access nearby would save me lugging buckets from the back room every time I need to wipe down the storefront or water the plants I keep outside for our local art events.",
+      "cost": 0.016515000000000002,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_011_p2",
+      "persona_name": "Anil Patel",
+      "response": "Tool shed",
+      "justification": "As an electrician, I'm always lending out my tools to neighbors or borrowing specialist kit I don't own. Having a proper shared tool shed would save me trips to Screwfix when I just need something once for a quick job.",
+      "cost": 0.016335,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_012_p1",
+      "persona_name": "Anna Kowalska",
+      "response": "Water taps throughout",
+      "justification": "When I'm working at the community garden on weekends, we're always walking back and forth with heavy watering cans - having taps nearby would save my back and let us actually spend time planting instead of hauling water around.",
+      "cost": 0.015449999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_012_p2",
+      "persona_name": "Tomasz Kowalski",
+      "response": "Tool shed",
+      "justification": "After 38 years in carpentry, I know how much space proper tools take up - my workshop's bursting at the seams. A shared tool shed would let me store my larger equipment like my planer and table saw, plus neighbors could borrow tools instead of buying ones they'd use once a year.",
+      "cost": 0.01782,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_013_p1",
+      "persona_name": "Aisha Nziramasanga",
+      "response": "Composting area",
+      "justification": "I'm already trying to be more mindful about waste since I don't have a car and rely on what I can carry home on the bus - having a shared composting area would mean I could finally stop feeling guilty about throwing away my food scraps.",
+      "cost": 0.015375,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_014_p1",
+      "persona_name": "Alexei Ivanov",
+      "response": "Tool shed",
+      "justification": "Look, I spend half my life fixing things at work and the other half fixing things at home - having a proper tool shed means I wouldn't have to lug my heavy kit up three flights of stairs every time someone needs their bike sorted or a shelf put up.",
+      "cost": 0.016365,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_014_p2",
+      "persona_name": "Elena Ivanova",
+      "response": "Water taps throughout",
+      "justification": "Living in a one-bedroom flat in Dalston, I'm always hauling water up and down stairs for my plants and coffee equipment. Having taps around would save me so much time - I could finally grow herbs on my balcony without killing my back carrying watering cans up three flights.",
+      "cost": 0.017384999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_014_p3",
+      "persona_name": "Nikolai Ivanov",
+      "response": "Tool shed",
+      "justification": "I'm always tinkering with electronics projects and skateboard repairs in my flat, but the lack of proper workspace drives me mental. Having a shared tool shed with a workbench and power tools would save me from buying expensive equipment I'd only use occasionally for my Raspberry Pi builds and DIY stuff.",
+      "cost": 0.01686,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_014_p4",
+      "persona_name": "Veronika Ivanova",
+      "response": "Composting area",
+      "justification": "I'm constantly sketching with charcoal and using loads of paper for art projects, plus all the sheet music drafts that don't work out - I hate just throwing it all in the bin when I could turn it into something useful for the environment.",
+      "cost": 0.01617,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_015_p1",
+      "persona_name": "James Carter",
+      "response": "Composting area",
+      "justification": "I cycle past so much food waste on bin days in Hackney - having a proper composting setup would mean I could finally stop feeling guilty about chucking vegetable scraps in the bin. Plus, it'd give me something practical to show the kids at school when we cover environmental topics.",
+      "cost": 0.016635,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_015_p2",
+      "persona_name": "Amelia Carter",
+      "response": "Water taps throughout",
+      "justification": "After my yoga sessions in the communal garden, I'm always parched and need to refill my water bottle - having taps nearby would be brilliant instead of traipsing back to my flat.",
+      "cost": 0.015404999999999999,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_016_p1",
+      "persona_name": "Jonathan McCarthy",
+      "response": "Water taps throughout",
+      "justification": "After spending hours tending my vegetable patch and herb garden, I'm constantly trudging back to the house with muddy boots just to fill the watering can. Having taps nearby would save my knees and my kitchen floor.",
+      "cost": 0.016094999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_017_p1",
+      "persona_name": "Yasmin Ahmed",
+      "response": "Water taps throughout",
+      "justification": "As someone who does a lot of tailoring work, I'm always needing water for steam pressing and cleaning fabric - having taps nearby would save me constantly running back and forth, especially when I'm working on bigger projects like curtains or wedding dresses.",
+      "cost": 0.016139999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_017_p2",
+      "persona_name": "Hassan Ahmed",
+      "response": "Water taps throughout",
+      "justification": "Mate, have you seen our flat? Between my mum watering her plants, my sister doing her art projects, and me constantly needing to fill up water bottles for football, we're always fighting over the kitchen sink. Having taps around would be mint - no more hauling buckets from inside.",
+      "cost": 0.016739999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_017_p3",
+      "persona_name": "Amara Johnson",
+      "response": "Composting area",
+      "justification": "I've been trying to reduce waste in my own garden for years, but managing a proper compost system in my small terraced house garden is tricky. Having a shared one would mean I could finally compost all my kitchen scraps and garden cuttings properly - I go through so much with all my baking and the amount of pruning I do.",
+      "cost": 0.018045,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_018_p1",
+      "persona_name": "Ayla Kazım",
+      "response": "Water taps throughout",
+      "justification": "Living in a flat in London means I'm always lugging watering cans from my kitchen sink to keep my herbs and windowsill plants alive - having taps outside would make my Sunday morning gardening routine so much easier.",
+      "cost": 0.016815,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_018_p2",
+      "persona_name": "Mehmet Kazım",
+      "response": "Composting area",
+      "justification": "Living in my Dalston flat, I've been frustrated watching all the food waste from our building just go to landfill. I already cycle everywhere and have smart meters tracking energy use, but waste management is the one sustainability gap I can't solve on my own in a two-bedroom flat.",
+      "cost": 0.016875,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_018_p3",
+      "persona_name": "Leyla Kazım",
+      "response": "Water taps throughout",
+      "justification": "Living in a Dalston flatshare, I'm always lugging my camera gear and water bottles around for shoots and protests - having taps everywhere would save me from dehydration headaches when I'm documenting events in the summer heat.",
+      "cost": 0.016890000000000002,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_018_p4",
+      "persona_name": "Ahmet Kazım",
+      "response": "Water taps throughout",
+      "justification": "My knees aren't what they used to be, and lugging heavy watering cans from one end of the garden to the other is getting harder. Having taps nearby would save my back and mean I could actually enjoy tending to my tomatoes instead of dreading the watering.",
+      "cost": 0.01749,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_019_p1",
+      "persona_name": "Nia Campbell",
+      "response": "Water taps throughout",
+      "justification": "After my morning runs and yoga sessions, I'm always filling up my reusable water bottle - having taps nearby would save me going all the way back inside, especially when I'm rushing to get ready for my shift at the hospital.",
+      "cost": 0.01569,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_019_p2",
+      "persona_name": "Leo Fischer",
+      "response": "Water taps throughout",
+      "justification": "I'm constantly lugging water bottles to community garden events for my sociology research on green spaces - having taps everywhere would save my back and let me actually focus on talking to people instead of playing water courier.",
+      "cost": 0.015014999999999999,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_019_p3",
+      "persona_name": "Ava Patel",
+      "response": "Water taps throughout",
+      "justification": "With my dodgy knees these days, I'm not trudging back and forth to the house every time I need to water my courgettes and tomatoes. Having taps right where I'm working would be brilliant - I could fill my watering can without the trek.",
+      "cost": 0.01671,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_019_p4",
+      "persona_name": "Efe Kaya",
+      "response": "Water taps throughout",
+      "justification": "I work at cafes most days and always need to refill my water bottle between sketching sessions - having taps around would save me from constantly going inside to ask staff.",
+      "cost": 0.01611,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_020_p1",
+      "persona_name": "Elaine Smith",
+      "response": "Water taps throughout",
+      "justification": "After forty years working at the council office, I know how much time gets wasted when people have to trek back and forth for water. I'm in the community garden three times a week now, and watching folks struggle with heavy watering cans reminds me why we finally got taps installed at the charity shop's back garden.",
+      "cost": 0.017805,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_021_p1",
+      "persona_name": "David Morgan",
+      "response": "Water taps throughout",
+      "justification": "I'm always lugging watering cans around my allotment plot after work, and my back isn't getting any younger after standing in classrooms all day. Having taps nearby would save me so much time - I could actually get some weeding done instead of just hauling water about.",
+      "cost": 0.017085,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_021_p2",
+      "persona_name": "Sarah Thompson",
+      "response": "Water taps throughout",
+      "justification": "After my yoga sessions in the garden, I'm always desperate for water and hate having to go all the way back inside - plus it'd be brilliant for keeping my little herb pots alive when I'm working long shifts at the hospital.",
+      "cost": 0.015584999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_022_p1",
+      "persona_name": "Priya Sharma",
+      "response": "Water taps throughout",
+      "justification": "Working at the clinic, I see how many people struggle with simple things like staying hydrated during hot days. Plus, after my yoga sessions at the Lane, it'd be brilliant to refill my bottle without having to trek back inside.",
+      "cost": 0.016125,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_022_p2",
+      "persona_name": "Clive Reynolds",
+      "response": "Greenhouse",
+      "justification": "My balcony garden's lovely but limited - I'd finally have proper space to grow heritage tomatoes and keep my seedlings going through winter. Been reading about Victorian greenhouses and would love to try some of those old cultivation methods.",
+      "cost": 0.015645,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_023_p1",
+      "persona_name": "Paulina Kowalczyk",
+      "response": "Water taps throughout",
+      "justification": "With my long shifts at the cafe, I know how much difference having water nearby makes - I'd definitely use them when I'm out with my nephew at the park or doing community events.",
+      "cost": 0.01545,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_023_p2",
+      "persona_name": "Piotr Kowalczyk",
+      "response": "Tool shed",
+      "justification": "Listen, after 16 years of keeping workshops organized, I know how much grief you get when people can't find the right tool. At my garage, before I set up our inventory system, we'd waste hours looking for things. A shared tool shed would save everyone from buying the same expensive kit - I've got three socket sets at home because I keep forgetting where I put them!",
+      "cost": 0.01857,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_023_p3",
+      "persona_name": "Lena Kowalczyk",
+      "response": "Composting area",
+      "justification": "I'm always bringing kitchen scraps from my flat but have nowhere to properly compost them - would save me carrying bags to the community garden every week.",
+      "cost": 0.014475,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_023_p4",
+      "persona_name": "Dominik Kowalczyk",
+      "response": "Water taps throughout",
+      "justification": "Would be brilliant for our science projects at school - we're always needing water for experiments and having to trek back to the classroom. Plus after football practice with my mates, we could actually wash the mud off our boots properly instead of getting told off for tracking it everywhere.",
+      "cost": 0.016665,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_024_p1",
+      "persona_name": "Hannah Kowalczyk",
+      "response": "Water taps throughout",
+      "justification": "As an artist who's constantly cleaning brushes and mixing paints in my flat, having water access outside would be brilliant - I could finally do my messier work outdoors without traipsing back inside every five minutes. Plus, my watercolor experiments wouldn't be limited to my kitchen sink anymore.",
+      "cost": 0.0171,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_024_p2",
+      "persona_name": "Robert Kowalczyk",
+      "response": "Water taps throughout",
+      "justification": "I'm out there nearly every day with my plants, and hauling watering cans from my flat down three floors is getting harder on these old knees. Having taps nearby would save my back and let me spend more time actually tending to the garden instead of trudging back and forth.",
+      "cost": 0.010679999999999999,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_025_p1",
+      "persona_name": "David Turner",
+      "response": "Tool shed",
+      "justification": "I'm always lending out my drill or borrowing someone's tile cutter - having a proper shared tool shed would save me a fortune and stop my garage looking like a B&Q overflow car park.",
+      "cost": 0.01404,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_025_p2",
+      "persona_name": "Lisa Turner",
+      "response": "Water taps throughout",
+      "justification": "I'm always lugging my watering can back and forth from my flat when I tend to my plants - having taps nearby would save my back after a long shift at the shop!",
+      "cost": 0.01491,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_026_p1",
+      "persona_name": "Simone Reynolds",
+      "response": "Water taps throughout",
+      "justification": "After those long shifts at the hospital, I'm always keen to help with the community garden on weekends, but lugging watering cans about kills my back. Having taps everywhere would make it so much easier to actually enjoy the gardening rather than feel like I'm back at work doing heavy lifting.",
+      "cost": 0.017384999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_027_p1",
+      "persona_name": "Marlon Thompson",
+      "response": "Tool shed",
+      "justification": "I'm always needing equipment for my upcycling projects - last week I had to borrow a drill from three different neighbors just to finish one piece. Having a shared tool shed would save me from hauling stuff between my place and whatever creative space I'm working in that day.",
+      "cost": 0.015285,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_028_p1",
+      "persona_name": "Rashida Patel",
+      "response": "Water taps throughout",
+      "justification": "Last summer I nearly gave myself heat exhaustion lugging heavy watering cans back and forth to my plot - proper water access would save my back and let me spend more time actually tending my plants instead of just keeping them alive.",
+      "cost": 0.015254999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_028_p2",
+      "persona_name": "Amir Patel",
+      "response": "Water taps throughout",
+      "justification": "Living in Dalston, I've seen how many shared gardens fail because people can't be bothered lugging watering cans from one corner to another. When I tend to the herbs outside my flat, having water nearby makes all the difference - I actually do it regularly instead of watching everything wilt during busy case weeks.",
+      "cost": 0.01845,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_028_p3",
+      "persona_name": "Nisha Patel",
+      "response": "Composting area",
+      "justification": "Honestly, after seeing how much food waste we generate at uni and doing my volunteer work at Hackney City Farm, I know we could easily divert so much from landfill. Plus it'd be perfect for my environmental science coursework - I could actually collect real data on decomposition rates right here in Dalston.",
+      "cost": 0.01797,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_028_p4",
+      "persona_name": "Dylan Chan",
+      "response": "Water taps throughout",
+      "justification": "Living in a Dalston flat, I've dealt with carrying water for my balcony plants and it's a proper pain. Plus, when I'm debugging code outside on nice days, having water nearby without going back inside would be brilliant.",
+      "cost": 0.01629,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_029_p1",
+      "persona_name": "Ayşegül Kara",
+      "response": "Water taps throughout",
+      "justification": "In my tailoring work, I'm constantly washing fabric dyes and threads off my hands, and having water access nearby would save me so much time instead of traipsing back inside every half hour.",
+      "cost": 0.016065,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_029_p2",
+      "persona_name": "Mehmet Kara",
+      "response": "Water taps throughout",
+      "justification": "When I'm doing deliveries all day in my Transit Connect, I'm constantly refilling my water bottle - having taps around would save me buying bottled water at petrol stations.",
+      "cost": 0.01521,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_029_p3",
+      "persona_name": "Kerem Kara",
+      "response": "Composting area",
+      "justification": "I'm always trying to reduce waste from my uni flat and would actually use this - we generate so much food waste between my flatmates and me, and I hate just binning it when I know it could be doing some good.",
+      "cost": 0.015870000000000002,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_029_p4",
+      "persona_name": "Emine Kara",
+      "response": "Water taps throughout",
+      "justification": "I'm always carrying my reusable water bottle around campus and having to trek back to the main building just to refill it is such a pain, especially when I'm rushing between debate practice and classes.",
+      "cost": 0.01524,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_029_p5",
+      "persona_name": "Hüseyin Kara",
+      "response": "Water taps throughout",
+      "justification": "When we go to the park, I always get really thirsty from running around, and mum has to carry water bottles for me and my little sister. Having taps everywhere would be brilliant - I could just drink whenever I want without bothering her!",
+      "cost": 0.01596,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_030_p1",
+      "persona_name": "Ayşe Yılmaz",
+      "response": "Water taps throughout",
+      "justification": "As a community nurse visiting patients all over the area, I'm constantly needing to wash my hands between visits - having water taps available would be brilliant for me and other healthcare workers who use these spaces.",
+      "cost": 0.01536,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_031_p1",
+      "persona_name": "Aria Davies",
+      "response": "Water taps throughout",
+      "justification": "Living in a Dalston flat, I know how frustrating it is when you're trying to water plants on a balcony or wash muddy boots after a weekend walk - having to trek back inside constantly. Water access makes everything else actually work.",
+      "cost": 0.01614,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_031_p2",
+      "persona_name": "Tom Davies",
+      "response": "Water taps throughout",
+      "justification": "Would be proper useful when I'm out practicing coding in the communal areas - always need water for those long sessions and hate having to pack up my laptop just to get a drink.",
+      "cost": 0.014759999999999999,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_031_p3",
+      "persona_name": "Olive Watkins",
+      "response": "Water taps throughout",
+      "justification": "After decades of nursing, I know how quickly you can get dehydrated when you're out working in the garden. Having taps nearby means I won't have to trek back to my flat every time I need to fill my watering can or wash the soil off my hands - my knees aren't what they used to be!",
+      "cost": 0.01788,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_032_p1",
+      "persona_name": "Zeynep Özdemir",
+      "response": "Water taps throughout",
+      "justification": "When I'm working with my tomatoes and herbs in the community garden, I'm always dragging heavy watering cans back and forth - my back isn't what it used to be since I retired, and having taps nearby would save me so much trouble.",
+      "cost": 0.016365,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_032_p2",
+      "persona_name": "Yusuf Özdemir",
+      "response": "Water taps throughout",
+      "justification": "Between teaching all day and rushing home to help with homework, I barely have time to properly water my vegetables - having taps nearby would save me from dragging the hose across the yard every evening.",
+      "cost": 0.015135,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_032_p3",
+      "persona_name": "Selin Özdemir",
+      "response": "Water taps throughout",
+      "justification": "Working 12-hour shifts as a nurse, I know firsthand how crucial accessible water is - I'd definitely use them after my weekend gardening sessions when I'm too tired to trek back inside with muddy hands.",
+      "cost": 0.01629,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_032_p4",
+      "persona_name": "Aylin Özdemir",
+      "response": "Composting area",
+      "justification": "I'm always trying to compost my food scraps in my dorm but there's nowhere to do it properly - I literally have a sad little bin under my desk that gets gross. Plus we could use the compost for campus gardens or even just give it away to local community gardens.",
+      "cost": 0.017415,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_032_p5",
+      "persona_name": "Efe Khan",
+      "response": "Greenhouse",
+      "justification": "Would be perfect for my photography projects - I'm always hunting around London for interesting plant textures and light patterns to shoot. Having a greenhouse nearby means I could pop in with my camera whenever the afternoon light hits just right, especially during those grey winter months when I'm desperate for something green to break up all the concrete.",
+      "cost": 0.017939999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_033_p1",
+      "persona_name": "Devan Singh",
+      "response": "Water taps throughout",
+      "justification": "I cycle to work every day and I'm always out with my camera - having water taps around would be brilliant for refilling my bottle and washing my hands after fixing a puncture or handling my bike chain.",
+      "cost": 0.015960000000000002,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_033_p2",
+      "persona_name": "Kiran Patel",
+      "response": "Composting area",
+      "justification": "Working at the salon, I see how much waste we generate daily - all those foils and product containers. Having a proper composting setup would mean I could bring organic scraps from home and maybe even convince the lounge to start composting our tea bags and fruit peels from the staff kitchen.",
+      "cost": 0.01653,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_034_p1",
+      "persona_name": "Owen Griffiths",
+      "response": "Water taps throughout",
+      "justification": "Makes life so much easier when I'm working at the community centre - we're always lugging watering cans back and forth for the garden beds, and having taps nearby would save my back!",
+      "cost": 0.015045,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_034_p2",
+      "persona_name": "Margaret Griffiths",
+      "response": "Greenhouse",
+      "justification": "I'd be in there every weekend starting my seedlings for the allotment - been dying to grow proper tomatoes but my kitchen windowsill just isn't cutting it anymore.",
+      "cost": 0.015705,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_035_p1",
+      "persona_name": "Callum Matthews",
+      "response": "Water taps throughout",
+      "justification": "Running GreenGroves means I'm constantly dealing with mess - soil from plant displays, spills, you name it. Having water taps everywhere would be brilliant for quick clean-ups and keeping the shop looking decent without traipsing back and forth.",
+      "cost": 0.016455,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_035_p2",
+      "persona_name": "Grace Taylor",
+      "response": "Composting area",
+      "justification": "I've been trying to compost on my balcony but it's getting cramped with all my plants - having a proper shared space would mean I could finally do it right and maybe swap tips with the neighbors about their sustainable gardening.",
+      "cost": 0.01587,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_036_p1",
+      "persona_name": "Linda Ng",
+      "response": "Water taps throughout",
+      "justification": "With my running schedule and weekend hikes, I'm always needing to refill my water bottle - plus it'd be perfect for washing muddy trainers after those rainy London jogs without traipsing through the flat.",
+      "cost": 0.01617,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_036_p2",
+      "persona_name": "Marcus Li",
+      "response": "Water taps throughout",
+      "justification": "I cycle to work at Greenwood Secondary and around London regularly - having water taps available would be brilliant for refilling my bottle, especially after those sweaty rides from Dalston or when I'm doing outdoor science experiments with my Year 10s.",
+      "cost": 0.015855,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_037_p1",
+      "persona_name": "Yusuf Halici",
+      "response": "Water taps throughout",
+      "justification": "My back's not getting any younger, and dragging the watering can from my kitchen all the way to the far beds is becoming a right pain. Plus, I'd be able to properly water my tomatoes without having to rush back for refills when I'm telling the grandkids about how we used to grow things back in Turkey.",
+      "cost": 0.01788,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_037_p2",
+      "persona_name": "Zeynep Halici",
+      "response": "Water taps throughout",
+      "justification": "With the kids running around during weekend outings and activities, having water taps scattered about would be brilliant - no more lugging water bottles everywhere or having to trek back to one spot when someone's thirsty after football practice.",
+      "cost": 0.016635,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_037_p3",
+      "persona_name": "Elif Halici",
+      "response": "Composting area",
+      "justification": "I'm always sketching organic forms and honestly feel guilty about all the food scraps from my flat that just go in the bin. Would be perfect for when I'm experimenting with natural dyes and materials for my art projects too.",
+      "cost": 0.016485,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_038_p1",
+      "persona_name": "Emma Osei",
+      "response": "Water taps throughout",
+      "justification": "After long shifts at the hospital, I love spending evenings at the community garden when I volunteer - but hauling water from one corner gets exhausting, especially when I'm already on my feet all day. Having taps scattered around would make it so much easier to actually enjoy the gardening instead of dreading the water runs.",
+      "cost": 0.01743,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_038_p2",
+      "persona_name": "Kwame Osei",
+      "response": "Water taps throughout",
+      "justification": "Look, I'm always lugging water bottles to school for my classroom plants project, and when I get home to my flat in Dalston, I'm usually thinking about watering my own little balcony garden. Having taps everywhere would be brilliant - no more hauling watering cans about or watching things wilt in the summer heat.",
+      "cost": 0.017939999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_039_p1",
+      "persona_name": "Duygu Yılmaz",
+      "response": "Water taps throughout",
+      "justification": "After running around helping customers all day at Greenway, I'm always desperate for a quick drink - and honestly, having water taps everywhere would be brilliant for when I'm rushing between the shop floor and the stockroom. Plus, when I'm trying out new recipes from the food forums I'm on, it'd be so handy not having to trek back inside every time I need water.",
+      "cost": 0.01953,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_040_p1",
+      "persona_name": "Emma Sorensen",
+      "response": "Composting area",
+      "justification": "Living in Dalston, I'm always trying to be more sustainable but my flat's tiny - nowhere to compost properly. I'd actually use this, especially after those community workshops I go to where they're always on about reducing waste.",
+      "cost": 0.01632,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_040_p2",
+      "persona_name": "Jonas Petersson",
+      "response": "Tool shed",
+      "justification": "Working from home as a developer means I'm always fixing things around the flat or tinkering with hardware projects - having access to proper tools without buying and storing them all myself would be brilliant. Plus, I could finally tackle that bike maintenance properly instead of struggling with my limited toolkit.",
+      "cost": 0.016184999999999998,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_041_p1",
+      "persona_name": "Georgia Gibbons",
+      "response": "Water taps throughout",
+      "justification": "When I'm working in the community garden with my bad knee, I can't be lugging watering cans back and forth - having taps nearby means I can actually tend to my tomatoes and runner beans without asking the younger volunteers for help all the time.",
+      "cost": 0.0159,
+      "question_index": 1
+    },
+    {
+      "persona_id": "hh_001_p1",
+      "persona_name": "Dilek Aydin",
+      "response": "Wood chip",
+      "justification": "In my community garden in Dalston, we use wood chip for the paths and it works wonderfully - it's soft underfoot which is easier on my knees now I'm getting older, and we can get it delivered cheap from the local tree surgeons.",
+      "cost": 0.0153,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_001_p2",
+      "persona_name": "Kemal Aydin",
+      "response": "Paved slabs",
+      "justification": "Look, I'm laying paths all the time for outdoor socket installations and garden lighting - paved slabs are the only option that won't shift when I'm running cables underneath. Plus, after a long day on site, the last thing I want is gravel stuck in my work boots or wood chips that'll rot and need replacing every few years.",
+      "cost": 0.017895,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_001_p3",
+      "persona_name": "Zeynep Aydin",
+      "response": "Wood chip",
+      "justification": "I love the earthy smell and soft feel underfoot - it reminds me of the forest walks I take while listening to my folk playlists. Plus, it composts naturally which fits with my whole sustainable living thing.",
+      "cost": 0.015224999999999999,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_001_p4",
+      "persona_name": "Hasan Aydin",
+      "response": "Paved slabs",
+      "justification": "Look, I spend way too much time at my desk coding and gaming - when I do go outside, I don't want to deal with gravel getting in my shoes or wood chips that get soggy after it rains. Just give me something solid I can walk on while I'm checking my phone for patch notes.",
+      "cost": 0.016305,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_001_p5",
+      "persona_name": "Emine Aydin",
+      "response": "Paved slabs",
+      "justification": "I'm always lugging my art supplies and portfolio around, and gravel would be a nightmare - I learned that the hard way when I nearly tripped carrying my paintings to that Brighton exhibit last year.",
+      "cost": 0.01656,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_001_p6",
+      "persona_name": "Sofia Giannopoulos",
+      "response": "Wood chip",
+      "justification": "I'm on my feet all day at the restaurant, so I know how much softer surfaces help - plus wood chip reminds me of the forest paths at the festivals I go to, and it's better for the environment than concrete.",
+      "cost": 0.015179999999999999,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_002_p1",
+      "persona_name": "Marko Petrović",
+      "response": "Paved slabs",
+      "justification": "Look, I've twisted my ankle twice on gravel paths while out for my morning runs - once right before a big project deadline, which was a nightmare. Plus, when I'm walking around listening to podcasts, the last thing I need is to watch every step on uneven surfaces.",
+      "cost": 0.01734,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_002_p2",
+      "persona_name": "Selma Akman",
+      "response": "Wood chip",
+      "justification": "I've been to a few community gardens around East London where they use wood chip paths, and they just feel right somehow - plus they're basically recycled material from tree maintenance, which fits with the whole sustainability vibe I'm into. Would be perfect for the urban farming projects I follow on TikTok.",
+      "cost": 0.01701,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_003_p1",
+      "persona_name": "Olivia Thompson",
+      "response": "Wood chip",
+      "justification": "I spend so much time sketching in parks around London, and wood chip paths just blend in naturally with the environment - plus they're way better for the ecosystem than concrete. There's this lovely wood chip trail in Hampstead Heath where I go to draw sometimes, and it feels like you're properly in nature, not just another paved bit of the city.",
+      "cost": 0.017835,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_003_p2",
+      "persona_name": "Ahmed Ünal",
+      "response": "Paved slabs",
+      "justification": "At the café, I've learned the hard way that gravel gets tracked inside on rainy days - drives me mad cleaning it up constantly. Paved slabs are what we use in our back garden area, and they're brilliant for the wheelchairs and pushchairs that come through daily.",
+      "cost": 0.01677,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_003_p3",
+      "persona_name": "Joyce Williams",
+      "response": "Paved slabs",
+      "justification": "At my age, I need something steady underfoot - I've taken a tumble or two on loose gravel at the historical society gardens, and it's not worth the risk anymore.",
+      "cost": 0.01377,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_004_p1",
+      "persona_name": "Zeynep Demir",
+      "response": "Paved slabs",
+      "justification": "I'm on my feet all day teaching sewing classes and carrying heavy bolts of fabric - the last thing I need is gravel getting stuck in my shoes or wood chips making the path uneven when I'm wheeling supplies around.",
+      "cost": 0.015435,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_005_p1",
+      "persona_name": "Thomas Wright",
+      "response": "Wood chip",
+      "justification": "I've installed these for plenty of clients' backyards - they're easy to maintain and you can refresh them yourself without calling in a crew. Plus, I always have leftover chips from tree work that neighbors are happy to share.",
+      "cost": 0.01554,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_005_p2",
+      "persona_name": "Emma Wright",
+      "response": "Paved slabs",
+      "justification": "After standing all day at the shop, the last thing I want is to wobble about on gravel or get wood chips in my shoes - proper paving means I can walk to the community center for my volunteering without thinking twice about what I'm wearing.",
+      "cost": 0.01626,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_005_p3",
+      "persona_name": "Jack Wright",
+      "response": "Wood chip",
+      "justification": "I bike through the city a lot and wood chip paths have this nice give to them - plus they smell amazing after it rains, kind of earthy and fresh. Always reminds me of hiking trails when I'm stuck in the urban grind.",
+      "cost": 0.015765,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_005_p4",
+      "persona_name": "Lucy Wright",
+      "response": "Mown grass",
+      "justification": "I'm always looking for nice outdoor spots in Dalston for outfit photos and TikToks - grass paths would look so much better in the background than boring concrete, plus they're way more comfortable to walk on when I'm wearing vintage heels I've thrifted.",
+      "cost": 0.01704,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_005_p5",
+      "persona_name": "Beatrice Wright",
+      "response": "Paved slabs",
+      "justification": "At my age, I need something stable underfoot - I've had a few wobbles on gravel paths in Dalston Park, and I'm not risking a fall that could put me out of action for weeks. My knees aren't what they used to be, and proper paving means I can potter about the garden without worrying about tripping.",
+      "cost": 0.0162,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_006_p1",
+      "persona_name": "Michael Oseni",
+      "response": "Paved slabs",
+      "justification": "After 25 years of walking to school in all weather, I know how muddy gravel and wood chip get in London rain - paved slabs mean I won't be tracking mess into my classroom every morning.",
+      "cost": 0.016335,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_006_p2",
+      "persona_name": "Antonia Oseni",
+      "response": "Wood chip",
+      "justification": "Wood chips are what I use in my own garden beds at home - they break down naturally and feed the soil, plus they're soft underfoot which is a blessing after being on my feet for 12-hour shifts at the hospital.",
+      "cost": 0.01515,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_006_p3",
+      "persona_name": "Isaac Oseni",
+      "response": "Paved slabs",
+      "justification": "I'm always walking around campus with my laptop bag and electronics kit, and gravel or wood chips would be a nightmare - especially when it rains here in London. Plus, I've rolled my ankle on uneven paths before while rushing to lectures, so proper flat slabs would be much safer.",
+      "cost": 0.017475,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_006_p4",
+      "persona_name": "Evelyn Oseni",
+      "response": "Gravel",
+      "justification": "I've got gravel on my own garden path and it's been brilliant - you can hear when someone's coming up to the door, which gives me peace of mind living on my own. Plus it's easy enough to top up when needed, not like those paving slabs that crack and need proper workmen to fix.",
+      "cost": 0.017655,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_007_p1",
+      "persona_name": "Aydin Yılmaz",
+      "response": "Gravel",
+      "justification": "I've been tending my garden for decades now, and gravel paths are what I trust - they drain well in our London rain and I can hear when someone's coming up to the door. At my age, I don't fancy the maintenance of wood chips rotting away or grass that needs constant mowing.",
+      "cost": 0.01689,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_008_p1",
+      "persona_name": "Fatima Yıldız",
+      "response": "Wood chip",
+      "justification": "After walking on concrete pavements all day between Westminster tube and the office, I'd love something softer underfoot - plus it reminds me of the paths through Hackney Downs where I sometimes go for a run on weekends.",
+      "cost": 0.015719999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_009_p1",
+      "persona_name": "Alistair Bennett",
+      "response": "Gravel",
+      "justification": "I've spent countless hours wandering through National Trust gardens, and there's something about the crunch of gravel underfoot that just feels right - plus it's what they use at most historic properties I visit. Works brilliantly in my own garden beds too, keeps the weeds down without looking too modern.",
+      "cost": 0.01728,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_009_p2",
+      "persona_name": "Margaret Bennett",
+      "response": "Wood chip",
+      "justification": "After spending all week on London pavements getting to chambers, there's something therapeutic about the soft crunch underfoot in my garden - plus it breaks down nicely into the beds over time, which works brilliantly with my composting system.",
+      "cost": 0.016485,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_010_p1",
+      "persona_name": "Aylin Demir",
+      "response": "Gravel",
+      "justification": "I'm always out with my camera doing street photography, and gravel paths have this satisfying crunch that makes for great audio in my TikTok videos. Plus, when I'm heading to my early shifts at the coffee shop, gravel drains well so I'm not slipping around in the London rain.",
+      "cost": 0.01737,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_010_p2",
+      "persona_name": "Emre Kaya",
+      "response": "Paved slabs",
+      "justification": "Look, I work on my feet all day at the garage and when I'm walking to the local pub or heading to the park for a kickabout, I don't want to be dealing with muddy shoes or gravel getting stuck in my trainers. Proper paved paths just make sense - easy to maintain and no hassle.",
+      "cost": 0.017070000000000002,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_011_p1",
+      "persona_name": "Rachel Patel",
+      "response": "Paved slabs",
+      "justification": "After years of hauling deliveries and displays around the boutique, I've learned the hard way that gravel and wood chip are nightmares for wheeling anything heavy. Plus, when we host our outdoor markets and art events, vendors need stable surfaces for their stalls - can't have people's tables sinking into grass or chips.",
+      "cost": 0.017835,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_011_p2",
+      "persona_name": "Anil Patel",
+      "response": "Paved slabs",
+      "justification": "I've laid loads of paving slabs for customers' gardens and paths - they're brilliant cos you don't get muddy boots traipsing through the house, and they last forever. Plus they're dead easy to maintain, just a quick sweep or pressure wash and sorted.",
+      "cost": 0.01713,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_012_p1",
+      "persona_name": "Anna Kowalska",
+      "response": "Wood chip",
+      "justification": "We've been using wood chip paths at the community garden and they're brilliant - they decompose naturally over time and we can just top them up with fresh chips from the council's tree maintenance. Plus, they're so much easier on your knees when you're kneeling down to weed compared to the gravel we had before.",
+      "cost": 0.016845,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_012_p2",
+      "persona_name": "Tomasz Kowalski",
+      "response": "Wood chip",
+      "justification": "I've been using wood chip paths in my own garden for years - it's soft underfoot which is easier on my knees after a long day in the workshop, plus I can source it cheap from timber yards where I buy my materials.",
+      "cost": 0.016665,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_013_p1",
+      "persona_name": "Aisha Nziramasanga",
+      "response": "Paved slabs",
+      "justification": "Getting to work in Dalston means I'm always rushing for the bus, and gravel gets everywhere - last week I had to clean stones out of my office shoes before a community meeting. Proper paving just makes life easier when you're walking every day.",
+      "cost": 0.015645,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_014_p1",
+      "persona_name": "Alexei Ivanov",
+      "response": "Paved slabs",
+      "justification": "After spending all day crawling under cars and getting covered in oil, the last thing I want is tracking gravel or wood chips through the house - my wife would kill me. Plus, I can roll my tool cart straight from the garage without it getting stuck.",
+      "cost": 0.016560000000000002,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_014_p2",
+      "persona_name": "Elena Ivanova",
+      "response": "Paved slabs",
+      "justification": "Look, I walk to work every day and coming home after an 8-hour shift on my feet, the last thing I need is gravel getting stuck in my shoes or muddy wood chips after it rains. Dalston's wet enough as it is - proper paving means I can get home without tracking half the park into my flat.",
+      "cost": 0.018179999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_014_p3",
+      "persona_name": "Nikolai Ivanov",
+      "response": "Paved slabs",
+      "justification": "Look, I've eaten it on gravel too many times while skating - that stuff's a nightmare when you bail. Paved slabs give me a smooth surface to practice tricks on the way to the tube station.",
+      "cost": 0.01578,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_014_p4",
+      "persona_name": "Veronika Ivanova",
+      "response": "Wood chip",
+      "justification": "Wood chips would be perfect - they're eco-friendly and I love how they feel under your feet, plus they'd look natural next to all the plants and flowers I'd want to sketch there. We could probably even source them locally from tree trimmings, which I could propose at student council as a sustainability initiative.",
+      "cost": 0.01704,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_015_p1",
+      "persona_name": "James Carter",
+      "response": "Gravel",
+      "justification": "I cycle through Victoria Park every morning and the gravel paths there drain brilliantly after rain - much better than the paved bits near the school that turn into puddles. Plus they're easier to maintain than wood chip, which just gets everywhere.",
+      "cost": 0.015855,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_015_p2",
+      "persona_name": "Amelia Carter",
+      "response": "Paved slabs",
+      "justification": "After 12-hour shifts at the hospital, the last thing I need is gravel stuck in my trainers or muddy grass staining my scrubs. Plus, it's much easier to wheel patients in chairs along smooth paths when we take them out for fresh air.",
+      "cost": 0.016649999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_016_p1",
+      "persona_name": "Jonathan McCarthy",
+      "response": "Paved slabs",
+      "justification": "At my age, I need something stable underfoot - I've had a few near-misses on loose gravel visiting gardens in Edinburgh last year. Plus, paved paths are much easier when I'm wheeling my garden trolley around with tools and fresh veg for the kitchen.",
+      "cost": 0.01704,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_017_p1",
+      "persona_name": "Yasmin Ahmed",
+      "response": "Paved slabs",
+      "justification": "With all the fabric samples and materials I carry back and forth from the shop, I need something solid underfoot - can't be tripping on gravel or getting wood chips stuck to my good shoes when I'm meeting clients.",
+      "cost": 0.015735,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_017_p2",
+      "persona_name": "Hassan Ahmed",
+      "response": "Paved slabs",
+      "justification": "Living in Dalston where it rains half the time, I'd rather not deal with muddy shoes every time I'm heading to college or coming back from playing football. Plus, my mum would go mental if we kept tracking dirt into the flat.",
+      "cost": 0.016035,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_017_p3",
+      "persona_name": "Amara Johnson",
+      "response": "Gravel",
+      "justification": "I've had gravel paths winding through my garden for years now - they drain beautifully after our London rains, and I love the satisfying crunch underfoot when I'm out with my secateurs in the early morning. Much easier on my knees than those hard paving slabs.",
+      "cost": 0.01719,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_018_p1",
+      "persona_name": "Ayla Kazım",
+      "response": "Paved slabs",
+      "justification": "Living in London means dealing with rain half the year - I've ruined too many shoes walking through muddy parks. Plus, I actually enjoy sketching outdoors when the weather's decent, and stable paths mean I can set up my easel without wobbling about on uneven ground.",
+      "cost": 0.017835,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_018_p2",
+      "persona_name": "Mehmet Kazım",
+      "response": "Paved slabs",
+      "justification": "I cycle through Dalston every day and proper paved paths are the only thing that works with London weather - I've seen too many muddy gravel disasters on my commute, and grass paths just turn into slip hazards after our typical rainy week.",
+      "cost": 0.01647,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_018_p3",
+      "persona_name": "Leyla Kazım",
+      "response": "Mown grass",
+      "justification": "Living in Dalston, we're surrounded by concrete everywhere - I'd love something soft underfoot for once. Plus it'd be perfect for spreading out a blanket when I'm editing photos or reading for my media studies coursework outside.",
+      "cost": 0.016785,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_018_p4",
+      "persona_name": "Ahmet Kazım",
+      "response": "Wood chip",
+      "justification": "I've been using wood chip on the paths at the community garden for years now - it's cheap, drains well in our London rain, and we can get it delivered free from the tree surgeons. Plus it's easier on my knees than those hard slabs when I'm kneeling down to tend the beds.",
+      "cost": 0.01791,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_019_p1",
+      "persona_name": "Nia Campbell",
+      "response": "Mown grass",
+      "justification": "I'm on my feet all day at the hospital, so when I go for my evening walks or runs, I really appreciate the softer surface - much easier on my knees than the hard hospital floors I've been pounding for hours.",
+      "cost": 0.015735,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_019_p2",
+      "persona_name": "Leo Fischer",
+      "response": "Paved slabs",
+      "justification": "I've been studying how different path materials affect who actually uses public spaces, and from what I've seen in the neighborhoods I visit for my research, paved paths are the only ones that work year-round for everyone - especially older folks with walkers and parents pushing strollers. Plus, I'm always lugging heavy books and research materials around campus, and gravel paths are a nightmare for that.",
+      "cost": 0.018209999999999997,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_019_p3",
+      "persona_name": "Ava Patel",
+      "response": "Paved slabs",
+      "justification": "With my eyesight not being what it used to be, I need paths I can navigate safely, especially when I'm carrying heavy watering cans or bringing in the veg harvest. Gravel shifts about too much and I've had a few near-misses already.",
+      "cost": 0.016905,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_019_p4",
+      "persona_name": "Efe Kaya",
+      "response": "Wood chip",
+      "justification": "I spend so much time at cafés working that when I'm outside, I want something that feels natural and soft underfoot - plus it reminds me of the trails near the music venues I play at on weekends.",
+      "cost": 0.01668,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_020_p1",
+      "persona_name": "Elaine Smith",
+      "response": "Gravel",
+      "justification": "We've got gravel paths down at the community garden and they've held up brilliantly for years - much easier to maintain than the wooden borders we tried that rotted after two winters. Plus, I can manage them myself with a rake when I'm volunteering, whereas those paving slabs at the charity shop are a nightmare when they crack.",
+      "cost": 0.018075,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_021_p1",
+      "persona_name": "David Morgan",
+      "response": "Wood chip",
+      "justification": "I've been using wood chip paths in my own garden for years now - they're brilliant for suppressing weeds and they break down naturally to improve the soil. Plus, I can get them free from the council when they're doing tree work in Dalston.",
+      "cost": 0.016455,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_021_p2",
+      "persona_name": "Sarah Thompson",
+      "response": "Paved slabs",
+      "justification": "After doing yoga in the park before work, I hate getting gravel stuck in my shoes or dealing with muddy grass on my scrubs - proper paving means I can walk straight to the hospital without faffing about cleaning up.",
+      "cost": 0.015705,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_022_p1",
+      "persona_name": "Priya Sharma",
+      "response": "Paved slabs",
+      "justification": "After doing 12-hour shifts at the clinic, the last thing I want is gravel getting stuck in my work shoes or muddy grass stains on my scrubs. Plus, I've seen too many elderly patients at Osier Grove who've tripped on uneven surfaces - proper paving just makes sense for everyone.",
+      "cost": 0.017745,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_022_p2",
+      "persona_name": "Clive Reynolds",
+      "response": "Paved slabs",
+      "justification": "I've had gravel paths before and they're a nightmare to maintain - always getting kicked about and needing topping up. Paved slabs are proper and permanent, like the Victorian pathways you see in the historical gardens I visit. Plus, at my age, I need something solid underfoot, not loose stones shifting about.",
+      "cost": 0.01749,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_023_p1",
+      "persona_name": "Paulina Kowalczyk",
+      "response": "Paved slabs",
+      "justification": "Working on my feet all day at the cafe, I need proper paths when I'm walking around - especially when I'm carrying shopping bags or pushing my nephew's buggy when I babysit. Gravel gets stuck in my shoes and wood chips go everywhere.",
+      "cost": 0.01677,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_023_p2",
+      "persona_name": "Piotr Kowalczyk",
+      "response": "Paved slabs",
+      "justification": "Look, I'm on my feet all day at the garage working on concrete floors - last thing I want is to walk on unstable gravel or wood chips when I'm carrying heavy shopping bags with my kielbasa and other groceries. Paved slabs are solid and won't shift around, plus they're easy to keep clean.",
+      "cost": 0.018090000000000002,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_023_p3",
+      "persona_name": "Lena Kowalczyk",
+      "response": "Wood chip",
+      "justification": "Wood chip paths are perfect for the community garden project I'm helping with in Dalston - they're sustainable, let rainwater through naturally, and we can actually source them locally from tree surgeons. Plus they smell amazing when they're fresh, reminds me of the forest walks I take when I need a break from A-level revision.",
+      "cost": 0.017294999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_023_p4",
+      "persona_name": "Dominik Kowalczyk",
+      "response": "Paved slabs",
+      "justification": "Me and my mates are always riding our bikes and doing tricks after school, and paved paths are way better for that than gravel that gets everywhere or grass that gets all muddy when it rains.",
+      "cost": 0.01581,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_024_p1",
+      "persona_name": "Hannah Kowalczyk",
+      "response": "Gravel",
+      "justification": "I love the sound of gravel crunching underfoot - it reminds me of the paths at the Tate Modern where I spend so much time. Plus, it drains well which is perfect for London weather, and I won't have to worry about mud getting tracked into my flat when I'm coming back from the art supply shop.",
+      "cost": 0.01782,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_024_p2",
+      "persona_name": "Robert Kowalczyk",
+      "response": "Wood chip",
+      "justification": "In my garden, I've used wood chip paths for years now - they're gentle on the knees when I'm kneeling to tend the beds, and they break down nicely to feed the soil. Plus, they remind me of the woodland walks I take when visiting the grandchildren.",
+      "cost": 0.010499999999999999,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_025_p1",
+      "persona_name": "David Turner",
+      "response": "Paved slabs",
+      "justification": "I've laid plenty of paths over the years doing handyman work around London, and slabs are what most people end up happiest with. Just last month I redid Mrs Henderson's garden path - the gravel was always getting kicked about and the wood chips she tried before just rotted in our wet weather. Proper slabs might cost more upfront but you won't be out there every weekend trying to sort them out.",
+      "cost": 0.017835,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_025_p2",
+      "persona_name": "Lisa Turner",
+      "response": "Gravel",
+      "justification": "I'd go with gravel - it's what we've got in the community garden space near the estate and it's brilliant. Proper satisfying crunch when you walk on it, and when I'm tending to my plot after a long shift at the shop, it just feels right. Plus it drains well, which is perfect for London weather - nothing worse than muddy paths ruining your shoes before work.",
+      "cost": 0.01848,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_026_p1",
+      "persona_name": "Simone Reynolds",
+      "response": "Paved slabs",
+      "justification": "After being on my feet for 12-hour shifts at the hospital, the last thing I want is to trudge through gravel or wood chips on my way home - proper paving means I can wheel my bike easily and won't track mud into my flat.",
+      "cost": 0.016829999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_027_p1",
+      "persona_name": "Marlon Thompson",
+      "response": "Wood chip",
+      "justification": "I'm always looking for materials I can repurpose for my creative projects, and wood chips break down naturally so they'd eventually feed back into the earth - plus they remind me of the outdoor venues where I've spun tracks, that earthy festival vibe.",
+      "cost": 0.014955,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_028_p1",
+      "persona_name": "Rashida Patel",
+      "response": "Paved slabs",
+      "justification": "I've learned from my own garden that gravel and wood chips just end up everywhere - tracking into the house is a nightmare! And with the London rain, paved slabs are the only thing that stays put and doesn't turn into a muddy mess when I'm out there tending my plants.",
+      "cost": 0.016425000000000002,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_028_p2",
+      "persona_name": "Amir Patel",
+      "response": "Paved slabs",
+      "justification": "Living in Dalston, I've seen too many gravel paths turn into muddy messes during rainy months - not great when you're rushing to court in a suit. Paved slabs are practical and accessible for everyone, especially after dealing with a case involving a client who couldn't navigate their local park paths in a wheelchair.",
+      "cost": 0.018795,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_028_p3",
+      "persona_name": "Nisha Patel",
+      "response": "Wood chip",
+      "justification": "From all my time at Hackney City Farm doing environmental projects, I've seen how wood chip paths work brilliantly - they're sustainable, let rainwater through properly, and honestly they're what we use there and it just works.",
+      "cost": 0.01644,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_028_p4",
+      "persona_name": "Dylan Chan",
+      "response": "Paved slabs",
+      "justification": "Living in Dalston, I walk everywhere and the UK weather is brutal on other materials - I've seen too many muddy gravel paths and soggy wood chips around here that become a nightmare after it rains.",
+      "cost": 0.016035,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_029_p1",
+      "persona_name": "Ayşegül Kara",
+      "response": "Paved slabs",
+      "justification": "After years of carrying fabric bolts and heavy materials back and forth to my workshop, I've learned the hard way that uneven surfaces are a nightmare - I once twisted my ankle on loose gravel while rushing to meet a client deadline, and it put me out of work for days.",
+      "cost": 0.01746,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_029_p2",
+      "persona_name": "Mehmet Kara",
+      "response": "Paved slabs",
+      "justification": "Look, I'm driving my Transit all day on London roads - when I get home, the last thing I want is gravel stuck in my shoes or muddy grass. Proper paving means I can wheel my delivery trolley without it getting stuck, same as the smooth loading bays I use at work.",
+      "cost": 0.01728,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_029_p3",
+      "persona_name": "Kerem Kara",
+      "response": "Wood chip",
+      "justification": "Perfect for the park clean-ups I volunteer at - wood chips are way easier to maintain than gravel paths that get scattered everywhere, plus they're sustainable and break down naturally over time. We've been trying to get more eco-friendly materials in our local parks.",
+      "cost": 0.01629,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_029_p4",
+      "persona_name": "Emine Kara",
+      "response": "Wood chip",
+      "justification": "Perfect for running debate practice drills outside - I've twisted my ankle on gravel before and it's honestly the worst. Plus wood chip has that nice forest-y smell that reminds me of the fantasy books I'm always reading.",
+      "cost": 0.015585,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_029_p5",
+      "persona_name": "Hüseyin Kara",
+      "response": "Paved slabs",
+      "justification": "My little brother's pushchair always gets stuck in gravel at the park, and mum says it's a right pain. Plus I can ride my scooter properly on smooth paths when we go out.",
+      "cost": 0.01533,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_030_p1",
+      "persona_name": "Ayşe Yılmaz",
+      "response": "Paved slabs",
+      "justification": "As a community nurse who's constantly on my feet visiting patients around London, I need paths that stay dry and stable - I can't be tracking mud into people's homes or slipping on wet wood chips when I'm carrying medical supplies.",
+      "cost": 0.01593,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_031_p1",
+      "persona_name": "Aria Davies",
+      "response": "Paved slabs",
+      "justification": "Living in Dalston, I walk everywhere - to the tube, to local galleries, even to chambers when the weather's nice. Proper paving means I won't ruin my court shoes in the mud, which matters when you're rushing between meetings and can't change footwear.",
+      "cost": 0.01686,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_031_p2",
+      "persona_name": "Tom Davies",
+      "response": "Paved slabs",
+      "justification": "Honestly, paved slabs are the way to go - I skateboard to college sometimes and gravel would be a nightmare. Plus when it's wet, which is like every other day in London, at least you're not getting your trainers muddy.",
+      "cost": 0.016155,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_031_p3",
+      "persona_name": "Olive Watkins",
+      "response": "Gravel",
+      "justification": "I've had gravel paths in my own garden for years now - they drain well in our wet London weather and I can easily top them up myself without calling someone in. Plus, the crunching sound always lets me know when someone's coming up to the door, which I quite like at my age.",
+      "cost": 0.017475,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_032_p1",
+      "persona_name": "Zeynep Özdemir",
+      "response": "Gravel",
+      "justification": "In my garden here in Dalston, I've used gravel paths between my vegetable beds for years - it drains well in our London rain and I can easily top it up myself without calling anyone for help. Plus, it reminds me of the courtyard paths back in Istanbul.",
+      "cost": 0.016785,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_032_p2",
+      "persona_name": "Yusuf Özdemir",
+      "response": "Wood chip",
+      "justification": "I've been using wood chips in my own garden beds and they're perfect - they break down naturally over time and actually improve the soil, plus I can get them free from the local tree service. Much easier on my back than laying pavers too.",
+      "cost": 0.01578,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_032_p3",
+      "persona_name": "Selin Özdemir",
+      "response": "Wood chip",
+      "justification": "After long shifts on the ward, my feet are absolutely killing me - wood chips are so much softer to walk on than concrete. Plus, they remind me of the forest paths I walked on during my trip to the Black Forest last year.",
+      "cost": 0.016485,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_032_p4",
+      "persona_name": "Aylin Özdemir",
+      "response": "Wood chip",
+      "justification": "We used wood chips for the community garden path at uni last semester and it was perfect - drains well in the rain, biodegradable, and we got them free from the campus groundskeeping crew. Plus it feels nice to walk on barefoot when I'm checking on my plot between classes.",
+      "cost": 0.01761,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_032_p5",
+      "persona_name": "Efe Khan",
+      "response": "Paved slabs",
+      "justification": "I spend hours hunched over my desk working on designs, so when I take breaks to clear my head, I need proper paths I can walk on without thinking about where I'm stepping. Plus, I've photographed some brilliant street art on paved surfaces around London - smooth surfaces just work better for urban creativity.",
+      "cost": 0.018135,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_033_p1",
+      "persona_name": "Devan Singh",
+      "response": "Gravel",
+      "justification": "I cycle to work every day and gravel paths are brilliant for drainage - no massive puddles to dodge like you get with slabs. Plus they've got that satisfying crunch that reminds me of the paths in Victoria Park where I go to shoot photos on weekends.",
+      "cost": 0.016980000000000002,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_033_p2",
+      "persona_name": "Kiran Patel",
+      "response": "Paved slabs",
+      "justification": "I'm on my feet all day at the salon and walk everywhere - proper paving means I won't be tracking mud or wood chips into work on rainy days, which would be a nightmare to clean off the salon floor.",
+      "cost": 0.015525,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_034_p1",
+      "persona_name": "Owen Griffiths",
+      "response": "Gravel",
+      "justification": "We've got gravel paths at the Dalston Community Centre where I volunteer, and they're brilliant - easy to maintain and they drain well after it rains, which is perfect when I'm doing the gardening work there.",
+      "cost": 0.015465,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_034_p2",
+      "persona_name": "Margaret Griffiths",
+      "response": "Paved slabs",
+      "justification": "I've got dodgy knees from all those years of kneeling in the garden beds, and gravel's a nightmare when you're pushing a wheelbarrow full of compost. Learned that the hard way at the community garden last spring!",
+      "cost": 0.0171,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_035_p1",
+      "persona_name": "Callum Matthews",
+      "response": "Paved slabs",
+      "justification": "From managing the shop, I've seen too many customers struggle with pushchairs and wheelchairs on our gravel car park - proper paving just makes life easier for everyone, especially elderly folks doing their weekly shop.",
+      "cost": 0.016050000000000002,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_035_p2",
+      "persona_name": "Grace Taylor",
+      "response": "Wood chip",
+      "justification": "I'd go with wood chip - it's what we use in our community garden in Dalston and it works brilliantly. Plus, it's basically free from tree surgeons and breaks down naturally over time, which fits perfectly with the sustainable approach I take in my design work.",
+      "cost": 0.01644,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_036_p1",
+      "persona_name": "Linda Ng",
+      "response": "Paved slabs",
+      "justification": "After years of commuting to the office in London weather, I know how annoying it is when paths get muddy or slippery - paved slabs would mean I could walk through without worrying about ruining my shoes before client meetings.",
+      "cost": 0.01659,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_036_p2",
+      "persona_name": "Marcus Li",
+      "response": "Paved slabs",
+      "justification": "I cycle to work at Greenwood Secondary most days, and paved paths are brilliant for both bikes and wheelchairs - means everyone can use them properly, not just able-bodied walkers. Plus they don't get muddy in London rain like the gravel paths near my flat in Dalston do.",
+      "cost": 0.01695,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_037_p1",
+      "persona_name": "Yusuf Halici",
+      "response": "Gravel",
+      "justification": "I've got gravel paths in my back garden here in London, and they're brilliant - proper satisfying crunch when you walk on them, plus I can hear when the grandkids are sneaking up to nick tomatoes from my vegetable patch!",
+      "cost": 0.016575,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_037_p2",
+      "persona_name": "Zeynep Halici",
+      "response": "Paved slabs",
+      "justification": "With two kids to take to activities every weekend, I need paths that won't get muddy when it rains - can't have them tracking dirt into the Yaris or showing up to football practice with soaked trainers.",
+      "cost": 0.016755,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_037_p3",
+      "persona_name": "Elif Halici",
+      "response": "Wood chip",
+      "justification": "I'm always sketching in parks and outdoor spaces, and wood chip paths have this lovely organic feel that doesn't clash with the natural environment - plus they're sustainable, which matters to me. They remind me of the paths at Hampstead Heath where I go to draw sometimes.",
+      "cost": 0.017055,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_038_p1",
+      "persona_name": "Emma Osei",
+      "response": "Paved slabs",
+      "justification": "After doing 12-hour shifts at the hospital, the last thing I want is to navigate uneven gravel or muddy wood chips when I'm rushing to my evening volunteer sessions at the community center. Proper paving just makes life easier when you're constantly on the go.",
+      "cost": 0.016875,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_038_p2",
+      "persona_name": "Kwame Osei",
+      "response": "Paved slabs",
+      "justification": "With all the rain we get in London, I need something solid for wheeling equipment between classrooms - I'm always carting around history resources and musical instruments, and gravel or wood chips would be a nightmare with trolleys.",
+      "cost": 0.016184999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_039_p1",
+      "persona_name": "Duygu Yılmaz",
+      "response": "Paved slabs",
+      "justification": "Working retail means I'm on my feet all day at Greenway, so when I'm walking around London I need proper paths - can't be dealing with gravel in my shoes or muddy grass after a typical British rain!",
+      "cost": 0.0171,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_040_p1",
+      "persona_name": "Emma Sorensen",
+      "response": "Paved slabs",
+      "justification": "With all the rain we get in London, I need something that won't turn into a muddy mess on my walk from the tube station. I've ruined too many good shoes trudging through Dalston's soggy paths already.",
+      "cost": 0.01644,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_040_p2",
+      "persona_name": "Jonas Petersson",
+      "response": "Paved slabs",
+      "justification": "As someone who cycles around London parks regularly, I know how frustrating it is when paths get muddy or uneven - paved slabs would mean I could cycle smoothly year-round without worrying about weather conditions.",
+      "cost": 0.015629999999999998,
+      "question_index": 2
+    },
+    {
+      "persona_id": "hh_041_p1",
+      "persona_name": "Georgia Gibbons",
+      "response": "Wood chip",
+      "justification": "We use wood chip paths at the Dalston Community Garden and they're brilliant - soft underfoot when I'm kneeling down to tend the beds, and they break down naturally to feed the soil. Plus, they're much easier on my knees than those hard paved slabs.",
+      "cost": 0.016245,
+      "question_index": 2
+    }
+  ],
+  "followUpQuestions": [
+    {
+      "id": "plot_style",
+      "text": "How should the plots be laid out?",
+      "options": [
+        "Raised beds",
+        "Ground-level rows",
+        "Mixed sizes for different needs"
+      ]
+    },
+    {
+      "id": "shared_facility",
+      "text": "What shared facility is most important?",
+      "options": [
+        "Tool shed",
+        "Greenhouse",
+        "Composting area",
+        "Water taps throughout"
+      ]
+    },
+    {
+      "id": "paths",
+      "text": "What should the paths be made of?",
+      "options": [
+        "Gravel",
+        "Wood chip",
+        "Paved slabs",
+        "Mown grass"
+      ]
+    }
+  ],
+  "winningOption": "Allotments",
+  "totalCost": 6.687104999999999,
+  "modelUsed": "Claude Opus 4",
+  "generatedImagePath": "/images/allotment.png",
+    "imagePrompt": "Transform this empty urban plot into: Allotments.\n\nDesign specifications from community vote:\n- How should the plots be laid out?: Mixed sizes for different needs\n- What shared facility is most important?: Water taps throughout\n- What should the paths be made of?: Paved slabs\n\nKeep the same camera angle and perspective. Keep the Victorian brick walls and terraced houses visible. Make it look like a professional architectural rendering of the completed space. Show the space as newly built and in use with people. British overcast weather lighting."
+}

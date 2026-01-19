@@ -158,8 +158,8 @@ Return ONLY valid JSON with these exact fields:
   "location": "City, State/Region",
   "country": "Country name",
   "continent": "One of: North America, South America, Europe, Africa, Asia, Oceania",
-  "latitude": number (valid latitude for the location),
-  "longitude": number (valid longitude for the location),
+  "latitude": number (precise latitude of their home address, not just city center),
+  "longitude": number (precise longitude of their home address, not just city center),
   "brief": "2-3 sentence description of who they are, their background, interests"
 }"""
 
@@ -263,6 +263,44 @@ app.add_middleware(
 @app.get("/api/health")
 async def health():
     return {"status": "ok"}
+
+
+@app.get("/api/keys/status")
+async def get_api_key_status():
+    """Check which API keys are configured."""
+    return {
+        "openai": bool(os.getenv("OPENAI_API_KEY")),
+        "anthropic": bool(os.getenv("ANTHROPIC_API_KEY")),
+        "gemini": bool(os.getenv("GEMINI_API_KEY")),
+        "has_llm_key": bool(os.getenv("OPENAI_API_KEY") or os.getenv("ANTHROPIC_API_KEY")),
+    }
+
+
+class SetApiKeysRequest(BaseModel):
+    """Request to set API keys."""
+
+    openai_key: str | None = None
+    anthropic_key: str | None = None
+    gemini_key: str | None = None
+
+
+@app.post("/api/keys/set")
+async def set_api_keys(request: SetApiKeysRequest):
+    """Set API keys at runtime (session only, not persisted to .env)."""
+    if request.openai_key:
+        os.environ["OPENAI_API_KEY"] = request.openai_key
+    if request.anthropic_key:
+        os.environ["ANTHROPIC_API_KEY"] = request.anthropic_key
+    if request.gemini_key:
+        os.environ["GEMINI_API_KEY"] = request.gemini_key
+
+    return {
+        "success": True,
+        "openai": bool(os.getenv("OPENAI_API_KEY")),
+        "anthropic": bool(os.getenv("ANTHROPIC_API_KEY")),
+        "gemini": bool(os.getenv("GEMINI_API_KEY")),
+        "has_llm_key": bool(os.getenv("OPENAI_API_KEY") or os.getenv("ANTHROPIC_API_KEY")),
+    }
 
 
 @app.get("/api/prompt")
@@ -375,6 +413,7 @@ class SurveyResponse(BaseModel):
     persona_id: str
     persona_name: str
     response: str
+    justification: str = ""
     cost: float
 
 
@@ -446,6 +485,7 @@ async def run_survey(request: SurveyRequest):
             persona_id=p.id,
             persona_name=p.name,
             response=result.response,
+            justification=result.justification,
             cost=result.cost,
         )
 
@@ -460,7 +500,7 @@ async def run_survey(request: SurveyRequest):
 
 @app.get("/api/personas/dalston-clt")
 async def get_dalston_personas():
-    """Load the Dalston CLT personas for the Dream A Garden experiment."""
+    """Load the Dalston CLT personas for the Testing space before it happens experiment."""
     personas_file = _project_root / "data" / "synthetic" / "dalston_clt" / "personas_for_survey.json"
 
     if not personas_file.exists():
@@ -470,6 +510,39 @@ async def get_dalston_personas():
         personas_data = json.load(f)
 
     return {"personas": personas_data}
+
+
+@app.get("/api/households/dalston-clt")
+async def get_dalston_households():
+    """Load the Dalston CLT neighbourhood with households."""
+    neighbourhood_file = _project_root / "data" / "synthetic" / "dalston_clt" / "neighbourhood.json"
+
+    if not neighbourhood_file.exists():
+        return {"error": "Neighbourhood file not found", "households": []}
+
+    with open(neighbourhood_file) as f:
+        data = json.load(f)
+
+    return data
+
+
+@app.get("/api/persona-files/{persona_id}")
+async def get_persona_files(persona_id: str):
+    """Get the synthetic files for a specific persona."""
+    persona_dir = _project_root / "data" / "synthetic" / "dalston_clt" / "personas" / persona_id
+
+    if not persona_dir.exists():
+        return {"error": "Persona not found", "files": []}
+
+    files = []
+    for file_path in sorted(persona_dir.iterdir()):
+        if file_path.is_file() and not file_path.name.startswith('.'):
+            files.append({
+                "name": file_path.name,
+                "content": file_path.read_text()
+            })
+
+    return {"persona_id": persona_id, "files": files}
 
 
 # ============================================================================
@@ -491,9 +564,9 @@ class ImageGenerationResponse(BaseModel):
     prompt_used: str
 
 
-@app.post("/api/generate-garden-image")
-async def generate_garden_image(request: ImageGenerationRequest):
-    """Generate an image of the garden design using Google Gemini."""
+@app.post("/api/generate-image")
+async def generate_image(request: ImageGenerationRequest):
+    """Generate an image of the design using Google Gemini."""
     # Load the original plot image
     plot_image_path = _project_root / "web" / "static" / "images" / "plot_1.png"
     if not plot_image_path.exists():
@@ -502,12 +575,12 @@ async def generate_garden_image(request: ImageGenerationRequest):
     # Build a detailed prompt from the survey results
     design_description = "\n".join([f"- {d['question']}: {d['answer']}" for d in request.design_choices])
 
-    prompt = f"""Transform this empty urban plot into a beautiful {request.winning_option}.
+    prompt = f"""Transform this small empty urban plot into: {request.winning_option}.
 
 Design specifications from community vote:
 {design_description}
 
-Keep the same camera angle and perspective. Keep the Victorian brick walls and terraced houses visible. Make it look like a professional landscape architecture rendering of the completed garden. Show the space as newly built and in use with people enjoying it. British overcast weather lighting."""
+Important: This is a small 0.3-acre urban plot. Keep the exact same size, proportions, and boundaries as shown. Do not expand or enlarge the space. Keep the same camera angle and perspective. Keep the Victorian brick walls and terraced houses visible around the edges. Make it look like a professional architectural rendering of the completed space, appropriately scaled to fit this compact urban plot. Show the space as newly built and in use with a few people. British overcast weather lighting."""
 
     try:
         # Initialize Gemini client

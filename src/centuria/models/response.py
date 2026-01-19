@@ -8,6 +8,7 @@ class QuestionResponse(BaseModel):
 
     question_id: str
     response: str
+    justification: str = ""
     prompt_tokens: int = 0
     completion_tokens: int = 0
     cost: float = 0.0  # USD

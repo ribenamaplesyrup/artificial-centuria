@@ -1,0 +1,23 @@
+Artists:
+- The Beatles
+- Fleetwood Mac
+- Simon & Garfunkel
+- ABBA
+- The Carpenters
+- Elton John
+- Queen
+- David Bowie
+- Carole King
+- Rod Stewart
+- Barbra Streisand
+- Diana Ross
+
+Genres:
+- Classic Rock
+- Soft Rock
+- Motown
+
+Playlists:
+- "Golden Oldies: Classics from the 60s and 70s"
+- "Sunday Morning Relaxation"
+- "Feel-Good Motown Hits"

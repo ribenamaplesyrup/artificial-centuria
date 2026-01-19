@@ -1,0 +1,43 @@
+**Online Communities and Forums Participation for Dylan Chan**
+
+1. **Reddit**
+   - **Communities:** r/gaming, r/MachineLearning, r/london
+   - **Topics Engaged:** Latest game releases, game development, AI breakthroughs, local events in London.
+   - **Engagement Style:** Mostly reads, occasionally posts.
+   - **Sample Post/Comment:** 
+     - In r/MachineLearning: "Has anyone experimented with GPT-like models for creative writing? Looking for resources or personal experiences!"
+     - In r/gaming: "Finished the latest FromSoftware title. Loved the complex AI NPC interactions – anyone else notice the improved enemy strategies?" 
+
+2. **Stack Overflow**
+   - **Topics Engaged:** Python programming, AI algorithms, software debugging.
+   - **Engagement Style:** Frequently provides answers, occasionally asks for help.
+   - **Sample Post/Comment:** 
+     - "Having trouble implementing a neural network in Python for a side project. Anyone know efficient libraries to handle large data sets?"
+
+3. **GitHub**
+   - **Communities:** Open-source AI projects, game development projects.
+   - **Topics Engaged:** Contributions to AI tools, collaboration on game development repos.
+   - **Engagement Style:** Actively contributes code, discusses issues in repositories.
+   - **Sample Contribution:** 
+     - "Added a new feature to improve data preprocessing speed by 30% in the AI toolkit repo I've been working with."
+
+4. **Local Community Boards (e.g., Nextdoor, local Facebook groups)**
+   - **Communities:** Dalston Residents, Tech Meetups in London.
+   - **Topics Engaged:** Community tech events, local meetups, neighborhood news.
+   - **Engagement Style:** Reads often, occasionally posts.
+   - **Sample Post/Comment:** 
+     - "Heard there’s a tech meetup happening at the Shoreditch House next weekend. Anyone going?"
+
+5. **LinkedIn**
+   - **Communities:** AI & ML Professionals Group, London Tech Network.
+   - **Topics Engaged:** Industry trends, job opportunities, professional networking.
+   - **Engagement Style:** Comments on posts, shares articles.
+   - **Sample Post/Comment:** 
+     - "The future of AI looks promising with recent advancements in machine learning algorithms. Interesting piece on its applications in healthcare – worth a read."
+
+6. **Slack Channels/Discord Servers**
+   - **Communities:** Game developers, AI enthusiasts.
+   - **Topics Engaged:** Project collaborations, tech support, casual gaming chat.
+   - **Engagement Style:** Regular participant, sometimes initiates discussions.
+   - **Sample Post/Comment:** 
+     - "Anyone up for a game dev co-op project? Thinking of integrating AI-driven NPCs in a new indie title I'm brainstorming."

@@ -1,0 +1,23 @@
+Artists:
+- Lorde
+- Billie Eilish
+- Florence + The Machine
+- Tame Impala
+- Arctic Monkeys
+- The 1975
+- Maggie Rogers
+- Bon Iver
+- Phoebe Bridgers
+- Hozier
+- Lana Del Rey
+- Clairo
+
+Genres:
+- Indie Pop
+- Alternative Rock
+- Folk
+
+Playlists:
+- "Eco Warriors: Music for Change"
+- "Chill Vibes for Study Nights"
+- "Artistic Inspirations: Soundtrack for Creativity"

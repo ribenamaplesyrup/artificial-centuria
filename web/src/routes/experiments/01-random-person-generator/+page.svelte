@@ -13,6 +13,18 @@
 	let map = null;
 	let markers = [];
 
+	// Sample data mode
+	let useSampleData = $state(false);
+	let sampleDataIndex = $state(0);
+	let sampleData = $state(null);
+	let loadingSampleData = $state(false);
+
+	// Track previous model for change detection
+	let previousModel = $state('gpt-4o-mini');
+
+	// Track which model was used for the current batch of personas
+	let usedModel = $state(null);
+
 	const API_URL = 'http://localhost:8000';
 
 	// Stop words to exclude from word frequency
@@ -213,6 +225,12 @@
 			const persona = await response.json();
 			personas = [...personas, persona];
 
+			// Track which model was used
+			if (!usedModel) {
+				const modelInfo = models.find(m => m.id === selectedModel);
+				usedModel = modelInfo ? `${modelInfo.name} (${modelInfo.provider})` : selectedModel;
+			}
+
 			if (map && browser) {
 				const L = await import('leaflet');
 				const marker = L.marker([persona.latitude, persona.longitude])
@@ -241,10 +259,136 @@
 		selectedPersona = null;
 		markers.forEach((m) => m.remove());
 		markers = [];
+		sampleDataIndex = 0;
+		usedModel = null;
 		if (map) {
 			map.setView([20, 0], 2);
 		}
 	}
+
+	function handleModelChange(event) {
+		const newModel = event.target.value;
+
+		if (personas.length > 0 && newModel !== previousModel) {
+			const confirmed = confirm(
+				`Changing the model will clear all ${personas.length} generated personas.\n\n` +
+				`This ensures statistics are consistent for a single model.\n\n` +
+				`Do you want to continue?`
+			);
+
+			if (confirmed) {
+				clearAll();
+				selectedModel = newModel;
+				previousModel = newModel;
+			} else {
+				// Revert to previous model - need to reset the select element
+				event.target.value = previousModel;
+			}
+		} else {
+			selectedModel = newModel;
+			previousModel = newModel;
+		}
+	}
+
+	function downloadData() {
+		if (personas.length === 0) return;
+
+		const exportData = {
+			model: usedModel || selectedModel,
+			personas: personas
+		};
+		const dataStr = JSON.stringify(exportData, null, 2);
+		const blob = new Blob([dataStr], { type: 'application/json' });
+		const url = URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.href = url;
+		a.download = `random-personas-${personas.length}.json`;
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+		URL.revokeObjectURL(url);
+	}
+
+	// Sample data model name (loaded from file)
+	let sampleDataModel = $state(null);
+
+	async function loadSampleDataFile() {
+		if (sampleData) return; // Already loaded
+
+		loadingSampleData = true;
+		try {
+			const res = await fetch('/sample-data/01-random-personas.json');
+			if (res.ok) {
+				const data = await res.json();
+				// Support both new format {model, personas} and legacy array format
+				if (Array.isArray(data)) {
+					sampleData = data;
+					sampleDataModel = 'Unknown';
+				} else {
+					sampleData = data.personas;
+					sampleDataModel = data.model || 'Unknown';
+				}
+			} else {
+				error = 'Sample data not found. Generate some data with live LLM first, then download it.';
+			}
+		} catch (e) {
+			error = 'Could not load sample data file.';
+		} finally {
+			loadingSampleData = false;
+		}
+	}
+
+	async function generateFromSampleData() {
+		if (!sampleData || sampleData.length === 0) {
+			error = 'No sample data available.';
+			return;
+		}
+
+		if (sampleDataIndex >= sampleData.length) {
+			error = 'All sample personas have been used.';
+			return;
+		}
+
+		loading = true;
+		error = null;
+
+		// Simulate a small delay for realism
+		await new Promise(resolve => setTimeout(resolve, 300));
+
+		const persona = sampleData[sampleDataIndex];
+		sampleDataIndex++;
+
+		personas = [...personas, persona];
+
+		// Track the model from sample data
+		if (!usedModel) {
+			usedModel = sampleDataModel || 'Sample Data';
+		}
+
+		if (map && browser) {
+			const L = await import('leaflet');
+			const marker = L.marker([persona.latitude, persona.longitude])
+				.addTo(map)
+				.bindPopup(`<strong>${persona.name}</strong><br>${persona.occupation}`);
+
+			marker.on('click', () => {
+				selectedPersona = persona;
+			});
+
+			markers.push(marker);
+			map.setView([persona.latitude, persona.longitude], 4);
+		}
+
+		selectedPersona = persona;
+		loading = false;
+	}
+
+	// Load sample data when switching to sample mode
+	$effect(() => {
+		if (useSampleData && !sampleData && !loadingSampleData) {
+			loadSampleDataFile();
+		}
+	});
 
 	function formatPercent(count, total) {
 		return ((count / total) * 100).toFixed(0) + '%';
@@ -275,42 +419,95 @@
 		Uses a minimal prompt to generate random people via LLM. A follow-up call classifies
 		their occupation. Watch the stats to see what patterns and biases emerge.
 	</p>
+
+	<div class="prompt-section">
+		<button class="prompt-toggle" onclick={() => (showPrompt = !showPrompt)}>
+			{showPrompt ? 'Hide' : 'Show'} the prompt
+		</button>
+
+		{#if showPrompt}
+			<pre class="prompt-display">{prompt || 'Loading prompt...'}</pre>
+		{/if}
+	</div>
+
 	<p>
-		Whilst this makes for a fun drinking game, it demonstrates the perils of relying on
-		LLMs too heavily for simulating randomised behaviour—real-world representative samples
-		or curated persona datasets remain far more valuable.
+		It demonstrates the perils of relying on LLMs too heavily for simulating randomised
+		behaviour—real-world representative samples or curated persona datasets remain far
+		more valuable.
 	</p>
 </div>
 
-<div class="prompt-section">
-	<button class="prompt-toggle" onclick={() => (showPrompt = !showPrompt)}>
-		{showPrompt ? 'Hide' : 'Show'} the prompt
-	</button>
+<div class="survey-controls">
+	<div class="controls-row">
+		<div class="control-group">
+			<span class="control-label">Data source</span>
+			<div class="toggle-buttons">
+				<button
+					class="toggle-btn"
+					class:active={!useSampleData}
+					onclick={() => { if (useSampleData && personas.length > 0) clearAll(); useSampleData = false; }}
+				>
+					Live LLM
+				</button>
+				<button
+					class="toggle-btn"
+					class:active={useSampleData}
+					onclick={() => { if (!useSampleData && personas.length > 0) clearAll(); useSampleData = true; }}
+				>
+					Sample Data
+				</button>
+			</div>
+		</div>
 
-	{#if showPrompt}
-		<pre class="prompt-display">{prompt || 'Loading prompt...'}</pre>
-	{/if}
-</div>
+		{#if !useSampleData}
+			<div class="control-group">
+				<label for="model-select" class="control-label">Model</label>
+				<select id="model-select" value={selectedModel} onchange={handleModelChange}>
+					{#each models as model}
+						<option value={model.id}>{model.name} ({model.provider})</option>
+					{/each}
+					{#if models.length === 0}
+						<option value="gpt-4o-mini">GPT-4o Mini (OpenAI)</option>
+					{/if}
+				</select>
+			</div>
+		{/if}
 
-<div class="controls">
-	<div class="model-selector">
-		<label for="model-select">Model:</label>
-		<select id="model-select" bind:value={selectedModel}>
-			{#each models as model}
-				<option value={model.id}>{model.name} ({model.provider})</option>
-			{/each}
-			{#if models.length === 0}
-				<option value="gpt-4o-mini">GPT-4o Mini (OpenAI)</option>
+		<div class="control-group control-group-action">
+			{#if useSampleData}
+				<button class="run-btn" onclick={generateFromSampleData} disabled={loading || !sampleData || sampleDataIndex >= sampleData.length}>
+					{loading ? 'Loading...' : 'Generate Person'}
+				</button>
+			{:else}
+				<button class="run-btn" onclick={generatePerson} disabled={loading}>
+					{loading ? 'Generating...' : 'Generate Person'}
+				</button>
 			{/if}
-		</select>
+		</div>
 	</div>
 
-	<button onclick={generatePerson} disabled={loading}>
-		{loading ? 'Generating...' : 'Generate a random person'}
-	</button>
+	{#if useSampleData && loadingSampleData}
+		<p class="controls-status">Loading sample data...</p>
+	{:else if useSampleData && !sampleData}
+		<p class="controls-status warning">No sample data found</p>
+	{:else if useSampleData && sampleData}
+		{#if sampleDataIndex >= sampleData.length}
+			<p class="controls-status">All {sampleData.length} sample personas used</p>
+		{:else}
+			<p class="controls-status">{sampleData.length - sampleDataIndex} of {sampleData.length} sample personas remaining</p>
+		{/if}
+	{/if}
 
 	{#if personas.length > 0}
-		<button onclick={clearAll} class="secondary">Clear all ({personas.length})</button>
+		<div class="controls-secondary">
+			<button onclick={clearAll} class="secondary-btn">Clear all ({personas.length})</button>
+			{#if !useSampleData}
+				<button onclick={downloadData} class="secondary-btn download-btn">Download Data</button>
+			{/if}
+			{#if !useSampleData}
+				<span class="model-warning">Changing model will clear results</span>
+			{/if}
+		</div>
 	{/if}
 </div>
 
@@ -371,6 +568,9 @@
 		<h2>Statistics</h2>
 		{#if stats}
 			<p class="stat-total">{stats.total} {stats.total === 1 ? 'person' : 'people'} generated</p>
+			{#if usedModel}
+				<p class="stat-model">Model: <strong>{usedModel}</strong></p>
+			{/if}
 
 			<div class="stat-row three-col">
 				<div class="stat-group stat-small">
@@ -524,7 +724,7 @@
 	}
 
 	.prompt-section {
-		margin-bottom: 1.5rem;
+		margin: 0.5rem 0 1.25rem 0;
 	}
 
 	.prompt-toggle {
@@ -555,49 +755,163 @@
 		color: #444;
 	}
 
-	.controls {
-		display: flex;
-		gap: 1rem;
-		flex-wrap: wrap;
-		align-items: center;
+	.survey-controls {
+		background: #f8f8f8;
+		border: 1px solid #e0e0e0;
+		border-radius: 8px;
+		padding: 1.25rem 1.5rem;
 		margin-bottom: 1.5rem;
 	}
 
-	.controls button {
-		margin-top: 0;
-		height: 2.5rem;
-	}
-
-	.model-selector {
+	.controls-row {
 		display: flex;
-		align-items: center;
-		gap: 0.5rem;
+		align-items: flex-end;
+		gap: 2rem;
+		flex-wrap: wrap;
 	}
 
-	.model-selector label {
-		font-size: 0.9rem;
+	.control-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+
+	.control-group-action {
+		margin-left: auto;
+	}
+
+	.control-label {
+		font-size: 0.75rem;
+		color: #666;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
+		font-weight: 500;
+	}
+
+	.toggle-buttons {
+		display: flex;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.toggle-btn {
+		background: white;
 		color: #555;
+		border: none;
+		border-radius: 0;
+		padding: 0.5rem 1rem;
+		font-size: 0.9rem;
+		margin: 0;
+		cursor: pointer;
+		transition: all 0.15s ease;
 	}
 
-	.model-selector select {
+	.toggle-btn:not(:last-child) {
+		border-right: 1px solid #ccc;
+	}
+
+	.toggle-btn:hover:not(.active) {
+		background: #f0f0f0;
+	}
+
+	.toggle-btn.active {
+		background: var(--accent);
+		color: white;
+	}
+
+	.controls-status {
+		font-size: 0.85rem;
+		color: #666;
+		margin: 0.75rem 0 0 0;
+	}
+
+	.controls-status.warning {
+		color: #b45309;
+	}
+
+	.model-warning {
+		font-size: 0.85rem;
+		color: #b45309;
+		margin-left: auto;
+	}
+
+	.control-group select {
 		font-family: inherit;
-		font-size: 1rem;
+		font-size: 0.9rem;
 		padding: 0.5rem 0.75rem;
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		background: white;
+		min-width: 200px;
 		cursor: pointer;
-		height: 2.5rem;
-		box-sizing: border-box;
 	}
 
-	.model-selector select:focus {
+	.control-group select:focus {
 		outline: none;
 		border-color: var(--accent);
 	}
 
-	.secondary {
+	.run-btn {
+		background: var(--accent);
+		color: white;
+		padding: 0.5rem 1.5rem;
+		font-size: 0.95rem;
+		margin: 0;
+		white-space: nowrap;
+	}
+
+	.run-btn:hover:not(:disabled) {
+		background: #6b1010;
+	}
+
+	.run-btn:disabled {
+		background: #ccc;
+		cursor: not-allowed;
+	}
+
+	.controls-secondary {
+		display: flex;
+		gap: 0.75rem;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e0e0e0;
+	}
+
+	.secondary-btn {
 		background: #666;
+		color: white;
+		padding: 0.4rem 1rem;
+		font-size: 0.85rem;
+		margin: 0;
+	}
+
+	.secondary-btn:hover {
+		background: #555;
+	}
+
+	.download-btn {
+		background: #2563eb;
+	}
+
+	.download-btn:hover {
+		background: #1d4ed8;
+	}
+
+	@media (max-width: 600px) {
+		.controls-row {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 1rem;
+		}
+
+		.control-group-action {
+			margin-left: 0;
+		}
+
+		.run-btn {
+			width: 100%;
+		}
 	}
 
 	.error-box {
@@ -705,7 +1019,17 @@
 		font-size: 1.1rem;
 		font-weight: bold;
 		color: var(--accent);
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-model {
+		font-size: 0.9rem;
+		color: #666;
 		margin-bottom: 1.5rem;
+	}
+
+	.stat-model strong {
+		color: #444;
 	}
 
 	.stat-row {
