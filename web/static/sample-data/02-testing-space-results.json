@@ -2,7 +2,7 @@
   "surveyResults": [
     {
       "persona_id": "hh_001_p1",
-      "persona_name": "Kemal Yılmaz",
+      "persona_name": "Kemal Y\u0131lmaz",
       "response": "Urban forest",
       "justification": "After those late shifts at work, I need somewhere quiet to decompress that's not just my flat. Plus I'm always watching shows about climate stuff on Netflix - would be nice to actually do something good for the environment instead of just binge-watching documentaries about how we're all doomed.",
       "cost": 0.003639
@@ -72,7 +72,7 @@
     },
     {
       "persona_id": "hh_005_p1",
-      "persona_name": "Gülay Demirci",
+      "persona_name": "G\u00fclay Demirci",
       "response": "Allotments",
       "justification": "I'm already tracking nutrition and trying to get the kids at school more interested in where their food comes from - having a proper space to grow veg would be brilliant. Plus I'm constantly reading about sustainable living and this would actually let me practice what I preach instead of just lurking in those online communities.",
       "cost": 0.003726
@@ -100,7 +100,7 @@
     },
     {
       "persona_id": "hh_006_p1",
-      "persona_name": "Deniz Yılmaz",
+      "persona_name": "Deniz Y\u0131lmaz",
       "response": "Allotments",
       "justification": "I'm always at the local markets buying fresh veg anyway, and half my students complain they've never seen where food actually comes from. Would be brilliant to have somewhere local to grow our own - plus I could finally stop lugging heavy bags back from the market every weekend.",
       "cost": 0.0033030000000000004
@@ -116,7 +116,7 @@
       "persona_id": "hh_008_p1",
       "persona_name": "Amara Ogunleye",
       "response": "Allotments",
-      "justification": "I'm always trying new recipes from the Bon Appétit channel and spending a fortune on organic veg at the shops. Having my own plot would mean I could grow proper tomatoes and herbs right here in Dalston - plus I'd finally have somewhere to practice all those sustainability tips I've been picking up at the local workshops.",
+      "justification": "I'm always trying new recipes from the Bon App\u00e9tit channel and spending a fortune on organic veg at the shops. Having my own plot would mean I could grow proper tomatoes and herbs right here in Dalston - plus I'd finally have somewhere to practice all those sustainability tips I've been picking up at the local workshops.",
       "cost": 0.0037860000000000003
     },
     {
@@ -135,14 +135,14 @@
     },
     {
       "persona_id": "hh_010_p1",
-      "persona_name": "Ebru Özdemir",
+      "persona_name": "Ebru \u00d6zdemir",
       "response": "Allotments",
-      "justification": "I'm always banging on about sustainability at the café, and honestly, I spend a fortune on groceries after work. Having a proper spot to grow some veg would be brilliant - I could finally put my money where my mouth is instead of just lecturing customers about food miles while serving them imported avocados.",
+      "justification": "I'm always banging on about sustainability at the caf\u00e9, and honestly, I spend a fortune on groceries after work. Having a proper spot to grow some veg would be brilliant - I could finally put my money where my mouth is instead of just lecturing customers about food miles while serving them imported avocados.",
       "cost": 0.0035340000000000002
     },
     {
       "persona_id": "hh_010_p2",
-      "persona_name": "Serkan Yıldırım",
+      "persona_name": "Serkan Y\u0131ld\u0131r\u0131m",
       "response": "Allotments",
       "justification": "I'm always buying loads of groceries and trying to plan meals properly - having my own plot to grow vegetables would cut down my shopping trips and I'd know exactly what's going into my food. Plus with all the wiring work I do, I could set up proper irrigation systems and lighting if needed.",
       "cost": 0.003417
@@ -191,7 +191,7 @@
     },
     {
       "persona_id": "hh_012_p3",
-      "persona_name": "Frieda Müller",
+      "persona_name": "Frieda M\u00fcller",
       "response": "Allotments",
       "justification": "I've been growing herbs and veg on my tiny balcony for ages and it's honestly not enough space. Plus, half the people I chat with at the local market are always moaning about wanting somewhere proper to grow their own food. I see how these projects bring neighborhoods together when I'm working on community housing schemes - people actually talk to each other over the fence posts.",
       "cost": 0.003876
@@ -221,7 +221,7 @@
       "persona_id": "hh_013_p3",
       "persona_name": "Siobhan O'Brien",
       "response": "Urban forest",
-      "justification": "Honestly, living in London and spending most of my time either in lectures or at the café, I'm desperate for a proper green space nearby. My flat's tiny and I can't even keep plants alive on my windowsill, but when I walk through Hampstead Heath between shifts it just clears my head completely. Plus I'm always scrolling through those mental health awareness TikToks about how nature helps with stress, and with uni deadlines constantly looming, we could all use somewhere quiet to actually breathe that isn't just another concrete courtyard.",
+      "justification": "Honestly, living in London and spending most of my time either in lectures or at the caf\u00e9, I'm desperate for a proper green space nearby. My flat's tiny and I can't even keep plants alive on my windowsill, but when I walk through Hampstead Heath between shifts it just clears my head completely. Plus I'm always scrolling through those mental health awareness TikToks about how nature helps with stress, and with uni deadlines constantly looming, we could all use somewhere quiet to actually breathe that isn't just another concrete courtyard.",
       "cost": 0.0044610000000000006
     },
     {
@@ -284,7 +284,7 @@
       "persona_id": "hh_017_p2",
       "persona_name": "Kwame Mensah",
       "response": "Allotments",
-      "justification": "Been thinking about growing my own veg for ages - all those podcasts about self-improvement keep going on about it. Plus with my grocery bill hitting £300 a month, growing some of my own food would actually save me proper money. And honestly, after being on job sites all day dealing with dodgy wiring and stressed-out customers, I could use somewhere quiet to just dig around in the dirt and switch off.",
+      "justification": "Been thinking about growing my own veg for ages - all those podcasts about self-improvement keep going on about it. Plus with my grocery bill hitting \u00a3300 a month, growing some of my own food would actually save me proper money. And honestly, after being on job sites all day dealing with dodgy wiring and stressed-out customers, I could use somewhere quiet to just dig around in the dirt and switch off.",
       "cost": 0.004104
     },
     {
@@ -298,7 +298,7 @@
       "persona_id": "hh_017_p4",
       "persona_name": "Emine Kaya",
       "response": "Allotments",
-      "justification": "I'm always sourcing fresh herbs and veg for the café menu, and the prices keep going up. Having local allotments would mean fresher ingredients right on our doorstep, plus I reckon half my regular customers would love to get their hands dirty growing their own stuff. It's practical and brings people together - I see how community projects work when we host local events at the café.",
+      "justification": "I'm always sourcing fresh herbs and veg for the caf\u00e9 menu, and the prices keep going up. Having local allotments would mean fresher ingredients right on our doorstep, plus I reckon half my regular customers would love to get their hands dirty growing their own stuff. It's practical and brings people together - I see how community projects work when we host local events at the caf\u00e9.",
       "cost": 0.003795
     },
     {
@@ -473,7 +473,7 @@
       "persona_id": "hh_026_p3",
       "persona_name": "Emre Arslan",
       "response": "Allotments",
-      "justification": "I'm always posting about my cooking experiments and budget meals on Instagram, but having to buy everything from Tesco is killing my food budget. Growing my own veg would be perfect for my food photography content too - imagine the farm-to-table shots I could get. Plus I've been watching loads of those Bon Appétit videos about seasonal cooking and I'm proper curious to try growing some of the ingredients myself.",
+      "justification": "I'm always posting about my cooking experiments and budget meals on Instagram, but having to buy everything from Tesco is killing my food budget. Growing my own veg would be perfect for my food photography content too - imagine the farm-to-table shots I could get. Plus I've been watching loads of those Bon App\u00e9tit videos about seasonal cooking and I'm proper curious to try growing some of the ingredients myself.",
       "cost": 0.004194
     },
     {
@@ -485,7 +485,7 @@
     },
     {
       "persona_id": "hh_027_p1",
-      "persona_name": "Fatma Akgül",
+      "persona_name": "Fatma Akg\u00fcl",
       "response": "Allotments",
       "justification": "I've been working in the community kitchen garden club since I retired, and I know how much everyone loves growing their own veg. Plus with prices at the shops these days, having a bit of land to grow tomatoes and herbs would help stretch the pension. My neighbor Mrs. Rahman is always asking where she can get a proper plot - this would be perfect for folks like us.",
       "cost": 0.003774
@@ -508,7 +508,7 @@
       "persona_id": "hh_028_p3",
       "persona_name": "Samiya Begum",
       "response": "Allotments",
-      "justification": "I've been wanting to grow my own veg for ages but my flat doesn't even have a proper balcony. Plus working at the café, I see how much we spend on fresh herbs and produce - would be brilliant to have somewhere local to grow stuff. My neighbor's always going on about how expensive everything's getting at the shops, and honestly, she's not wrong.",
+      "justification": "I've been wanting to grow my own veg for ages but my flat doesn't even have a proper balcony. Plus working at the caf\u00e9, I see how much we spend on fresh herbs and produce - would be brilliant to have somewhere local to grow stuff. My neighbor's always going on about how expensive everything's getting at the shops, and honestly, she's not wrong.",
       "cost": 0.003927
     },
     {
@@ -541,7 +541,7 @@
     },
     {
       "persona_id": "hh_031_p2",
-      "persona_name": "Ayşe Demir",
+      "persona_name": "Ay\u015fe Demir",
       "response": "Allotments",
       "justification": "I've been wanting to try growing my own herbs and vegetables after watching all those cooking shows, and with my cleaning business I'm always looking for natural alternatives to harsh chemicals. Plus I spend so much time indoors cleaning other people's houses - having a little plot to tend would be perfect for unwinding after work.",
       "cost": 0.003555
@@ -613,7 +613,7 @@
       "persona_id": "hh_036_p2",
       "persona_name": "Yasmin Afolabi",
       "response": "Allotments",
-      "justification": "I'm proper into cooking and always looking for ways to save money on groceries - spending £4 on herbs at Tesco when I could just grow my own is mad. Plus I've been wanting to try growing my own veg for my YouTube cooking videos, and having a little plot right here in Dalston would be perfect. Way more practical than a sculpture park or whatever.",
+      "justification": "I'm proper into cooking and always looking for ways to save money on groceries - spending \u00a34 on herbs at Tesco when I could just grow my own is mad. Plus I've been wanting to try growing my own veg for my YouTube cooking videos, and having a little plot right here in Dalston would be perfect. Way more practical than a sculpture park or whatever.",
       "cost": 0.003993
     },
     {
@@ -690,7 +690,7 @@
       "persona_id": "hh_041_p2",
       "persona_name": "Ella Turner",
       "response": "Allotments",
-      "justification": "I'm proper into cooking shows like Tasty and Bon Appétit on YouTube, always watching them after my shifts, and I've been wanting to try growing my own veg for ages. Plus with how much I spend on groceries working at the supermarket - seeing those prices go up every week - having my own little plot would actually save me some money and give me something to do that's not just watching telly.",
+      "justification": "I'm proper into cooking shows like Tasty and Bon App\u00e9tit on YouTube, always watching them after my shifts, and I've been wanting to try growing my own veg for ages. Plus with how much I spend on groceries working at the supermarket - seeing those prices go up every week - having my own little plot would actually save me some money and give me something to do that's not just watching telly.",
       "cost": 0.004071
     },
     {
@@ -704,7 +704,7 @@
   "followUpResults": [
     {
       "persona_id": "hh_001_p1",
-      "persona_name": "Kemal Yılmaz",
+      "persona_name": "Kemal Y\u0131lmaz",
       "response": "Mixed sizes for different needs",
       "justification": "Honestly, I'm all about having options - like how I'll binge-watch an entire season of Stranger Things on my days off but then need something quick like a single episode of The Great British Bake Off when I get home late from work. Same energy here - sometimes you want to go big with tomatoes, other times you just need a small herb patch you can actually maintain between shifts.",
       "cost": 0.003801,
@@ -784,7 +784,7 @@
     },
     {
       "persona_id": "hh_005_p1",
-      "persona_name": "Gülay Demirci",
+      "persona_name": "G\u00fclay Demirci",
       "response": "Mixed sizes for different needs",
       "justification": "I've been helping set up the school garden with my Year 4 class, and we learned the hard way that one size doesn't fit all - the kids can barely reach into the big raised beds we started with, but they love the smaller plots for herbs and quick-growing veg. Plus at home I need different setups for my tomatoes versus the lettuce I'm constantly picking for salads.",
       "cost": 0.0038280000000000002,
@@ -816,7 +816,7 @@
     },
     {
       "persona_id": "hh_006_p1",
-      "persona_name": "Deniz Yılmaz",
+      "persona_name": "Deniz Y\u0131lmaz",
       "response": "Mixed sizes for different needs",
       "justification": "I've been shopping at the local markets in Dalston for years, and you can tell which vendors know what they're doing - they always have different sized plots for herbs versus root vegetables versus leafy greens. Plus, when I'm planning lessons, I need different spaces for different activities - same logic applies to gardening.",
       "cost": 0.0032400000000000003,
@@ -856,15 +856,15 @@
     },
     {
       "persona_id": "hh_010_p1",
-      "persona_name": "Ebru Özdemir",
+      "persona_name": "Ebru \u00d6zdemir",
       "response": "Mixed sizes for different needs",
-      "justification": "At the café, we've got different setups for different drinks - espresso bar, pour-over station, cold brew tower - and it just makes sense. When I help my mum with her little garden patch behind our flat, we do the same thing - bigger area for the tomatoes that spread everywhere, smaller raised bit for her herbs. You don't want everything crammed together fighting for space.",
+      "justification": "At the caf\u00e9, we've got different setups for different drinks - espresso bar, pour-over station, cold brew tower - and it just makes sense. When I help my mum with her little garden patch behind our flat, we do the same thing - bigger area for the tomatoes that spread everywhere, smaller raised bit for her herbs. You don't want everything crammed together fighting for space.",
       "cost": 0.0035910000000000004,
       "question_index": 0
     },
     {
       "persona_id": "hh_010_p2",
-      "persona_name": "Serkan Yıldırım",
+      "persona_name": "Serkan Y\u0131ld\u0131r\u0131m",
       "response": "Mixed sizes for different needs",
       "justification": "Same way I approach wiring jobs - you need different sized conduits and boxes for different circuits. Plus when I'm planning my grocery runs, I know some weeks I need more space for bulk stuff, other weeks just basics. Makes sense to have options depending on what you're growing.",
       "cost": 0.003144,
@@ -920,7 +920,7 @@
     },
     {
       "persona_id": "hh_012_p3",
-      "persona_name": "Frieda Müller",
+      "persona_name": "Frieda M\u00fcller",
       "response": "Mixed sizes for different needs",
       "justification": "Been helping with the community garden project near my flat in Dalston and we learned the hard way that one-size-fits-all doesn't work. The elderly folks need raised beds they can actually reach, families with kids want bigger ground plots for teaching, and people like me in tiny flats just need small raised boxes for herbs. Makes the whole space work for everyone instead of excluding half the community.",
       "cost": 0.003738,
@@ -954,7 +954,7 @@
       "persona_id": "hh_013_p3",
       "persona_name": "Siobhan O'Brien",
       "response": "Mixed sizes for different needs",
-      "justification": "Working at the café, I see how much more efficient things are when you have different sized spaces for different tasks - like having small prep areas for garnishes and bigger ones for main dishes. Same logic applies to gardens really - you need different sized plots for herbs versus bigger vegetables.",
+      "justification": "Working at the caf\u00e9, I see how much more efficient things are when you have different sized spaces for different tasks - like having small prep areas for garnishes and bigger ones for main dishes. Same logic applies to gardens really - you need different sized plots for herbs versus bigger vegetables.",
       "cost": 0.0033629999999999997,
       "question_index": 0
     },
@@ -1042,7 +1042,7 @@
       "persona_id": "hh_017_p4",
       "persona_name": "Emine Kaya",
       "response": "Mixed sizes for different needs",
-      "justification": "At the café, I've learned that one-size-fits-all never works - we need different station setups for different tasks. Same logic applies here. When I helped set up our community garden plot last year, the mixed approach let people grow herbs in small raised beds while others did proper vegetable rows. Way more practical than forcing everyone into the same setup.",
+      "justification": "At the caf\u00e9, I've learned that one-size-fits-all never works - we need different station setups for different tasks. Same logic applies here. When I helped set up our community garden plot last year, the mixed approach let people grow herbs in small raised beds while others did proper vegetable rows. Way more practical than forcing everyone into the same setup.",
       "cost": 0.003477,
       "question_index": 0
     },
@@ -1256,7 +1256,7 @@
     },
     {
       "persona_id": "hh_027_p1",
-      "persona_name": "Fatma Akgül",
+      "persona_name": "Fatma Akg\u00fcl",
       "response": "Mixed sizes for different needs",
       "justification": "We've got all sorts in our community garden club - some folks want big plots for their tomatoes and courgettes, others just want a little strip for herbs. I've seen Martha struggle with her bad back trying to tend a massive plot, while young Ahmed keeps asking for more space. Makes sense to have different sizes so everyone can manage what they can handle.",
       "cost": 0.003501,
@@ -1282,7 +1282,7 @@
       "persona_id": "hh_028_p3",
       "persona_name": "Samiya Begum",
       "response": "Mixed sizes for different needs",
-      "justification": "From volunteering at the community centre, I've seen how different families need different amounts of space - some just want herbs for cooking, others are trying to feed a whole household. Plus at the café we get customers asking about growing their own veg and they all have completely different living situations - tiny flats versus proper gardens.",
+      "justification": "From volunteering at the community centre, I've seen how different families need different amounts of space - some just want herbs for cooking, others are trying to feed a whole household. Plus at the caf\u00e9 we get customers asking about growing their own veg and they all have completely different living situations - tiny flats versus proper gardens.",
       "cost": 0.003534,
       "question_index": 0
     },
@@ -1320,7 +1320,7 @@
     },
     {
       "persona_id": "hh_031_p2",
-      "persona_name": "Ayşe Demir",
+      "persona_name": "Ay\u015fe Demir",
       "response": "Mixed sizes for different needs",
       "justification": "I've been watching those cooking shows and trying new recipes from my meal kit service, so I'd want different sized plots for herbs, bigger veggies, and maybe some flowers to make nice oils like the set I got. Plus with my cleaning business, I know how important it is to organize spaces efficiently - you need the right setup for different jobs.",
       "cost": 0.0034620000000000002,
@@ -1466,7 +1466,7 @@
       "persona_id": "hh_040_p3",
       "persona_name": "Emir Yilmaz",
       "response": "Mixed sizes for different needs",
-      "justification": "Like with my dinosaur project - I needed different sized paper for the T-Rex vs the Triceratops pictures. Makes sense to have different plot sizes for whatever you're trying to grow, just like how I organize my Pokémon cards by rarity and size.",
+      "justification": "Like with my dinosaur project - I needed different sized paper for the T-Rex vs the Triceratops pictures. Makes sense to have different plot sizes for whatever you're trying to grow, just like how I organize my Pok\u00e9mon cards by rarity and size.",
       "cost": 0.003084,
       "question_index": 0
     },
@@ -1504,7 +1504,7 @@
     },
     {
       "persona_id": "hh_001_p1",
-      "persona_name": "Kemal Yılmaz",
+      "persona_name": "Kemal Y\u0131lmaz",
       "response": "Water taps throughout",
       "justification": "After those late shifts when I'm exhausted and just want to clean up quickly, having to walk across the entire complex to find water would be such a pain. Plus when I'm doing laundry or cleaning my place, I need easy access - learned that the hard way at my last apartment where the nearest tap was like a 5-minute walk away.",
       "cost": 0.0036360000000000003,
@@ -1584,7 +1584,7 @@
     },
     {
       "persona_id": "hh_005_p1",
-      "persona_name": "Gülay Demirci",
+      "persona_name": "G\u00fclay Demirci",
       "response": "Water taps throughout",
       "justification": "Having taught primary kids for years, I can tell you water access is absolutely crucial - whether it's for handwashing, drinking, or cleaning up after messy activities. I've seen too many lessons derailed because we had to trek across the school just to get water. Plus with my daily yoga practice and trying to hit those step goals, I'm constantly needing to hydrate. Everything else is nice to have, but water taps are essential for basic daily functioning.",
       "cost": 0.004008,
@@ -1616,7 +1616,7 @@
     },
     {
       "persona_id": "hh_006_p1",
-      "persona_name": "Deniz Yılmaz",
+      "persona_name": "Deniz Y\u0131lmaz",
       "response": "Water taps throughout",
       "justification": "Having taught in schools with dodgy plumbing, I can tell you nothing kills a good lesson plan like thirty kids queuing for one working tap. Plus I'm always dragging home bags of marking and need to water my little herb garden when I get back - shared water access just makes everything so much easier for everyone.",
       "cost": 0.00321,
@@ -1656,15 +1656,15 @@
     },
     {
       "persona_id": "hh_010_p1",
-      "persona_name": "Ebru Özdemir",
+      "persona_name": "Ebru \u00d6zdemir",
       "response": "Water taps throughout",
-      "justification": "At the café, we're constantly needing water - for cleaning the espresso machine, washing up, prepping drinks. When our back tap broke last month, it was chaos trying to carry everything to the front. Plus at home, I'm always lugging watering cans around for my little herb garden on the balcony. Having water accessible everywhere just makes everything so much easier.",
+      "justification": "At the caf\u00e9, we're constantly needing water - for cleaning the espresso machine, washing up, prepping drinks. When our back tap broke last month, it was chaos trying to carry everything to the front. Plus at home, I'm always lugging watering cans around for my little herb garden on the balcony. Having water accessible everywhere just makes everything so much easier.",
       "cost": 0.0035310000000000003,
       "question_index": 1
     },
     {
       "persona_id": "hh_010_p2",
-      "persona_name": "Serkan Yıldırım",
+      "persona_name": "Serkan Y\u0131ld\u0131r\u0131m",
       "response": "Water taps throughout",
       "justification": "When I'm doing electrical work around the house, I'm constantly washing my hands and cleaning up. Plus with all the cooking I do - you saw my grocery list - I need water access everywhere. Nothing worse than having to trek across the yard just to rinse something off or fill a bucket.",
       "cost": 0.0031590000000000003,
@@ -1720,7 +1720,7 @@
     },
     {
       "persona_id": "hh_012_p3",
-      "persona_name": "Frieda Müller",
+      "persona_name": "Frieda M\u00fcller",
       "response": "Water taps throughout",
       "justification": "I've done enough community garden projects in Dalston to know that everything falls apart without proper water access. Had one site where people stopped showing up because hauling watering cans from a single tap 50 meters away was just too much faff. You can share tools and make compost work somehow, but if watering your plot feels like a workout, the whole thing dies.",
       "cost": 0.0036780000000000003,
@@ -1754,7 +1754,7 @@
       "persona_id": "hh_013_p3",
       "persona_name": "Siobhan O'Brien",
       "response": "Water taps throughout",
-      "justification": "Working at the café, I'm constantly filling up kettles, washing dishes, and cleaning - if the water pressure's rubbish or the taps are miles away, everything takes forever. Plus when I'm rushing between uni and work, I need to grab water quickly without trekking across campus.",
+      "justification": "Working at the caf\u00e9, I'm constantly filling up kettles, washing dishes, and cleaning - if the water pressure's rubbish or the taps are miles away, everything takes forever. Plus when I'm rushing between uni and work, I need to grab water quickly without trekking across campus.",
       "cost": 0.003438,
       "question_index": 1
     },
@@ -1842,7 +1842,7 @@
       "persona_id": "hh_017_p4",
       "persona_name": "Emine Kaya",
       "response": "Water taps throughout",
-      "justification": "Running a busy café, I know how crucial easy water access is - we're constantly filling kettles, washing up, and cleaning. When our main tap broke last month, everything ground to a halt. Plus with my team of 15, everyone needs quick access without queuing up at one spot. Makes everything flow smoother.",
+      "justification": "Running a busy caf\u00e9, I know how crucial easy water access is - we're constantly filling kettles, washing up, and cleaning. When our main tap broke last month, everything ground to a halt. Plus with my team of 15, everyone needs quick access without queuing up at one spot. Makes everything flow smoother.",
       "cost": 0.0033420000000000004,
       "question_index": 1
     },
@@ -2056,7 +2056,7 @@
     },
     {
       "persona_id": "hh_027_p1",
-      "persona_name": "Fatma Akgül",
+      "persona_name": "Fatma Akg\u00fcl",
       "response": "Water taps throughout",
       "justification": "From working at the kebab shop for years, I know you can't do anything without proper water access - cleaning, cooking, washing hands constantly. And now with our community garden club, we're always lugging watering cans around because there's only one tap at the far end. My back's not what it used to be, and I see the other older members struggling too.",
       "cost": 0.003561,
@@ -2082,7 +2082,7 @@
       "persona_id": "hh_028_p3",
       "persona_name": "Samiya Begum",
       "response": "Water taps throughout",
-      "justification": "Honestly, having worked in a café, I know how mental it gets when you don't have easy access to water - whether it's for cleaning up spills, washing hands constantly, or just staying hydrated during busy shifts. Plus when I'm volunteering at the mental health charity, we're always running around trying to find water for the tea station or to clean up after events. You can work around not having other facilities, but water access? That's just basic isn't it.",
+      "justification": "Honestly, having worked in a caf\u00e9, I know how mental it gets when you don't have easy access to water - whether it's for cleaning up spills, washing hands constantly, or just staying hydrated during busy shifts. Plus when I'm volunteering at the mental health charity, we're always running around trying to find water for the tea station or to clean up after events. You can work around not having other facilities, but water access? That's just basic isn't it.",
       "cost": 0.004029,
       "question_index": 1
     },
@@ -2120,7 +2120,7 @@
     },
     {
       "persona_id": "hh_031_p2",
-      "persona_name": "Ayşe Demir",
+      "persona_name": "Ay\u015fe Demir",
       "response": "Water taps throughout",
       "justification": "Running my cleaning business, I'm constantly needing water access - whether I'm at someone's house doing a deep clean or working on outdoor spaces. Nothing worse than dragging hoses around or having to go inside every time you need to rinse something. Plus when I'm doing my own gardening at home, having taps scattered around saves so much time and hassle.",
       "cost": 0.003522,
@@ -2202,7 +2202,7 @@
       "persona_id": "hh_036_p2",
       "persona_name": "Yasmin Afolabi",
       "response": "Water taps throughout",
-      "justification": "Mate, I'm on my feet all day making coffees and I know how crucial it is to have water access everywhere. At the café, when our one tap near the espresso machine broke down, it was absolute chaos - we were running back and forth to the kitchen constantly. Plus I bike to work daily and need to refill my bottle loads, and when I'm trying out new workout classes I'm always dying for water after. You can work around not having the other stuff, but no water access? That's just not happening.",
+      "justification": "Mate, I'm on my feet all day making coffees and I know how crucial it is to have water access everywhere. At the caf\u00e9, when our one tap near the espresso machine broke down, it was absolute chaos - we were running back and forth to the kitchen constantly. Plus I bike to work daily and need to refill my bottle loads, and when I'm trying out new workout classes I'm always dying for water after. You can work around not having the other stuff, but no water access? That's just not happening.",
       "cost": 0.00423,
       "question_index": 1
     },
@@ -2304,7 +2304,7 @@
     },
     {
       "persona_id": "hh_001_p1",
-      "persona_name": "Kemal Yılmaz",
+      "persona_name": "Kemal Y\u0131lmaz",
       "response": "Paved slabs",
       "justification": "After those late shifts when I'm dead tired, the last thing I want is to deal with uneven surfaces or mud on my shoes when I'm trying to get home. Plus, I've slipped on wet wood chips before at a park - not fun when you're already exhausted from work.",
       "cost": 0.003465,
@@ -2384,7 +2384,7 @@
     },
     {
       "persona_id": "hh_005_p1",
-      "persona_name": "Gülay Demirci",
+      "persona_name": "G\u00fclay Demirci",
       "response": "Paved slabs",
       "justification": "With all the running around I do between home and school, plus trying to get my daily steps in, I need paths that aren't going to trip me up or turn into a muddy mess when it rains. Had enough of dodging puddles on the gravel path near our school - the kids track it everywhere and it's murder to clean up afterwards.",
       "cost": 0.003687,
@@ -2416,7 +2416,7 @@
     },
     {
       "persona_id": "hh_006_p1",
-      "persona_name": "Deniz Yılmaz",
+      "persona_name": "Deniz Y\u0131lmaz",
       "response": "Paved slabs",
       "justification": "I walk through the local parks in Dalston regularly on my way to the market, and those gravel paths are an absolute nightmare when you're carrying heavy bags of veg - stones get everywhere and it's murder on your ankles. The paved paths in Victoria Park are brilliant though, proper solid footing even when it's been chucking it down.",
       "cost": 0.0033690000000000005,
@@ -2456,15 +2456,15 @@
     },
     {
       "persona_id": "hh_010_p1",
-      "persona_name": "Ebru Özdemir",
+      "persona_name": "Ebru \u00d6zdemir",
       "response": "Paved slabs",
-      "justification": "Mate, I'm on my feet all day at the café and the last thing you want is uneven surfaces when you're carrying hot drinks or rushing about. Gravel's a nightmare when it gets wet - seen too many people slip outside coffee shops. Paved slabs are proper solid, easy to clean, and won't turn into a muddy mess when it rains, which let's face it, happens every other day in London.",
+      "justification": "Mate, I'm on my feet all day at the caf\u00e9 and the last thing you want is uneven surfaces when you're carrying hot drinks or rushing about. Gravel's a nightmare when it gets wet - seen too many people slip outside coffee shops. Paved slabs are proper solid, easy to clean, and won't turn into a muddy mess when it rains, which let's face it, happens every other day in London.",
       "cost": 0.00375,
       "question_index": 2
     },
     {
       "persona_id": "hh_010_p2",
-      "persona_name": "Serkan Yıldırım",
+      "persona_name": "Serkan Y\u0131ld\u0131r\u0131m",
       "response": "Paved slabs",
       "justification": "I've been doing electrical work long enough to know that dragging equipment and materials over uneven surfaces is a pain in the ass. Last month I had to run wire to an outdoor outlet and the gravel path kept shifting under my ladder - nearly took a spill. Paved slabs give you solid footing and won't wash away when it rains like the other options.",
       "cost": 0.003468,
@@ -2520,7 +2520,7 @@
     },
     {
       "persona_id": "hh_012_p3",
-      "persona_name": "Frieda Müller",
+      "persona_name": "Frieda M\u00fcller",
       "response": "Wood chip",
       "justification": "I've used wood chip paths in community garden projects around Dalston - they're brilliant because they're permeable so no drainage issues, cheap to source locally, and they actually improve the soil as they break down. Plus when I'm sketching site plans, clients love that it looks natural but still feels intentional.",
       "cost": 0.003432,
@@ -2554,7 +2554,7 @@
       "persona_id": "hh_013_p3",
       "persona_name": "Siobhan O'Brien",
       "response": "Paved slabs",
-      "justification": "Walking to uni and work at the café every day, I'm constantly dealing with muddy paths when it rains - proper paved paths would be a godsend. Plus when I'm rushing between lectures with my laptop bag, the last thing I need is to slip on wet grass or get gravel in my trainers.",
+      "justification": "Walking to uni and work at the caf\u00e9 every day, I'm constantly dealing with muddy paths when it rains - proper paved paths would be a godsend. Plus when I'm rushing between lectures with my laptop bag, the last thing I need is to slip on wet grass or get gravel in my trainers.",
       "cost": 0.003537,
       "question_index": 2
     },
@@ -2602,7 +2602,7 @@
       "persona_id": "hh_016_p3",
       "persona_name": "Tyler Jenkins",
       "response": "Paved slabs",
-      "justification": "Been walking around Dalston to all the cafés I study at, and the cobbled and uneven paths are proper annoying when you're carrying a laptop bag and books. Plus with all the rain we get here, anything else just turns into a muddy mess - learned that the hard way trying to get to campus during winter term.",
+      "justification": "Been walking around Dalston to all the caf\u00e9s I study at, and the cobbled and uneven paths are proper annoying when you're carrying a laptop bag and books. Plus with all the rain we get here, anything else just turns into a muddy mess - learned that the hard way trying to get to campus during winter term.",
       "cost": 0.0036030000000000003,
       "question_index": 2
     },
@@ -2642,7 +2642,7 @@
       "persona_id": "hh_017_p4",
       "persona_name": "Emine Kaya",
       "response": "Paved slabs",
-      "justification": "We've got paved areas outside the café and honestly, it's the only thing that actually works when you've got foot traffic all day. I've seen what happens to gravel paths when it rains - customers track it everywhere and it's a right pain to clean up. Wood chips get soggy and gross, and mown grass? Forget it - it'd be mud in a week with all the foot traffic we get in Dalston.",
+      "justification": "We've got paved areas outside the caf\u00e9 and honestly, it's the only thing that actually works when you've got foot traffic all day. I've seen what happens to gravel paths when it rains - customers track it everywhere and it's a right pain to clean up. Wood chips get soggy and gross, and mown grass? Forget it - it'd be mud in a week with all the foot traffic we get in Dalston.",
       "cost": 0.003756,
       "question_index": 2
     },
@@ -2856,7 +2856,7 @@
     },
     {
       "persona_id": "hh_027_p1",
-      "persona_name": "Fatma Akgül",
+      "persona_name": "Fatma Akg\u00fcl",
       "response": "Paved slabs",
       "justification": "I'm getting on a bit now and my knees aren't what they used to be - standing all those years at the kebab shop didn't do them any favors. When I'm walking to bingo or pottering about in the community garden, I need something solid under my feet that won't turn into a muddy mess when it rains or trip me up like loose gravel would.",
       "cost": 0.00363,
@@ -2882,7 +2882,7 @@
       "persona_id": "hh_028_p3",
       "persona_name": "Samiya Begum",
       "response": "Paved slabs",
-      "justification": "I'm on my feet all day at the café and I know how much difference proper surfaces make - you don't want to be slipping about on gravel or getting your shoes muddy on grass paths. Plus when I'm rushing to catch the bus after work, I need something solid underfoot that won't trip me up in the dark.",
+      "justification": "I'm on my feet all day at the caf\u00e9 and I know how much difference proper surfaces make - you don't want to be slipping about on gravel or getting your shoes muddy on grass paths. Plus when I'm rushing to catch the bus after work, I need something solid underfoot that won't trip me up in the dark.",
       "cost": 0.0036030000000000003,
       "question_index": 2
     },
@@ -2920,7 +2920,7 @@
     },
     {
       "persona_id": "hh_031_p2",
-      "persona_name": "Ayşe Demir",
+      "persona_name": "Ay\u015fe Demir",
       "response": "Paved slabs",
       "justification": "Trust me, as someone who runs a cleaning business, I've seen what happens when people track mud and debris into houses. Gravel gets everywhere, wood chips rot and get messy, and mown grass turns into a muddy mess when it rains. Paved slabs are clean, easy to maintain, and won't have me spending extra time cleaning up after every client visit.",
       "cost": 0.0036060000000000003,
@@ -3137,6 +3137,6 @@
   "winningOption": "Allotments",
   "totalCost": 1.4620350000000002,
   "modelUsed": "claude-sonnet-4-20250514",
-  "generatedImagePath": null,
-  "imagePrompt": null
+  "generatedImagePath": "/images/allotment.png",
+  "imagePrompt": "Transform this empty urban plot into: Allotments.\n\nDesign specifications from community vote:\n- How should the plots be laid out?: Mixed sizes for different needs\n- What shared facility is most important?: Water taps throughout\n- What should the paths be made of?: Paved slabs\n\nKeep the same camera angle and perspective. Keep the Victorian brick walls and terraced houses visible. Make it look like a professional architectural rendering of the completed space. Show the space as newly built and in use with people. British overcast weather lighting."
 }
