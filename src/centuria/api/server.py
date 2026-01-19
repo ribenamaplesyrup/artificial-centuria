@@ -183,6 +183,10 @@ async def get_api_key_status(
     centuria_session: str | None = Cookie(default=None),
 ):
     """Check which API keys are configured for this session."""
+    # Prevent caching of session-specific data
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, private"
+    response.headers["Pragma"] = "no-cache"
+
     # Ensure session exists
     session_id = get_or_create_session(centuria_session)
     if session_id != centuria_session:
@@ -191,7 +195,7 @@ async def get_api_key_status(
             value=session_id,
             httponly=True,
             samesite="lax",
-            secure=False,  # Set to True in production with HTTPS
+            secure=True,  # Required for HTTPS (Railway)
         )
 
     keys = get_session_keys(session_id)
@@ -218,6 +222,10 @@ async def set_api_keys(
     centuria_session: str | None = Cookie(default=None),
 ):
     """Set API keys for this session only (isolated per user)."""
+    # Prevent caching
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, private"
+    response.headers["Pragma"] = "no-cache"
+
     # Ensure session exists
     session_id = get_or_create_session(centuria_session)
     if session_id != centuria_session:
@@ -226,7 +234,7 @@ async def set_api_keys(
             value=session_id,
             httponly=True,
             samesite="lax",
-            secure=False,  # Set to True in production with HTTPS
+            secure=True,  # Required for HTTPS (Railway)
         )
 
     # Store keys in session, not globally
@@ -254,8 +262,15 @@ async def get_prompt():
 
 
 @app.get("/api/models")
-async def get_models(centuria_session: str | None = Cookie(default=None)):
+async def get_models(
+    response: Response,
+    centuria_session: str | None = Cookie(default=None),
+):
     """Return available models based on configured API keys for this session."""
+    # Prevent caching of session-specific data
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, private"
+    response.headers["Pragma"] = "no-cache"
+
     keys = get_session_keys(centuria_session)
     return {"models": get_available_models(api_keys=keys)}
 
