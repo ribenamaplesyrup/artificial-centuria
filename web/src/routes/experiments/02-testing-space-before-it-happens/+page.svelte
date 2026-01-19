@@ -4,6 +4,16 @@
 
 	const API_URL = '';
 
+	// API key status
+	let keyStatus = $state({
+		openai: false,
+		anthropic: false,
+		gemini: false,
+		has_llm_key: false
+	});
+	let showKeyWarning = $state(false);
+	let keyWarningType = $state('llm'); // 'llm' or 'gemini'
+
 	// State
 	let personas = $state([]);
 	let loadingPersonas = $state(true);
@@ -86,15 +96,15 @@
 	const plotOptions = [
 		'Allotments',
 		'Playground',
-		'Outdoor gym',
+		'Outdoor Gym',
 		'Pond',
-		'Urban forest',
-		'Sculpture park',
+		'Urban Forest',
+		'Sculpture Park',
 		'Junkyard',
 		'Courtyard',
-		'Carpark',
-		'Urban caving entrance',
-		'Portacabins'
+		'Car Park',
+		'Urban Caving Entrance',
+		'Portakabins'
 	];
 
 	// Computed: vote tallies
@@ -192,11 +202,12 @@
 		document.body.classList.add('wide');
 
 		try {
-			// Fetch personas, households, and models in parallel
-			const [personasRes, householdsRes, modelsRes] = await Promise.all([
+			// Fetch personas, households, models, and key status in parallel
+			const [personasRes, householdsRes, modelsRes, keysRes] = await Promise.all([
 				fetch(`${API_URL}/api/personas/dalston-clt`, { credentials: 'include' }),
 				fetch(`${API_URL}/api/households/dalston-clt`, { credentials: 'include' }),
-				fetch(`${API_URL}/api/models`, { credentials: 'include' })
+				fetch(`${API_URL}/api/models`, { credentials: 'include' }),
+				fetch(`${API_URL}/api/keys/status`, { credentials: 'include' })
 			]);
 
 			if (personasRes.ok) {
@@ -212,6 +223,10 @@
 			if (modelsRes.ok) {
 				const data = await modelsRes.json();
 				models = data.models;
+			}
+
+			if (keysRes.ok) {
+				keyStatus = await keysRes.json();
 			}
 		} catch (e) {
 			error = 'Could not connect to API server. Make sure it is running.';
@@ -259,6 +274,13 @@
 	async function estimateCost() {
 		if (personas.length === 0) return;
 
+		// Check for API keys if using Live LLM mode
+		if (!useSampleData && !keyStatus.has_llm_key) {
+			keyWarningType = 'llm';
+			showKeyWarning = true;
+			return;
+		}
+
 		phase = 'estimate';
 
 		try {
@@ -295,6 +317,13 @@
 	}
 
 	async function runSurvey() {
+		// Check for API keys if using Live LLM mode
+		if (!useSampleData && !keyStatus.has_llm_key) {
+			keyWarningType = 'llm';
+			showKeyWarning = true;
+			return;
+		}
+
 		phase = 'surveying';
 		surveyProgress = 0;
 		surveyResults = [];
@@ -528,16 +557,16 @@
 					options: ['Trained cavers only', 'Guided tours for public', 'Members with equipment', 'Open supervised sessions']
 				}
 			);
-		} else if (option.includes('portacabin') || option.includes('porta')) {
+		} else if (option.includes('portakabin') || option.includes('porta')) {
 			questions.push(
 				{
 					id: 'purpose',
-					text: 'What should the portacabins be used for?',
+					text: 'What should the portakabins be used for?',
 					options: ['Community meeting rooms', 'Workspace and offices', 'Youth club', 'Storage and workshops']
 				},
 				{
 					id: 'quantity',
-					text: 'How many portacabins?',
+					text: 'How many portakabins?',
 					options: ['One large unit', 'Several small units', 'Clustered complex', 'Stacked two-storey']
 				},
 				{
@@ -877,11 +906,56 @@
 			loadSampleDataFile();
 		}
 	});
+
+	function handleLiveLLMClick() {
+		if (!keyStatus.has_llm_key) {
+			keyWarningType = 'llm';
+			showKeyWarning = true;
+			return;
+		}
+		useSampleData = false;
+	}
+
+	function handleGenerateImage() {
+		if (!keyStatus.gemini) {
+			keyWarningType = 'gemini';
+			showKeyWarning = true;
+			return;
+		}
+		generateImage();
+	}
 </script>
 
 <svelte:head>
 	<title>02: Testing space before it happens</title>
 </svelte:head>
+
+{#if showKeyWarning}
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<div class="key-warning-backdrop" onclick={() => showKeyWarning = false}></div>
+	<div class="key-warning-modal">
+		<div class="key-warning-header">
+			<h2>{keyWarningType === 'gemini' ? 'Gemini API Key Required' : 'API Keys Required'}</h2>
+			<button class="key-warning-close" onclick={() => showKeyWarning = false}>&times;</button>
+		</div>
+		{#if keyWarningType === 'gemini'}
+			<p class="key-warning-text">
+				To generate images, you need to configure a Gemini API key.
+			</p>
+		{:else}
+			<p class="key-warning-text">
+				To use Live LLM mode, you need to configure at least one API key (OpenAI or Anthropic).
+			</p>
+		{/if}
+		<p class="key-warning-text">
+			Go to the <a href="/">home page</a> and click "API Key Settings" to add your keys.
+		</p>
+		<div class="key-warning-actions">
+			<button onclick={() => showKeyWarning = false} class="key-warning-btn-primary">OK</button>
+		</div>
+	</div>
+{/if}
 
 <nav class="nav">
 	<a href="/">&larr; Back to experiments</a>
@@ -1106,7 +1180,7 @@
 						<button
 							class="toggle-btn"
 							class:active={!useSampleData}
-							onclick={() => useSampleData = false}
+							onclick={handleLiveLLMClick}
 						>
 							Live LLM
 						</button>
@@ -1421,7 +1495,7 @@
 						<div class="placeholder">Click below to generate</div>
 					</div>
 				</div>
-				<button onclick={generateImage} class="primary generate-btn">
+				<button onclick={handleGenerateImage} class="primary generate-btn">
 					Generate Image
 				</button>
 			{:else if generatingImage}
@@ -1450,7 +1524,7 @@
 				</details>
 
 				<div class="action-buttons">
-					<button onclick={generateImage} class="secondary">Regenerate Image</button>
+					<button onclick={handleGenerateImage} class="secondary">Regenerate Image</button>
 				</div>
 			{/if}
 		</div>
@@ -1465,6 +1539,90 @@
 {/if}
 
 <style>
+	/* Key warning modal styles */
+	.key-warning-backdrop {
+		position: fixed;
+		inset: 0;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1100;
+	}
+
+	.key-warning-modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: white;
+		border-radius: 8px;
+		padding: 2rem;
+		max-width: 450px;
+		width: 90%;
+		z-index: 1101;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	}
+
+	.key-warning-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 1rem;
+	}
+
+	.key-warning-header h2 {
+		margin: 0;
+		font-size: 1.3rem;
+	}
+
+	.key-warning-close {
+		background: none;
+		border: none;
+		font-size: 1.5rem;
+		color: #666;
+		cursor: pointer;
+		padding: 0;
+		line-height: 1;
+		margin: 0;
+	}
+
+	.key-warning-close:hover {
+		color: #333;
+		background: none;
+	}
+
+	.key-warning-text {
+		color: #555;
+		font-size: 0.95rem;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+
+	.key-warning-text:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.key-warning-text a {
+		color: var(--accent);
+	}
+
+	.key-warning-actions {
+		display: flex;
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+
+	.key-warning-btn-primary {
+		background: var(--accent);
+		color: white;
+		padding: 0.6rem 1.5rem;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.key-warning-btn-primary:hover {
+		background: #6b1010;
+	}
+
 	.header {
 		margin-bottom: 0.5rem;
 	}
