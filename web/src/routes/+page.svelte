@@ -169,15 +169,13 @@
 <h1>Weekend adventures in artificial societies...</h1>
 
 <p class="intro">
-	These are some of the early outputs from my initial experiments asking language
-	models to simulate human populations and seeing what happens. This experimentation
-	gave me a much greater appreciation of the art involved. Whilst it's possible to
-	vibecode a community of agents in a weekend, it's easy to underestimate how
-	challenging it can be to design useful experiments and counter the biases within LLMs.
+	These are some of the outputs from my initial experiments asking language
+	models to simulate human populations and seeing what happens. It's certaintly possible to
+	vibecode a community of agents in a weekend but actually designing useful experiments and countering the strong biases within LLMs is a much greater challenge.
 </p>
 
 <p>
-	There's clearly an opportunity for building moats around well curated datasets
+	There's clearly an opportunity to build moats around well curated datasets
 	of personas and hard-earned forward-deployed experience in the emerging art of silicon sampling.
 </p>
 
@@ -234,7 +232,7 @@
 <style>
 	.settings-section {
 		display: flex;
-		align-items: center;
+		align-items: baseline;
 		gap: 1rem;
 		margin-top: 1rem;
 	}
@@ -278,6 +276,7 @@
 	}
 
 	.settings-status {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 		font-size: 0.85rem;
 		color: #666;
 		display: flex;
