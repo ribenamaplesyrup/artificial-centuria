@@ -1,11 +1,11 @@
 {
-  "name": "Michael Oseni",
-  "age": 47,
-  "gender": "male",
-  "location": "11 Hackett Green Road, Dalston, London",
-  "occupation": "secondary school teacher",
+  "name": "Deniz Yılmaz",
+  "age": 36,
+  "gender": "female",
+  "location": "11 Chapelwright Lane Road, Dalston, London",
+  "occupation": "History Teacher",
   "industry": "Education",
-  "education": "Bachelor's degree",
-  "political_lean": "Labour",
-  "personality_sketch": "Michael is a dedicated teacher who enjoys inspiring young minds. Outside of work, he's an avid reader and loves cooking Nigerian dishes for his family. He values community engagement and often volunteers at local events."
+  "education": "Master's degree",
+  "political_lean": "left-leaning",
+  "personality_sketch": "Teaches at a local secondary school. Stops by the market on the way home for fresh vegetables. Keeps a stack of grading to finish during weekdays."
 }

@@ -1,11 +1,11 @@
 {
-  "name": "Owen Griffiths",
-  "age": 69,
-  "gender": "male",
-  "location": "1 Baker's Lane Mews, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "Secondary school",
-  "political_lean": "Conservative",
-  "personality_sketch": "Owen is a gruff but kind-hearted retired plumber. He spends his days tending to his small garden in the new-build's courtyard and volunteering at the local community centre. Owen enjoys watching football and is a loyal Arsenal supporter."
+  "name": "Ayse Demir",
+  "age": 23,
+  "gender": "female",
+  "location": "1 Mason's Brook Mews, Dalston, London",
+  "occupation": "sales assistant",
+  "industry": "Retail",
+  "education": "GCSEs",
+  "political_lean": "apolitical",
+  "personality_sketch": "Works six days a week. Catches the bus to work daily. Watches Netflix after dinner most nights."
 }

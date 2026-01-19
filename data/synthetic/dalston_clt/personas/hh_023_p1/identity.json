@@ -1,11 +1,11 @@
 {
-  "name": "Paulina Kowalczyk",
-  "age": 35,
-  "gender": "female",
-  "location": "Flat 2 Osier Grove Estate, Dalston, London",
-  "occupation": "waitress",
-  "industry": "Hospitality",
+  "name": "Kevin Armstrong",
+  "age": 45,
+  "gender": "male",
+  "location": "Flat 2 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "bus driver",
+  "industry": "Transport",
   "education": "Vocational/trade certificate",
-  "political_lean": "Apolitical",
-  "personality_sketch": "Paulina is an energetic and warm-hearted person who loves interacting with people at her job. She enjoys cooking traditional Polish dishes and often shares them with her neighbors. On weekends, she takes her kids to the local park and cherishes family time."
+  "political_lean": "Labour",
+  "personality_sketch": "Works irregular shifts. Eats lunch from local cafs. Listens to radio on drives."
 }

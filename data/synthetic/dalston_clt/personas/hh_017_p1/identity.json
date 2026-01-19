@@ -1,11 +1,11 @@
 {
-  "name": "Yasmin Ahmed",
-  "age": 40,
+  "name": "Linda Huang",
+  "age": 68,
   "gender": "female",
-  "location": "10 Weaver's End Street, Dalston, London",
-  "occupation": "self-employed tailor",
-  "industry": "Trades",
-  "education": "Vocational/trade certificate",
-  "political_lean": "Labour supporter",
-  "personality_sketch": "Yasmin is a hardworking and resourceful individual, known for her skillful hands and sharp eye for detail. She loves spending time with her family and is passionate about her local community, often volunteering at the community center."
+  "location": "10 Elderbloom Way Street, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
+  "education": "Secondary school",
+  "political_lean": "apolitical",
+  "personality_sketch": "Retired five years ago. Often visits the local library for new books. Brews green tea every morning before watching TV."
 }

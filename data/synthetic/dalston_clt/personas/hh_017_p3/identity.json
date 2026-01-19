@@ -1,11 +1,11 @@
 {
-  "name": "Amara Johnson",
-  "age": 70,
-  "gender": "female",
-  "location": "10 Weaver's End Street, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "Secondary school",
-  "political_lean": "slightly conservative",
-  "personality_sketch": "Amara is wise and caring, known for her love of gardening and ability to tell fascinating stories about the past. She finds joy in her family and enjoys attending local church events."
+  "name": "Jason Gallagher",
+  "age": 23,
+  "gender": "male",
+  "location": "10 Elderbloom Way Street, Dalston, London",
+  "occupation": "student",
+  "industry": "Student",
+  "education": "Some college",
+  "political_lean": "progressive",
+  "personality_sketch": "Studies marketing at university. Spends afternoons in the campus library. Often catches up with friends over drinks in Dalston."
 }

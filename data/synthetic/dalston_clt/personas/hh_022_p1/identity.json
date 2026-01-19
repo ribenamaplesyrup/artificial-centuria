@@ -1,11 +1,11 @@
 {
-  "name": "Priya Sharma",
-  "age": 23,
-  "gender": "female",
-  "location": "Flat 1 Osier Grove Estate, Dalston, London",
-  "occupation": "nurse",
+  "name": "Tarik Abbas",
+  "age": 47,
+  "gender": "male",
+  "location": "Flat 1 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "General Practitioner",
   "industry": "Healthcare",
-  "education": "Bachelor's degree",
-  "political_lean": "liberal",
-  "personality_sketch": "Priya is an outgoing and compassionate person who enjoys socializing with friends and exploring the vibrant arts scene in East London. In her free time, she volunteers at a local community center and practices yoga to unwind after long shifts at the hospital."
+  "education": "PhD",
+  "political_lean": "conservative",
+  "personality_sketch": "Works at a local clinic and often returns late. Rarely cooks at home, preferring takeaways. Catches up on medical journals during his daily commute."
 }

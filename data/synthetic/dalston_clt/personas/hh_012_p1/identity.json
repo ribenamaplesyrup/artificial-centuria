@@ -1,11 +1,11 @@
 {
-  "name": "Anna Kowalska",
-  "age": 66,
-  "gender": "female",
-  "location": "23 Hackett Green Road, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "Vocational/trade certificate",
-  "political_lean": "liberal",
-  "personality_sketch": "Anna is a warm, community-oriented individual who enjoys gardening and participating in local arts and crafts fairs. She is passionate about preserving the cultural heritage of her neighborhood and often volunteers at community events."
+  "name": "Jonathan Ogundipe",
+  "age": 29,
+  "gender": "male",
+  "location": "23 Chapelwright Lane Road, Dalston, London",
+  "occupation": "Software Engineer",
+  "industry": "Technology",
+  "education": "Master's degree",
+  "political_lean": "Liberal",
+  "personality_sketch": "Works remotely for a tech company. Often skips meals when caught up with coding. Calls his parents back in Lagos every weekend."
 }

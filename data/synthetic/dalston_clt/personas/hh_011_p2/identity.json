@@ -1,11 +1,11 @@
 {
-  "name": "Anil Patel",
-  "age": 30,
-  "gender": "male",
-  "location": "21 Hackett Green Road, Dalston, London",
-  "occupation": "electrician",
-  "industry": "Trades",
-  "education": "Vocational/trade certificate",
-  "political_lean": "moderate",
-  "personality_sketch": "Anil is a skilled and reliable electrician with a passion for DIY projects and home improvement. He enjoys participating in local community initiatives and values quiet evenings spent reading or watching documentaries with his wife. He is an avid football fan and plays occasionally with his friends."
+  "name": "Lisa Thompson",
+  "age": 43,
+  "gender": "female",
+  "location": "21 Chapelwright Lane Road, Dalston, London",
+  "occupation": "cleaner",
+  "industry": "Service",
+  "education": "GCSEs",
+  "political_lean": "Apolitical",
+  "personality_sketch": "Cleans offices in the evenings. Manages the household during the day. Watches cooking shows on TV."
 }

@@ -1,11 +1,11 @@
 {
-  "name": "Emre Kaya",
-  "age": 31,
+  "name": "Serkan Yıldırım",
+  "age": 36,
   "gender": "male",
-  "location": "19 Hackett Green Road, Dalston, London",
-  "occupation": "mechanic",
+  "location": "19 Chapelwright Lane Road, Dalston, London",
+  "occupation": "electrician",
   "industry": "Trades",
   "education": "Vocational/trade certificate",
-  "political_lean": "apolitical",
-  "personality_sketch": "Emre is a practical and hands-on person, with a keen interest in cars and motorcycles. He spends weekends attending various car meet-ups around London. His work as a mechanic keeps him busy, but he makes time for watching football and playing the occasional game of five-a-side with his friends."
+  "political_lean": "Conservative",
+  "personality_sketch": "Spends most of his day on job sites. Eats dinner late due to his work schedule. Visits a local pub for a pint after work now and then."
 }

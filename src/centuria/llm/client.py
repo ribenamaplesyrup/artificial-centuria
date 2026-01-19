@@ -8,6 +8,8 @@ from pathlib import Path
 import litellm
 from dotenv import load_dotenv
 
+from centuria.config import DEFAULT_MODEL
+
 # Load .env from project root (handles running from notebooks/)
 _project_root = Path(__file__).parent.parent.parent.parent
 load_dotenv(_project_root / ".env")
@@ -54,7 +56,7 @@ def estimate_cost(
     Returns:
         CostEstimate with token counts and estimated cost
     """
-    model = model or os.getenv("DEFAULT_MODEL", "gpt-4o")
+    model = model or os.getenv("DEFAULT_MODEL", DEFAULT_MODEL)
 
     messages = []
     if system:
@@ -98,7 +100,7 @@ async def complete(
     Returns:
         CompletionResult with content and usage stats
     """
-    model = model or os.getenv("DEFAULT_MODEL", "gpt-4o")
+    model = model or os.getenv("DEFAULT_MODEL", DEFAULT_MODEL)
 
     messages = []
     if system:

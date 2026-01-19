@@ -1,11 +1,11 @@
 {
-  "name": "David Turner",
-  "age": 55,
-  "gender": "male",
-  "location": "Flat 4 Osier Grove Estate, Dalston, London",
-  "occupation": "Electrician",
-  "industry": "Trades",
-  "education": "Vocational/trade certificate",
-  "political_lean": "Centrist",
-  "personality_sketch": "David is a hardworking and practical individual who takes pride in his job. He enjoys watching football on weekends and is a loyal supporter of his local team. In his spare time, he likes to fix electrical gadgets and occasionally volunteers for community service."
+  "name": "Samantha Lewis",
+  "age": 64,
+  "gender": "female",
+  "location": "Flat 4 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "nurse",
+  "industry": "Healthcare",
+  "education": "Bachelor's degree",
+  "political_lean": "Labour",
+  "personality_sketch": "Works three days a week at the local hospital. Prefers tea over coffee and tends to catch up on the latest medical journals. Enjoys feeding the birds from her window."
 }

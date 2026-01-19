@@ -1,11 +1,11 @@
 {
-  "name": "Yusuf Halici",
-  "age": 68,
+  "name": "Joseph Carpenter",
+  "age": 57,
   "gender": "male",
-  "location": "4 Baker's Lane Mews, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
+  "location": "4 Mason's Brook Mews, Dalston, London",
+  "occupation": "plumber",
+  "industry": "Trades",
   "education": "Vocational/trade certificate",
-  "political_lean": "moderate",
-  "personality_sketch": "Yusuf is a retired tradesman who enjoys gardening and spending afternoons with his grandchildren. He's known in the community for his storytelling and frequently attends local cultural events. He dislikes too much technology but appreciates the simple pleasures in life."
+  "political_lean": "Moderate conservative",
+  "personality_sketch": "Works long hours on residential repairs. Has a standing Wednesday evening pint with mates from college. Leaves DIY projects half-finished around the house."
 }

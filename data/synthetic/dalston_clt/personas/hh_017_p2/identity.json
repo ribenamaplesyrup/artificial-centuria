@@ -1,11 +1,11 @@
 {
-  "name": "Hassan Ahmed",
-  "age": 18,
+  "name": "Kwame Mensah",
+  "age": 32,
   "gender": "male",
-  "location": "10 Weaver's End Street, Dalston, London",
-  "occupation": "student",
-  "industry": "Education",
-  "education": "A-levels",
-  "political_lean": "apolitical",
-  "personality_sketch": "Hassan, a curious and bright teenager, is currently focused on his A-levels with hopes of pursuing a career in engineering. He is a fan of football and enjoys playing video games with friends in his free time."
+  "location": "10 Elderbloom Way Street, Dalston, London",
+  "occupation": "electrician",
+  "industry": "Trades",
+  "education": "Vocational/trade certificate",
+  "political_lean": "centrist",
+  "personality_sketch": "Works on different sites around London. Eats lunch at the local cafe. Fixes things around the house on weekends."
 }

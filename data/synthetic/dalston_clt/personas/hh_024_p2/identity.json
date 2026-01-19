@@ -1,11 +1,11 @@
 {
-  "name": "Robert Kowalczyk",
-  "age": 69,
+  "name": "David Okafor",
+  "age": 31,
   "gender": "male",
-  "location": "Flat 3 Osier Grove Estate, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "Bachelor's degree",
-  "political_lean": "liberal",
-  "personality_sketch": "Robert is a gentle and thoughtful person who loves history and has a passion for gardening. He spends his days tending to his plants and reading historical novels. He is also an avid chess player and enjoys weekly matches at the local library. Robert values quiet moments and has a knack for storytelling, often sharing tales from his youth with friends and family."
+  "location": "Flat 3 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "Secondary School Teacher",
+  "industry": "Education",
+  "education": "Master's degree",
+  "political_lean": "Labour",
+  "personality_sketch": "Teaches History to GCSE students. Prepares lesson plans over the weekend. Attends quiz nights at the local pub with colleagues."
 }

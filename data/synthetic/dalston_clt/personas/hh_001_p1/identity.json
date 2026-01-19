@@ -1,11 +1,11 @@
 {
-  "name": "Dilek Aydin",
-  "age": 67,
-  "gender": "female",
-  "location": "1 Hackett Green Road, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "No formal qualifications",
-  "political_lean": "neutral",
-  "personality_sketch": "Dilek enjoys tending to her small garden and cooking traditional Turkish meals for her family. She loves chatting with neighbors and keeps a keen eye on the happenings of the local community."
+  "name": "Kemal Yılmaz",
+  "age": 23,
+  "gender": "male",
+  "location": "1 Chapelwright Lane Road, Dalston, London",
+  "occupation": "bartender",
+  "industry": "Hospitality",
+  "education": "Secondary school",
+  "political_lean": "left-leaning",
+  "personality_sketch": "Works late shifts at a busy pub. Takes the bus home after midnight. Occasionally pulls double shifts on weekends."
 }

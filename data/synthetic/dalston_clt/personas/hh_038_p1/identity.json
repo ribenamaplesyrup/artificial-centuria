@@ -1,11 +1,11 @@
 {
-  "name": "Emma Osei",
-  "age": 30,
-  "gender": "female",
-  "location": "5 Baker's Lane Mews, Dalston, London",
-  "occupation": "nurse",
-  "industry": "Healthcare",
-  "education": "Bachelor's degree",
-  "political_lean": "progressive",
-  "personality_sketch": "Emma is a compassionate and dedicated nurse who enjoys spending her free time volunteering at local community centers. She loves reading fiction and often hosts book club meetings with friends. Emma is keen on staying active, enjoying yoga and jogging around the local parks."
+  "name": "John Molloy",
+  "age": 68,
+  "gender": "male",
+  "location": "5 Mason's Brook Mews, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
+  "education": "Some college",
+  "political_lean": "conservative",
+  "personality_sketch": "Retired last year after decades as an electrician. Visits the local market daily for groceries. Reads the newspaper every morning while drinking tea."
 }

@@ -1,11 +1,11 @@
 {
-  "name": "Leo Fischer",
-  "age": 23,
-  "gender": "male",
-  "location": "14 Weaver's End Street, Dalston, London",
-  "occupation": "Student",
-  "industry": "Education",
-  "education": "Bachelor's degree (in progress)",
-  "political_lean": "Liberal",
-  "personality_sketch": "Leo is an enthusiastic student of sociology with a keen interest in urban development. He enjoys attending live music events and is an active member of the university's debate team. He often brings home new ideas to share with his flatmates."
+  "name": "Martha Bailey",
+  "age": 41,
+  "gender": "female",
+  "location": "14 Elderbloom Way Street, Dalston, London",
+  "occupation": "self-employed seamstress",
+  "industry": "Creative",
+  "education": "Vocational/trade certificate",
+  "political_lean": "Lib Dem",
+  "personality_sketch": "Spends afternoons sewing and altering clothes for local clients. Goes to the local market on Thursdays. Keeps the family organized with lists and reminders."
 }

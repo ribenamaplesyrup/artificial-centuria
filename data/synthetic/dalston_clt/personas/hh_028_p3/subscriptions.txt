@@ -1,14 +1,10 @@
-1. Netflix
-2. Spotify (student plan)
-3. "My Favorite Murder" podcast
-4. "The Daily" podcast
-5. BBC iPlayer
-6. "First We Feast" YouTube channel
-7. Disney+
-8. "Conan O'Brien Needs A Friend" podcast
-9. "View from the Penalty Box" podcast
-10. "Vox" YouTube channel
-11. "The Moth" storytelling podcast
-12. Amazon Prime Video
-13. "Half Past Green" YouTube channel (environmental science focus)
-14. The Guardian Online (occasional news and opinion pieces)
+- "Always Aggravated" Podcast (comedy)  
+- "Criminal" Podcast (true crime)  
+- "My Favorite Murder" Podcast (true crime/comedy)  
+- "The Last Dance" (sports documentary series on Netflix)  
+- "How I Built This" Podcast (business storytelling)  
+- "Good Mythical Morning" YouTube Channel (entertainment/comedy)  
+- "Ted Lasso" (comedy series on Apple TV+)  
+- "The Daily" (news podcast, minimal political content)  
+- "Pod Save America" (political podcast, light commentary)  
+- "The Office" (streaming series available on various platforms)

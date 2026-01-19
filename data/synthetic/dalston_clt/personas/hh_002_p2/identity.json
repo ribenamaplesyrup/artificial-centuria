@@ -1,11 +1,11 @@
 {
-  "name": "Selma Akman",
-  "age": 24,
-  "gender": "female",
-  "location": "3 Hackett Green Road, Dalston, London",
-  "occupation": "barista",
-  "industry": "Hospitality",
-  "education": "A-levels",
-  "political_lean": "progressive",
-  "personality_sketch": "Selma is sociable and artistic, often spending her weekends visiting art galleries and attending cultural festivals. She enjoys connecting with diverse groups of people and practicing new coffee-making techniques. Selma is also passionate about community art projects and sustainability."
+  "name": "Eren Demir",
+  "age": 29,
+  "gender": "male",
+  "location": "3 Chapelwright Lane Road, Dalston, London",
+  "occupation": "electrician",
+  "industry": "Trades",
+  "education": "Vocational/trade certificate",
+  "political_lean": "Apolitical",
+  "personality_sketch": "Works on various sites around London. Eats dinner on the couch while watching the news. Checks in with his mother over the phone every Friday."
 }

@@ -1,11 +1,11 @@
 {
-  "name": "Mehmet Kazım",
-  "age": 44,
-  "gender": "male",
-  "location": "12 Weaver's End Street, Dalston, London",
-  "occupation": "tech executive",
-  "industry": "Technology",
-  "education": "Bachelor's degree",
-  "political_lean": "Centrist",
-  "personality_sketch": "Mehmet is a forward-thinking tech enthusiast who loves to innovate. He enjoys cycling through London and often attends tech meet-ups to network and exchange ideas. Mehmet is also passionate about environmental sustainability and supports local green initiatives."
+  "name": "Mary Fry",
+  "age": 65,
+  "gender": "female",
+  "location": "12 Elderbloom Way Street, Dalston, London",
+  "occupation": "part-time receptionist",
+  "industry": "Healthcare",
+  "education": "Secondary school",
+  "political_lean": "apolitical",
+  "personality_sketch": "Works part-time at a local GP surgery. Enjoys knitting in the evenings and catches up with her sister over the phone weekly. Keeps in touch with old friends from school with letters."
 }

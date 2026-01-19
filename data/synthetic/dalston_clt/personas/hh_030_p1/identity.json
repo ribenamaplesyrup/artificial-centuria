@@ -1,11 +1,11 @@
 {
-  "name": "Ayşe Yılmaz",
-  "age": 28,
-  "gender": "female",
-  "location": "Flat 9 Osier Grove Estate, Dalston, London",
-  "occupation": "community nurse",
-  "industry": "Healthcare",
-  "education": "Bachelor's degree",
-  "political_lean": "liberal",
-  "personality_sketch": "Ayşe is a compassionate and dedicated nurse who enjoys helping others. She spends her free time volunteering at the local community center and enjoys reading historical fiction. Ayşe is passionate about promoting health and wellness in her community and often organizes health awareness events in Dalston."
+  "name": "Paul Watkins",
+  "age": 52,
+  "gender": "male",
+  "location": "Flat 9 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "electrician",
+  "industry": "Trades",
+  "education": "Vocational/trade certificate",
+  "political_lean": "Labour",
+  "personality_sketch": "Works on construction sites across the city. Enjoys a pint with mates after work at the local pub. Spends weekends watching football on TV."
 }

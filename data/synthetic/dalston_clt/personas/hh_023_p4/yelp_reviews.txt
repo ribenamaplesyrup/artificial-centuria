@@ -1,0 +1,39 @@
+**Business Name:** Dalston Pizza Co.  
+**Type:** Restaurant  
+**Rating:** ★★★★☆  
+**Review:** “So, I hit up Dalston Pizza Co. with my mates last Friday night, and wow, the pizza here is fire! 🍕 I got the BBQ chicken and it was so tasty, with that perfect crunchy base. Prices are super chill for a student too. Only complaint? The place gets kinda packed, but we ended up chilling outside, so all good in the end. Definitely recommend if you need a late-night slice!”
+
+---
+
+**Business Name:** Cloud Nine Hair Salon  
+**Type:** Hair Salon  
+**Rating:** ★★★★☆  
+**Review:** “Just got my haircut at Cloud Nine and I’m pretty pleased! The stylist actually listened to what I wanted and didn’t just chop away. The vibe is relaxed, and I didn’t feel rushed at all. It’s a bit on the pricier side for me, but hey, you pay for good hair! I’ll be back for sure.”
+
+---
+
+**Business Name:** Ace Mechanics  
+**Type:** Auto Repair  
+**Rating:** ★★★☆☆  
+**Review:** “Took my dad’s old car here because it was making weird noises. Ace Mechanics fixed the engine issue but it took way longer than I expected. They were honest about costs, which I appreciated, but the wait time was a bummer. Slightly above average experience; I might try another place next time.”
+
+---
+
+**Business Name:** High Score Gaming Lounge  
+**Type:** Gaming Café  
+**Rating:** ★★★★★  
+**Review:** “OMG, you guys HAVE to check out High Score! It's like a gamer’s paradise. They have all the newest consoles and a ton of comfy seating. My friends and I spent hours there last Saturday just grinding away on various games. The snacks are decent too — a bit overpriced, but what gaming café isn’t? Totally coming back next week!”
+
+---
+
+**Business Name:** The Corner Café  
+**Type:** Café  
+**Rating:** ★★★☆☆  
+**Review:** “The Corner Café is your classic chill spot for a snack and coffee. I grabbed a hot chocolate there one afternoon while studying, and it was fine, nothing too special. Prices are okay, but I wasn't blown away by the pastries. It’s a nice place to hang out and do some revision, though!”
+
+---
+
+**Business Name:** Trendy Shaves Barbershop  
+**Type:** Barbershop  
+**Rating:** ★★★★★  
+**Review:** “If you need a fresh cut, Trendy Shaves is the spot! Really cool atmosphere and the barbers are super chill. I got a fade the other day and I can’t stop looking in the mirror. Definitely a good place for teens, plus they have gaming stations which is rad while you wait. Totally recommend it!”

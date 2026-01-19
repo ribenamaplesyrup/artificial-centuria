@@ -1,11 +1,11 @@
 {
-  "name": "Duygu Yılmaz",
+  "name": "Hasan Demir",
   "age": 23,
-  "gender": "female",
-  "location": "6 Baker's Lane Mews, Dalston, London",
-  "occupation": "customer service representative",
-  "industry": "Retail",
-  "education": "A-levels",
-  "political_lean": "liberal",
-  "personality_sketch": "Duygu is an energetic and sociable young woman who enjoys exploring the vibrant culture of East London. She loves spending her weekends visiting local markets and trying out different cuisines. Duygu is passionate about music and often attends live gigs. Friendly and approachable, she values diversity and embraces new experiences with an open mind."
+  "gender": "male",
+  "location": "6 Mason's Brook Mews, Dalston, London",
+  "occupation": "bike courier",
+  "industry": "Transport",
+  "education": "GCSEs",
+  "political_lean": "apolitical",
+  "personality_sketch": "Delivers food across the city. Eats on the go between jobs. Streamlines routes to finish early."
 }

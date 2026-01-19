@@ -1,23 +1,19 @@
-Artists:
-1. Adele
-2. Ed Sheeran
-3. Norah Jones
-4. Coldplay
-5. John Legend
-6. Florence + The Machine
-7. Sade
-8. Sting
-9. Lighthouse Family
-10. Corinne Bailey Rae
-11. Enya
-12. Michael Bublé
+**Artists**  
+1. ABBA  
+2. Elton John  
+3. Fleetwood Mac  
+4. Rod Stewart  
+5. Dolly Parton  
+6. Billie Eilish  
+7. The Beatles  
+8. Adele  
 
-Genres:
-1. Pop
-2. Adult Contemporary
-3. Soft Rock
+**Genres**  
+1. Pop  
+2. Classic Rock  
+3. Easy Listening  
 
-Playlists:
-1. "Easy Listening for Evenings"
-2. "Family Dinner Tunes"
-3. "Sunday Morning Relaxation"
+**Playlists**  
+1. 70s and 80s Classics  
+2. Soft Pop Hits  
+3. Songs for Sunday Mornings

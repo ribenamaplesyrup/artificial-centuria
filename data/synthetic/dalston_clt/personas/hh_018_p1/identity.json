@@ -1,11 +1,11 @@
 {
-  "name": "Ayla Kazım",
-  "age": 42,
-  "gender": "female",
-  "location": "12 Weaver's End Street, Dalston, London",
-  "occupation": "lawyer",
-  "industry": "Legal",
-  "education": "Master's degree",
-  "political_lean": "Liberal",
-  "personality_sketch": "Ayla is a passionate and driven individual with a strong sense of justice. She enjoys spending her weekends exploring new art exhibitions and taking long walks along the canal with her family. Ayla is known for her keen sense of humor and love for cooking Turkish delicacies."
+  "name": "Stuart Fry",
+  "age": 67,
+  "gender": "male",
+  "location": "12 Elderbloom Way Street, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
+  "education": "Vocational/trade certificate",
+  "political_lean": "conservative",
+  "personality_sketch": "Retired five years ago from his carpentry business. Spends afternoons tinkering in his shed and attends the local pub quiz every Thursday. Keeps a vegetable garden in the back yard."
 }

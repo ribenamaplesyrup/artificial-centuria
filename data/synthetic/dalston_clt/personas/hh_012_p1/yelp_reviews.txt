@@ -1,0 +1,39 @@
+**Restaurant: The Vegan Deli**  
+**Type:** Vegan restaurant  
+**Rating:** ★★★★★  
+"The Vegan Deli is a hidden gem in Dalston! As a software engineer who often forgets to eat while coding, I needed a place that offers quick yet fulfilling meals. Their Buddha bowl is a game-changer—packed with flavor and just the right amount of spice. Plus, the staff is super friendly, making it a perfect spot to grab a bite without feeling rushed. Will definitely be back, especially for their weekly specials!"
+
+---
+
+**Service: Ace Hair & Beauty Salon**  
+**Type:** Hair salon  
+**Rating:** ★★★★☆  
+"I recently visited Ace Hair & Beauty for a trim, and I must say, they really know what they're doing! My stylist was personable and did an excellent job understanding what I wanted. It's not fancy, but the prices are reasonable, especially for the quality of service. A tad noisy, though, but that didn’t bother me too much. Just be sure to book in advance, as they're quite popular!"
+
+---
+
+**Restaurant: Curry & Co.**  
+**Type:** Indian restaurant  
+**Rating:** ★★★☆☆  
+"Curry & Co. has decent food, but it didn’t quite live up to my expectations from all the hype. The butter chicken was flavorful, but the naan was a tad disappointing—felt more like store-bought than freshly made. Could be a good spot for a casual meal after a long coding session, but I’ll probably stick to takeout next time. Also, I might be a bit biased; I tend to crave home-cooked Nigerian meals more!"
+
+---
+
+**Service: Dalston Auto Repair**  
+**Type:** Mechanic  
+**Rating:** ★★★★★  
+"These guys were lifesavers! I had a minor emergency with my car right before a weekend coding session. They squeezed me in and fixed the issue quickly without draining my wallet. Super friendly, transparent about the costs, and they even gave me some tips for maintaining my car. Best mechanic experience I’ve had in London!"
+
+---
+
+**Business: Barley & Oats Cafe**  
+**Type:** Cafe  
+**Rating:** ★★★★☆  
+"Barley & Oats is my go-to spot for a quick caffeine fix. Their flat white is excellent and never fails to get me through those long code-crunching days. The atmosphere is relaxing, making it a great place for remote work—though Wi-Fi can get spotty during peak hours. They could use more vegan snack options, but the staff is lovely and always ready to help!"
+
+---
+
+**Restaurant: La Pizzeria**  
+**Type:** Pizzeria  
+**Rating:** ★★★☆☆  
+"I had high hopes for La Pizzeria based on reviews, but it felt a bit underwhelming. The pizza was decent, nothing spectacular. I mean, a well-made pizza is a must for any techie cramming for deadlines, right? Maybe it was just an off-night, but I’ve had better. I think I’ll explore other options next time I’m craving pizza, even if it means a bit of a trek!"

@@ -1,12 +1,102 @@
 """Extract structured information from personal data files using LLM."""
 
+import json
 from pathlib import Path
-from typing import Any
 
 from pydantic import BaseModel, field_validator
 
 from centuria.data import load_text
 from centuria.llm import complete
+from centuria.utils import parse_json_response
+
+# =============================================================================
+# Extraction Prompts
+# =============================================================================
+
+# Maximum characters of raw context to include in prompts
+RAW_CONTEXT_CHAR_LIMIT = 8000
+
+PROFILE_EXTRACTION_PROMPT = """Analyze the following personal data and extract a structured profile.
+
+<personal_data>
+{content}
+</personal_data>
+
+Based on this data, extract the following information. For each field, provide your best inference based on the available evidence. If something cannot be reasonably inferred, leave it as null.
+
+Return a JSON object with these fields:
+{{
+    "name": "string or null",
+    "location": "string or null (city/country)",
+    "age_range": "string or null (e.g., '30-35')",
+    "current_role": "string or null",
+    "industry": "string or null",
+    "years_experience": "number or null",
+    "key_skills": ["list", "of", "skills"],
+    "education_level": "string or null (e.g., 'Masters', 'PhD', 'Bachelors')",
+    "education_field": "string or null",
+    "reading_genres": ["list", "of", "genres"],
+    "media_diet": ["types", "of", "media", "consumed"],
+    "intellectual_interests": ["list", "of", "topics"],
+    "political_lean": "string or null (left/right/center/heterodox/apolitical)",
+    "key_values": ["list", "of", "core", "values"],
+    "causes_care_about": ["list", "of", "causes"],
+    "communication_style": "string or null (e.g., 'direct', 'diplomatic', 'analytical')",
+    "work_style": "string or null (e.g., 'collaborative', 'independent', 'mixed')",
+    "risk_tolerance": "string or null (e.g., 'risk-averse', 'moderate', 'risk-seeking')"
+}}
+
+Return ONLY the JSON object, no other text."""
+
+CONTEXT_STATEMENT_PROMPT = """You are creating a factual persona context statement for use in LLM role-playing.
+
+Based on the following structured profile and raw personal data, write a clear, objective context statement.
+
+<structured_profile>
+{profile_json}
+</structured_profile>
+
+<raw_data>
+{raw_context}
+</raw_data>
+
+Write a context statement (300-500 words) that:
+1. States factual information about this person's work, education, and background
+2. Lists their intellectual interests and media consumption without editorializing
+3. Notes any genuinely unusual or contradictory elements (e.g., if their media diet spans opposing political viewpoints, state this plainly)
+4. Infers likely opinions and worldview based strictly on evidence, using hedged language ("likely", "suggests", "probably")
+5. Describes observable patterns in their career or interests
+
+CRITICAL - WRITE LIKE A NEUTRAL OBSERVER, NOT AN ADVERTISER:
+Your output must read like a researcher's field notes, not a LinkedIn profile or dating app bio.
+
+BANNED PHRASES (never use these or similar):
+- "passionate about", "driven", "dedicated to", "committed to"
+- "in their free time", "enjoys exploring", "loves discovering"
+- "well-rounded", "diverse interests", "eclectic taste"
+- "balance of", "blend of", "mix of work and play"
+- "community-minded", "family-oriented", "health-conscious"
+- "thrives on", "finds joy in", "takes pride in"
+- "keen interest", "deep appreciation", "strong believer"
+- Any phrase that sounds promotional or self-congratulatory
+
+GOOD NEUTRAL PHRASING:
+- "Works as a..." NOT "accomplished professional who..."
+- "Watches..." NOT "enjoys watching..." or "passionate about..."
+- "Reads..." NOT "avid reader of..."
+- "Goes to church on Sundays" NOT "deeply spiritual" or "faith-driven"
+- "Spends evenings on social media" NOT "stays connected with..."
+- "Doesn't exercise regularly" NOT "focused on other priorities"
+
+Include mundane and unflattering details where relevant:
+- Long commutes, overtime, tiredness
+- Routine habits, not just interesting hobbies
+- Things they don't do (doesn't read, doesn't travel, doesn't cook)
+- Ordinary entertainment (TV, social media scrolling, gaming)
+
+The context statement should be written in third person, factual, and suitable for use as system prompt context.
+
+Write the context statement now:"""
 
 
 class ExtractedProfile(BaseModel):
@@ -58,59 +148,15 @@ class ExtractedProfile(BaseModel):
         return v if v is not None else []
 
 
-EXTRACTION_PROMPT = """Analyze the following personal data and extract a structured profile.
-
-<personal_data>
-{content}
-</personal_data>
-
-Based on this data, extract the following information. For each field, provide your best inference based on the available evidence. If something cannot be reasonably inferred, leave it as null.
-
-Return a JSON object with these fields:
-{{
-    "name": "string or null",
-    "location": "string or null (city/country)",
-    "age_range": "string or null (e.g., '30-35')",
-    "current_role": "string or null",
-    "industry": "string or null",
-    "years_experience": "number or null",
-    "key_skills": ["list", "of", "skills"],
-    "education_level": "string or null (e.g., 'Masters', 'PhD', 'Bachelors')",
-    "education_field": "string or null",
-    "reading_genres": ["list", "of", "genres"],
-    "media_diet": ["types", "of", "media", "consumed"],
-    "intellectual_interests": ["list", "of", "topics"],
-    "political_lean": "string or null (left/right/center/heterodox/apolitical)",
-    "key_values": ["list", "of", "core", "values"],
-    "causes_care_about": ["list", "of", "causes"],
-    "communication_style": "string or null (e.g., 'direct', 'diplomatic', 'analytical')",
-    "work_style": "string or null (e.g., 'collaborative', 'independent', 'mixed')",
-    "risk_tolerance": "string or null (e.g., 'risk-averse', 'moderate', 'risk-seeking')"
-}}
-
-Return ONLY the JSON object, no other text."""
-
-
 async def extract_profile_from_text(content: str) -> ExtractedProfile:
     """Extract a structured profile from raw text content."""
-    import json
-
-    prompt = EXTRACTION_PROMPT.format(content=content)
+    prompt = PROFILE_EXTRACTION_PROMPT.format(content=content)
     result = await complete(prompt)
 
-    # Parse the JSON response
     try:
-        # Handle potential markdown code blocks
-        response_text = result.content.strip()
-        if response_text.startswith("```"):
-            response_text = response_text.split("```")[1]
-            if response_text.startswith("json"):
-                response_text = response_text[4:]
-        response_text = response_text.strip()
-
-        data = json.loads(response_text)
+        data = parse_json_response(result.content)
         return ExtractedProfile(raw_context=content, **data)
-    except (json.JSONDecodeError, TypeError) as e:
+    except (json.JSONDecodeError, TypeError):
         # If parsing fails, return profile with just raw context
         return ExtractedProfile(raw_context=content)
 
@@ -129,49 +175,15 @@ async def extract_profile_from_files(paths: list[str]) -> ExtractedProfile:
     return await extract_profile_from_text(combined)
 
 
-CONTEXT_STATEMENT_PROMPT = """You are creating a factual persona context statement for use in LLM role-playing.
-
-Based on the following structured profile and raw personal data, write a clear, objective context statement.
-
-<structured_profile>
-{profile_json}
-</structured_profile>
-
-<raw_data>
-{raw_context}
-</raw_data>
-
-Write a context statement (300-500 words) that:
-1. States factual information about this person's work, education, and background
-2. Lists their intellectual interests and media consumption without editorializing
-3. Notes any genuinely unusual or contradictory elements (e.g., if their media diet spans opposing political viewpoints, state this plainly)
-4. Infers likely opinions and worldview based strictly on evidence, using hedged language ("likely", "suggests", "probably")
-5. Describes observable patterns in their career or interests
-
-CRITICAL RULES:
-- Do NOT use flattering or praising language (no "accomplished", "impressive", "key player", "dynamic", "formidable", etc.)
-- Do NOT use superlatives or hyperbole
-- State facts plainly. "Works as X at Y" not "excels as X at Y"
-- If something is genuinely notable or unusual, state what it is factually without calling it "remarkable" or "unique"
-- Write like a neutral researcher documenting a subject, not like a LinkedIn recommendation
-- Avoid corporate buzzwords and inflated language
-
-The context statement should be written in third person, factual, and suitable for use as system prompt context.
-
-Write the context statement now:"""
-
-
 async def build_context_statement(profile: ExtractedProfile) -> str:
     """Build a rich context statement from an extracted profile."""
-    import json
-
     # Convert profile to JSON, excluding raw_context for the structured view
     profile_dict = profile.model_dump(exclude={"raw_context"})
     profile_json = json.dumps(profile_dict, indent=2)
 
     prompt = CONTEXT_STATEMENT_PROMPT.format(
         profile_json=profile_json,
-        raw_context=profile.raw_context[:8000],  # Limit raw context size
+        raw_context=profile.raw_context[:RAW_CONTEXT_CHAR_LIMIT],
     )
 
     result = await complete(prompt)

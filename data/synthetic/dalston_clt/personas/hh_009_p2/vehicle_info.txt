@@ -1,7 +1,0 @@
-**Vehicle Profile**
-
-- **Ownership Status**: Margaret owns a car.
-- **Make, Model, Year, Condition**: Volvo XC40, 2021, Excellent Condition
-- **Reason for Choice**: Margaret chose the Volvo XC40 for its strong safety features, comfortable interior, and compact size, making it ideal for navigating the streets of London. Its eco-friendly hybrid engine aligns with her progressive values and concern for environmental impact.
-- **Driving Habits**: Margaret primarily uses her vehicle for weekend getaways to the countryside, where she enjoys the serenity away from the bustling city. During weekends, she also visits local charity events and community gatherings. In the city, she prefers to avoid driving during peak hours to prevent unnecessary stress.
-- **Public Transport Usage**: Living in urban Dalston, Margaret makes extensive use of public transportation during the workweek. She finds it convenient and efficient for daily commuting to her office in central London, taking advantage of the Tube and buses to avoid traffic and parking challenges.

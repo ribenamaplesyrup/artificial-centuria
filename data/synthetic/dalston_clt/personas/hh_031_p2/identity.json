@@ -1,11 +1,11 @@
 {
-  "name": "Tom Davies",
-  "age": 17,
-  "gender": "male",
-  "location": "Flat 10 Osier Grove Estate, Dalston, London",
-  "occupation": "student",
-  "industry": "Education",
-  "education": "A-levels",
-  "political_lean": "progressive",
-  "personality_sketch": "Tom is an ambitious student with a keen interest in technology and programming. He spends his free time participating in coding competitions and playing video games. Tom is sociable and enjoys the diverse cultural atmosphere of Dalston."
+  "name": "Ayşe Demir",
+  "age": 66,
+  "gender": "female",
+  "location": "Flat 10 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "domestic cleaner",
+  "industry": "Service",
+  "education": "No formal qualifications",
+  "political_lean": "apolitical",
+  "personality_sketch": "Works part-time cleaning nearby offices. Shops for groceries early on Tuesdays. Talks on the phone with her sister in Istanbul each evening."
 }

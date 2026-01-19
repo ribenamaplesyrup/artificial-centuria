@@ -1,11 +1,11 @@
 {
-  "name": "Ahmed Ünal",
-  "age": 45,
+  "name": "Ravi Patel",
+  "age": 25,
   "gender": "male",
-  "location": "5 Hackett Green Road, Dalston, London",
-  "occupation": "small business owner",
-  "industry": "Retail",
-  "education": "Vocational/trade certificate",
-  "political_lean": "Moderate",
-  "personality_sketch": "Ahmed owns a cozy neighborhood café popular for its Turkish coffee. He is friendly, enjoying good conversation and meeting new people. When not at the café, Ahmed loves gardening and making improvements to the property."
+  "location": "5 Chapelwright Lane Road, Dalston, London",
+  "occupation": "Software Engineer",
+  "industry": "Technology",
+  "education": "Bachelor's degree",
+  "political_lean": "Liberal Democrat",
+  "personality_sketch": "Works from home most days. Orders takeaways frequently. Plays squash at the local gym on Thursday evenings."
 }

@@ -1,11 +1,11 @@
 {
-  "name": "Linda Ng",
-  "age": 32,
-  "gender": "female",
-  "location": "3 Baker's Lane Mews, Dalston, London",
-  "occupation": "mid-level professional",
-  "industry": "Technology",
-  "education": "Bachelor's degree",
-  "political_lean": "progressive",
-  "personality_sketch": "Linda is tech-savvy and enjoys keeping up with the latest gadgets. She loves hiking on weekends and often explores the diverse cuisine of Dalston. Organized and meticulous, her attention to detail makes her an exemplary system analyst."
+  "name": "Adam Afolabi",
+  "age": 67,
+  "gender": "male",
+  "location": "3 Mason's Brook Mews, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
+  "education": "Secondary school",
+  "political_lean": "apolitical",
+  "personality_sketch": "Retired from a job in transport. Spends his afternoons feeding pigeons in Hackney Downs Park. Visits the local library once a week to borrow books."
 }

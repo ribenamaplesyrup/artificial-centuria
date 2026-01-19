@@ -1,11 +1,11 @@
 {
-  "name": "Clive Reynolds",
-  "age": 66,
-  "gender": "male",
-  "location": "Flat 1 Osier Grove Estate, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "Master's degree",
-  "political_lean": "conservative",
-  "personality_sketch": "Clive is a practical and reserved individual who maintains a keen interest in current affairs and history. Since retiring from his career in education, he spends his days reading and gardening, enjoying the peaceful environment of his local community. He values routine and appreciates the quieter side of life."
+  "name": "Fatima Abbas",
+  "age": 45,
+  "gender": "female",
+  "location": "Flat 1 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "Software Developer",
+  "industry": "Technology",
+  "education": "Bachelor's degree",
+  "political_lean": "progressive",
+  "personality_sketch": "Spends most days coding and attending virtual meetings. Orders groceries online weekly. Enjoys evening strolls around the neighborhood."
 }

@@ -755,13 +755,17 @@
 	}
 
 	function downloadResults() {
+		// Only include generatedImagePath if it's a URL path, not base64 data
+		const isImagePath = generatedImage && generatedImage.startsWith('/');
+
 		const data = {
 			surveyResults,
 			followUpResults,
 			followUpQuestions,
 			winningOption,
 			totalCost,
-			generatedImage,
+			modelUsed: surveyModelUsed,
+			generatedImagePath: isImagePath ? generatedImage : null,
 			imagePrompt
 		};
 

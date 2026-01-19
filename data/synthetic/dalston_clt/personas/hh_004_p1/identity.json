@@ -1,11 +1,11 @@
 {
-  "name": "Zeynep Demir",
-  "age": 55,
-  "gender": "female",
-  "location": "7 Hackett Green Road, Dalston, London",
-  "occupation": "seamstress",
+  "name": "Ethan Willis",
+  "age": 46,
+  "gender": "male",
+  "location": "7 Chapelwright Lane Road, Dalston, London",
+  "occupation": "electrician",
   "industry": "Trades",
   "education": "Vocational/trade certificate",
-  "political_lean": "centre-left",
-  "personality_sketch": "Zeynep is a warm and caring individual who cherishes her community connections in Dalston. Passionate about traditional Turkish crafts, she spends her free time teaching textile art at the local community centre and enjoys cooking elaborate meals inspired by her culture. She values resilience and hard work, having built her life independently in a busy London neighbourhood."
+  "political_lean": "Labour",
+  "personality_sketch": "Works irregular hours depending on jobs. Watches football matches when he's home. Enjoys fixing things around the house."
 }

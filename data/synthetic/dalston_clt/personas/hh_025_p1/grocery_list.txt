@@ -1,57 +1,51 @@
-**Fruits & Vegetables**
-- Bananas
-- Apples
-- Carrots
-- Broccoli
-- Mixed salad greens
-- Potatoes
-- Cherry tomatoes
-- Onions
+**Fruits & Vegetables:**
+- Apples (4)
+- Bananas (6)
+- Spinach (1 bag)
+- Broccoli (1 head)
+- Carrots (500g)
+- Tomatoes (for salads, 4-5)
+- Bell peppers (2)
+- Onions (2)
+- Potatoes (1kg)
+- Garlic (1 bulb)
 
-**Meat & Poultry**
-- Chicken breasts
-- Lean ground beef
+**Dairy & Eggs:**
+- Whole milk (1 litre)
+- Greek yogurt (500g)
+- Cheddar cheese (200g)
+- Eggs (6)
 
-**Dairy & Eggs**
-- Semi-skimmed milk
-- Greek yogurt
-- Cheddar cheese
-- Eggs
+**Meat & Fish:**
+- Chicken breasts (500g)
+- Salmon fillets (2)
+- Minced beef (500g)
 
-**Bakery & Cereals**
-- Whole grain bread
-- Oatmeal
+**Grains & Pasta:**
+- Brown bread (1 loaf)
+- Whole grain pasta (500g)
+- Quinoa (250g)
+- Oats (500g)
 
-**Pasta & Rice**
-- Whole wheat pasta
-- Brown rice
+**Canned & Jarred Goods:**
+- Chickpeas (1 can)
+- Black beans (1 can)
+- Tomato sauce (500g jar)
+- Olive oil (500ml)
+- Vegetable stock (1 carton)
 
-**Canned & Jarred Goods**
-- Baked beans
-- Tomato soup
-- Mixed beans
-
-**Spices & Condiments**
-- Olive oil
+**Herbs & Spices:**
+- Dried herbs (mixed Italian)
 - Salt
-- Pepper
-- Soy sauce
-- Worcestershire sauce
+- Black pepper
 
-**Snacks & Beverages**
-- Tea bags
-- Coffee
-- Mixed nuts
-- Dark chocolate
+**Beverages:**
+- Black tea (20 bags)
+- Herbal tea (variety pack)
 
-**Frozen Foods**
-- Frozen peas
-- Fish fingers
+**Snacks:**
+- Nuts (mixed, 200g)
+- Dark chocolate (70% cocoa, 100g)
 
-**Household & Personal Care**
-- Toothpaste
-- Toilet paper
-- Laundry detergent
-
-**Miscellaneous**
-- Football snacks (crisps)
+**Bird Feeding Supplies:**
+- Birdseed (1kg)

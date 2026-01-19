@@ -1,11 +1,11 @@
 {
-  "name": "Dominik Kowalczyk",
-  "age": 12,
+  "name": "Jayden Armstrong",
+  "age": 17,
   "gender": "male",
-  "location": "Flat 2 Osier Grove Estate, Dalston, London",
-  "occupation": "student",
-  "industry": "Student",
+  "location": "Flat 2 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "unemployed",
+  "industry": "Unemployed",
   "education": "Secondary school",
-  "political_lean": "Too young for political preference",
-  "personality_sketch": "Dominik is an enthusiastic and curious boy who loves playing football and video games. He is particularly interested in science and frequently experiments with small projects at home. Dominik is outgoing and makes friends easily at school."
+  "political_lean": "Lib Dem",
+  "personality_sketch": "Prepares for A-levels, lingers in parks. Keen gamer. Spends evenings with friends at the mall."
 }

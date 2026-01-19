@@ -1,11 +1,11 @@
 {
-  "name": "Amir Patel",
-  "age": 45,
+  "name": "Kevin Lund",
+  "age": 67,
   "gender": "male",
-  "location": "Flat 7 Osier Grove Estate, Dalston, London",
-  "occupation": "lawyer",
-  "industry": "Legal",
-  "education": "Master's degree",
-  "political_lean": "Moderate",
-  "personality_sketch": "Amir is a dedicated and hardworking solicitor who balances his time between family and work. He enjoys cycling and often takes part in community events, advocating for social justice."
+  "location": "Flat 7 Ironmonger Pass Estate, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
+  "education": "Vocational/trade certificate",
+  "political_lean": "conservative",
+  "personality_sketch": "Retired from electrical work five years ago. Fixes things around the flat. Watches politics on TV most afternoons."
 }

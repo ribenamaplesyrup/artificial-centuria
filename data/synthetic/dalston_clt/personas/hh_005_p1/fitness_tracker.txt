@@ -1,0 +1,14 @@
+**Fitness Tracker Data Summary for Gülay Demirci**
+
+- **Average Daily Steps**: 6,500 steps
+- **Exercise Activities and Frequency**: 
+  - Walking: 5 days a week
+  - Yoga: 2 days a week (30 minutes each session)
+  - Occasional cycling on weekends (1-2 times a month)
+- **Sleep Patterns**: 
+  - Average sleep duration: 6.5 hours per night
+  - Sleep quality: Fair (occasional wakefulness in the night)
+- **Fitness Goals**: 
+  - Increase daily steps to 8,000 steps
+  - Incorporate strength training 1-2 times a week
+- **Apps/Devices Used**: Fitbit Charge 5 for tracking steps and sleep, MyFitnessPal for nutrition tracking

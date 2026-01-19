@@ -1,62 +1,52 @@
-Fruits & Vegetables:
-- Bananas
-- Oranges
-- Apples
-- Spinach
-- Tomatoes
-- Onions
-- Bell peppers
-- Potatoes
-- Garlic
-- Ginger
-- Coriander (cilantro)
+**Produce**  
+- Spinach  
+- Broccoli  
+- Carrots  
+- Bell peppers  
+- Apples  
+- Bananas  
+- Tomatoes  
+- Onions  
+- Garlic  
 
-Proteins:
-- Chicken breast
-- Lamb mince
-- Eggs
-- Paneer
+**Meat & Fish**  
+- Chicken breast  
+- Canned tuna  
+- Salmon fillets  
 
-Grains & Legumes:
-- Basmati rice
-- Whole wheat chapati flour
-- Red lentils
-- Chickpeas
+**Dairy**  
+- Low-fat milk  
+- Greek yogurt  
+- Cheddar cheese  
 
-Dairy:
-- Whole milk
-- Plain yogurt
+**Grains & Pasta**  
+- Brown rice  
+- Whole grain bread  
+- Whole wheat pasta  
 
-Spices & Condiments:
-- Turmeric powder
-- Cumin seeds
-- Garam masala
-- Red chili powder
-- Mustard seeds
-- Rice vinegar
-- Olive oil
+**Canned & Frozen Goods**  
+- Canned chickpeas  
+- Frozen mixed vegetables  
+- Frozen berries  
 
-Baking & Cooking Essentials:
-- All-purpose flour
-- Baking powder
-- Granulated sugar
-- Honey
+**Condiments & Spices**  
+- Olive oil  
+- Balsamic vinegar  
+- Soy sauce  
+- Italian seasoning  
+- Cumin  
 
-Snacks & Miscellaneous:
-- Mixed nuts
-- Dark chocolate
-- Digestive biscuits
+**Snacks**  
+- Hummus  
+- Rice cakes  
+- Mixed nuts  
 
-Beverages:
-- Herbal tea
-- Coffee
+**Beverages**  
+- Green tea  
+- Herbal tea  
 
-Frozen Foods:
-- Peas
-- Mixed berries
-
-Household Items:
-- Dishwashing liquid
-- Toilet paper
-
-This list reflects a balance of healthy, home-cooked meals with Indian cultural influences, suitable for a small household.
+**Household Items**  
+- Dish soap  
+- Laundry detergent  
+- Toilet paper  
+- Paper towels

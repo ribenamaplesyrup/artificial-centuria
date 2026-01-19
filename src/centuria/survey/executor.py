@@ -1,12 +1,16 @@
 """Survey execution."""
 
+import asyncio
 from dataclasses import dataclass
 
 from centuria.llm import CostEstimate, complete, estimate_cost
 from centuria.models import Persona, Question, QuestionResponse, Survey, SurveyResponse
 
+# =============================================================================
+# Survey Prompts
+# =============================================================================
 
-SYSTEM_TEMPLATE = """You are {name}. Answer as this person would actually speak - casual, natural, in their own voice.
+SURVEY_SYSTEM_PROMPT = """You are {name}. Answer as this person would actually speak - casual, natural, in their own voice.
 
 <context>
 {context}
@@ -18,35 +22,39 @@ Guidelines:
 - Your opinions come from your personal experiences, not abstract values
 - Be direct and concise - real people don't give speeches"""
 
-USER_TEMPLATE_SINGLE_SELECT = """Question: {question}
+SURVEY_USER_PROMPT_SINGLE_SELECT = """Question: {question}
 
 Options: {options}
 
 Reply in exactly this format:
 CHOICE: [your chosen option]
-JUSTIFICATION: [a short, personal reason in your own voice - mention something specific about your life, not generic benefits]
+JUSTIFICATION: [a short, personal reason in your own voice - reference something specific from your life, work, or daily routine]
 
-Bad example: "As someone who values community, this would bring people together."
-Good example: "I'd use it every morning before my shift starts." or "My kids would love it, they're always asking for somewhere to play." """
+Bad example: "I believe this aligns with my values of sustainability and community."
+Good example: "I deal with this at work every day" or "Tried it last year and it was a nightmare" or "My brother-in-law won't shut up about it" """
 
-USER_TEMPLATE_OPEN_ENDED = """Question: {question}
+SURVEY_USER_PROMPT_OPEN_ENDED = """Question: {question}
 
 Provide a brief response."""
+
+# Estimated completion tokens for cost estimation
+SURVEY_COMPLETION_TOKENS_SINGLE_SELECT = 30
+SURVEY_COMPLETION_TOKENS_OPEN_ENDED = 50
 
 
 def build_system_prompt(persona: Persona) -> str:
     """Build the system prompt for a persona."""
-    return SYSTEM_TEMPLATE.format(name=persona.name, context=persona.context)
+    return SURVEY_SYSTEM_PROMPT.format(name=persona.name, context=persona.context)
 
 
 def build_user_prompt(question: Question) -> str:
     """Build the user prompt for a question."""
     if question.question_type == "single_select" and question.options:
-        return USER_TEMPLATE_SINGLE_SELECT.format(
+        return SURVEY_USER_PROMPT_SINGLE_SELECT.format(
             question=question.text,
             options=", ".join(question.options),
         )
-    return USER_TEMPLATE_OPEN_ENDED.format(question=question.text)
+    return SURVEY_USER_PROMPT_OPEN_ENDED.format(question=question.text)
 
 
 def parse_choice_and_justification(content: str) -> tuple[str, str]:
@@ -93,16 +101,17 @@ async def ask_question(persona: Persona, question: Question, model: str | None =
 
 
 async def run_survey(persona: Persona, survey: Survey, model: str | None = None) -> SurveyResponse:
-    """Run a complete survey on a persona."""
-    responses = []
-    for question in survey.questions:
-        response = await ask_question(persona, question, model=model)
-        responses.append(response)
+    """Run a complete survey on a persona (all questions in parallel)."""
+    # Run all questions in parallel for speed
+    responses = await asyncio.gather(*[
+        ask_question(persona, question, model=model)
+        for question in survey.questions
+    ])
 
     return SurveyResponse(
         persona_id=persona.id,
         survey_id=survey.id,
-        responses=responses,
+        responses=list(responses),
     )
 
 
@@ -145,8 +154,11 @@ def estimate_survey_cost(
 
     for question in survey.questions:
         user = build_user_prompt(question)
-        # Single-select answers now include choice + justification (~30 tokens), open-ended longer (~50)
-        est_completion = 30 if question.question_type == "single_select" else 50
+        est_completion = (
+            SURVEY_COMPLETION_TOKENS_SINGLE_SELECT
+            if question.question_type == "single_select"
+            else SURVEY_COMPLETION_TOKENS_OPEN_ENDED
+        )
         estimate = estimate_cost(user, system=system, model=model, estimated_completion_tokens=est_completion)
 
         total_prompt_tokens += estimate.prompt_tokens

@@ -1,11 +1,11 @@
 {
-  "name": "James Carter",
-  "age": 42,
+  "name": "Thomas Reed",
+  "age": 67,
   "gender": "male",
-  "location": "6 Weaver's End Street, Dalston, London",
-  "occupation": "secondary school teacher",
-  "industry": "Education",
-  "education": "Bachelor's degree",
-  "political_lean": "Labour",
-  "personality_sketch": "James is a dedicated teacher who is passionate about imparting knowledge to younger generations. He enjoys reading historical novels and cycling around the city. An advocate for sustainable living, he often participates in community clean-up drives."
+  "location": "6 Elderbloom Way Street, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
+  "education": "Vocational/trade certificate",
+  "political_lean": "conservative",
+  "personality_sketch": "Retired from a 40-year career as a plumber. Takes morning walks to the local park and weekly has a pint at the pub with old colleagues. Keeps up with local news and politics on the radio."
 }

@@ -1,11 +1,11 @@
 {
-  "name": "Alexei Ivanov",
-  "age": 45,
+  "name": "James O'Reilly",
+  "age": 67,
   "gender": "male",
-  "location": "4 Weaver's End Street, Dalston, London",
-  "occupation": "mechanic",
-  "industry": "Trades",
+  "location": "4 Elderbloom Way Street, Dalston, London",
+  "occupation": "retired",
+  "industry": "Retired",
   "education": "Vocational/trade certificate",
-  "political_lean": "centrist",
-  "personality_sketch": "Alexei is a hardworking mechanic who enjoys solving complex mechanical problems. He is a dedicated father who loves spending weekends at the local park with his family. In his spare time, he likes to tinker with old vehicles in his garage."
+  "political_lean": "conservative",
+  "personality_sketch": "Retired six months ago from a job in construction. Visits the pub with old colleagues three times a week. Still fixes things around the house, keeps his tools neatly organized."
 }

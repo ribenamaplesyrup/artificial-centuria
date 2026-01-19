@@ -1,11 +1,11 @@
 {
-  "name": "Rachel Patel",
-  "age": 29,
-  "gender": "female",
-  "location": "21 Hackett Green Road, Dalston, London",
-  "occupation": "shop owner",
-  "industry": "Retail",
-  "education": "Bachelor's degree",
-  "political_lean": "liberal",
-  "personality_sketch": "Rachel is an enterprising and energetic woman who runs a quaint boutique gift shop in East London. She is known for her keen eye for detail and enjoys attending local art exhibitions. A social person, she often organizes community events to connect with her neighbors."
+  "name": "Aaron Thompson",
+  "age": 45,
+  "gender": "male",
+  "location": "21 Chapelwright Lane Road, Dalston, London",
+  "occupation": "bricklayer",
+  "industry": "Trades",
+  "education": "Vocational/trade certificate",
+  "political_lean": "Conservative",
+  "personality_sketch": "Works six days a week. Enjoys a pint at the local pub. Watches Premier League matches on Sundays."
 }

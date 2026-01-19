@@ -1,59 +1,105 @@
 # Artificial Centuria
 
-This project includes some basic experiments using LLMs to generate synthetic personas and surveying them. It includes notebooks exploring methods and a web app simulating experiments.
+Experiments using LLMs to generate synthetic personas and survey them. Includes notebooks exploring methods and a web app for interactive experiments.
 
-## Key Components
+## Project Structure
 
-### Notebooks
+```
+artificial-centuria/
+├── src/centuria/           # Core API library
+│   ├── api/server.py       # FastAPI endpoints
+│   ├── config.py           # Prompts & configuration (single source of truth)
+│   ├── utils.py            # Shared utilities
+│   ├── llm/                # LLM client wrapper (LiteLLM)
+│   ├── persona/            # Persona generation
+│   │   ├── synthetic.py    # Generation logic
+│   │   └── file_types.py   # 40 file type definitions
+│   ├── survey/             # Survey execution
+│   ├── data/               # Data loading & extraction
+│   └── models/             # Pydantic models
+├── notebooks/              # Jupyter notebooks (3 experiments)
+├── web/                    # SvelteKit webapp
+├── data/
+│   ├── personal/           # Your personal data (gitignored)
+│   └── synthetic/          # Generated personas for experiments
+└── tests/                  # Test suite
+```
 
-The `notebooks/` directory contains Jupyter notebooks that walk through the core features of the project:
+## Notebooks
 
-- **`01_single_agent_from_personal_data.ipynb`**: Explores creating a single LLM persona from personal data (like a CV) and testing its accuracy and consistency against the real person's answers. It compares personas generated from structured vs. unstructured data.
+The `notebooks/` directory contains Jupyter notebooks that walk through the core features:
 
-- **`02_synthetic_persona_generation.ipynb`**: Details the process of creating synthetic personas. It covers extracting structured profiles from real data, dealing with LLM biases in generation, and a "file-first" approach where data files are generated before the persona.
+- **`01_single_agent_from_personal_data.ipynb`**: Creates an LLM persona from personal data (like a CV) and tests its accuracy against real answers. Compares structured vs. unstructured data approaches.
 
-- **`03_building_a_fictional_neighbourhood.ipynb`**: Generates a fictional neighbourhood of 100 synthetic personas based on real-world census data for E8, London. It creates households, assigns demographics, and generates rich context statements for each persona.
+- **`02_synthetic_persona_generation.ipynb`**: Details creating synthetic personas - extracting profiles, dealing with LLM biases, and a "file-first" approach where data files are generated before the persona.
 
-### Web App & Experiments
+- **`03_building_a_fictional_neighbourhood.ipynb`**: Generates 100 synthetic personas for a fictional E8 London neighbourhood based on real census data.
 
-The `web/` directory contains a SvelteKit application for interactive experiments and visualization of survey results.
+## Web App
 
-- **`01-random-person-generator`**: This experiment generates random personas using an LLM and displays them on a map. It shows statistics on the generated population, highlighting the biases that can emerge from relying on LLMs for random data generation.
+The `web/` directory contains a SvelteKit application with two interactive experiments:
 
-- **`02-testing-space-before-it-happens`**: This experiment simulates a real-world scenario where a community in Dalston, London, decides what to do with a collectively owned plot of land. It uses the 100 synthetic personas generated in the notebooks to survey them on their preferences, visualizes the results, and generates an AI image of the community's final vision.
+- **`01-random-person-generator`**: Generates random personas and displays them on a map with population statistics, highlighting LLM biases in random generation.
 
-To run the web app:
-1. Start the Python API server: `uv run python -m centuria.api.server`
-2. In another terminal, navigate to the `web` directory.
-3. Install dependencies: `npm install`
-4. Start the development server: `npm run dev`
+- **`02-testing-space-before-it-happens`**: Simulates a community in Dalston deciding what to do with collectively owned land. Surveys 100 synthetic personas, visualizes results, and generates an AI image of the final vision.
 
-### `src` Library
+### Running Locally
 
-The `src/centuria/` directory contains the core Python library, providing modules for:
-- `models`: Pydantic data models
-- `llm`: LiteLLM client & prompts
-- `persona`: Persona generation
-- `survey`: Survey execution & analysis
-- `data`: Data loading utilities
+1. **Set up environment variables** (if not already done):
+   ```bash
+   cp .env.example .env
+   # Add your API keys (OPENAI_API_KEY, ANTHROPIC_API_KEY, GEMINI_API_KEY)
+   ```
+
+2. **Start the API server:**
+   ```bash
+   uv run python -m centuria.api.server
+   ```
+   The server runs on port 8000 by default. If that port is in use, specify a different one:
+   ```bash
+   PORT=8001 uv run python -m centuria.api.server
+   ```
+
+3. **In another terminal, run the web app:**
+   ```bash
+   cd web
+   npm install
+   npm run dev
+   ```
+   The web app runs on port 5173 (or the next available port).
+
+4. **Open the app** at http://localhost:5173
 
 ## Getting Started
 
 1. **Install [uv](https://docs.astral.sh/uv/getting-started/installation/)**
+
 2. **Clone the repository**
+
 3. **Set up environment variables:**
    ```bash
    cp .env.example .env
-   # Add your API keys to .env
+   # Add your API keys (OPENAI_API_KEY, ANTHROPIC_API_KEY, etc.)
    ```
+
 4. **Install dependencies:**
    ```bash
    uv sync
    ```
-5. **Launch Jupyter Lab to explore the notebooks:**
+
+5. **Explore the notebooks:**
    ```bash
    uv run jupyter lab
    ```
+
+## Configuration
+
+All prompts and configuration live in `src/centuria/config.py`:
+- LLM provider/model settings
+- Persona generation prompts
+- Survey prompts
+- Age thresholds for file type selection
+- Occupation categories
 
 ## License
 

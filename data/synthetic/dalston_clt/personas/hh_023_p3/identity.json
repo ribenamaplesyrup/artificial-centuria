@@ -1,11 +1,11 @@
 {
-  "name": "Lena Kowalczyk",
-  "age": 18,
+  "name": "Sarah Armstrong",
+  "age": 21,
   "gender": "female",
-  "location": "Flat 2 Osier Grove Estate, Dalston, London",
+  "location": "Flat 2 Ironmonger Pass Estate, Dalston, London",
   "occupation": "student",
-  "industry": "Student",
-  "education": "A-levels",
-  "political_lean": "Green Party",
-  "personality_sketch": "Lena is a bright and environmentally conscious teenager who dreams of becoming an environmental scientist. She is involved in various school clubs and enjoys painting, often drawing inspiration from nature. In her free time, Lena volunteers at a local community garden."
+  "industry": "Education",
+  "education": "Some college",
+  "political_lean": "Green",
+  "personality_sketch": "Studies art at local college. Prints photos for extra cash. Rides a bike to commute."
 }

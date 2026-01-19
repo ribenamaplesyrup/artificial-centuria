@@ -1,11 +1,11 @@
 {
-  "name": "Jonathan McCarthy",
-  "age": 68,
+  "name": "Dylan Jenkins",
+  "age": 42,
   "gender": "male",
-  "location": "8 Weaver's End Street, Dalston, London",
-  "occupation": "retired",
-  "industry": "Retired",
-  "education": "Bachelor's degree",
-  "political_lean": "liberal",
-  "personality_sketch": "Jonathan is a warm and community-oriented retiree with a deep appreciation for art and history. He spends his days volunteering at the local museum and tending to his garden. An avid reader, he enjoys discussing literature and is known for his thoughtful insights and passionate advocacy for cultural preservation."
+  "location": "8 Elderbloom Way Street, Dalston, London",
+  "occupation": "electrician",
+  "industry": "Trades",
+  "education": "Vocational/trade certificate",
+  "political_lean": "Labour",
+  "personality_sketch": "Works on various construction sites. Eats a fry-up before early shifts. Watches football with his mates."
 }

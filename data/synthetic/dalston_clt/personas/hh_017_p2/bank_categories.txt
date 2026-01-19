@@ -1,0 +1,8 @@
+- Housing (rent): £1,200  
+- Utilities: £150  
+- Groceries: £250  
+- Transport: £200  
+- Entertainment/dining: £180  
+- Subscriptions: £30  
+- Shopping: £100  
+- Savings: £100

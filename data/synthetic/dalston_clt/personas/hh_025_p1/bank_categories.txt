@@ -1,8 +1,0 @@
-- Housing (rent): £1,200  
-- Utilities (electricity, water, gas, internet): £180  
-- Groceries: £300  
-- Transport (public transit, occasional vehicle expenses): £150  
-- Entertainment/dining (football matches, pub visits): £100  
-- Subscriptions (streaming services, football channels): £50  
-- Shopping (clothing, gadgets/tools): £100  
-- Savings: £50

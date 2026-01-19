@@ -1,11 +1,11 @@
 {
-  "name": "Tomasz Kowalski",
-  "age": 68,
-  "gender": "male",
-  "location": "23 Hackett Green Road, Dalston, London",
-  "occupation": "carpenter",
-  "industry": "Trades",
-  "education": "Vocational/trade certificate",
-  "political_lean": "moderate",
-  "personality_sketch": "Tomasz is a skilled tradesman with a love for woodworking and restoring antique furniture. He is known for his meticulous attention to detail and is a fixture in the local DIY community. When not working, Tomasz enjoys playing chess at the local pub and discussing current events with friends."
+  "name": "Priya Sengupta",
+  "age": 24,
+  "gender": "female",
+  "location": "23 Chapelwright Lane Road, Dalston, London",
+  "occupation": "Junior Doctor",
+  "industry": "Healthcare",
+  "education": "Bachelor's degree",
+  "political_lean": "Progressive",
+  "personality_sketch": "Does night shifts at the hospital. Eats instant noodles after returning home. Visits art galleries monthly."
 }

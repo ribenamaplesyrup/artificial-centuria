@@ -1,11 +1,11 @@
 {
-  "name": "David Morgan",
-  "age": 41,
-  "gender": "male",
-  "location": "18 Weaver's End Street, Dalston, London",
-  "occupation": "history teacher",
-  "industry": "Education",
+  "name": "Grace Langley",
+  "age": 45,
+  "gender": "female",
+  "location": "18 Elderbloom Way Street, Dalston, London",
+  "occupation": "Consultant",
+  "industry": "Finance",
   "education": "Master's degree",
-  "political_lean": "centrist",
-  "personality_sketch": "David is an enthusiastic teacher who loves history and enjoys inspiring his students. Outside work, he has a passion for gardening and often spends his weekends tending to his small backyard. He values community and enjoys attending local events and markets in Dalston."
+  "political_lean": "Centre-left",
+  "personality_sketch": "Works from home most days. Attends Pilates classes on weekday evenings. Spends Saturdays browsing farmers' markets."
 }
