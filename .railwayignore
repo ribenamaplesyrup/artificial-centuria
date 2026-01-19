@@ -1,0 +1,46 @@
+# Environment files
+.env
+.env.local
+.env.example
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data
+data/
+
+# Cache
+.cache/
+*.cache
+.diskcache/
+
+# OS
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Logs
+*.log
+logs/
+
+# Git
+.git/
+
+# Notebooks (not needed for web app deployment)
+notebooks/
+*.ipynb
